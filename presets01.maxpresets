@@ -1,0 +1,11 @@
+{
+	"preset_data" : [ 		{
+			"number" : 1,
+			"data" : [ 5, "obj-91", "number", "int", 120, 5, "obj-89", "number", "int", 19, 5, "obj-84", "number", "int", 15, 5, "obj-82", "number", "int", 28, 5, "obj-41", "number", "int", 6, 5, "obj-40", "flonum", "float", 6.0, 5, "obj-39", "flonum", "float", -6.0, 5, "obj-38", "flonum", "float", 0.0, 5, "obj-36", "flonum", "float", 6.0, 5, "obj-35", "flonum", "float", 0.0, 5, "obj-34", "flonum", "float", 0.0, 5, "obj-31", "toggle", "int", 0, 5, "obj-65", "number", "int", 1, 5, "obj-29", "flonum", "float", 7.0, 5, "obj-28", "flonum", "float", 7.0, 5, "obj-26", "flonum", "float", -7.0, 5, "obj-25", "flonum", "float", -7.0, 5, "obj-18", "flonum", "float", 0.0, 5, "obj-63", "flonum", "float", 0.0, 5, "obj-62", "flonum", "float", 0.0, 5, "obj-61", "flonum", "float", 0.0, 5, "obj-60", "flonum", "float", 0.0, 5, "obj-13", "flonum", "float", 0.0, 5, "obj-108", "flonum", "float", 7.0, 5, "obj-120", "flonum", "float", -7.0, 5, "obj-132", "flonum", "float", 0.0, 5, "obj-134", "flonum", "float", 0.123999997973442, 5, "obj-136", "flonum", "float", 0.0, 5, "obj-46", "flonum", "float", 0.888999998569489, 5, "obj-59", "flonum", "float", 0.855000019073486 ]
+		}
+, 		{
+			"number" : 2,
+			"data" : [ 5, "obj-91", "number", "int", 50, 5, "obj-89", "number", "int", 8, 5, "obj-84", "number", "int", 15, 5, "obj-82", "number", "int", 5, 5, "obj-41", "number", "int", 6, 5, "obj-40", "flonum", "float", 6.0, 5, "obj-39", "flonum", "float", 6.0, 5, "obj-38", "flonum", "float", 0.0, 5, "obj-36", "flonum", "float", 6.0, 5, "obj-35", "flonum", "float", 6.0, 5, "obj-34", "flonum", "float", 0.0, 5, "obj-31", "toggle", "int", 0, 5, "obj-65", "number", "int", 1, 5, "obj-29", "flonum", "float", 7.0, 5, "obj-28", "flonum", "float", 7.0, 5, "obj-26", "flonum", "float", -7.0, 5, "obj-25", "flonum", "float", -7.0, 5, "obj-18", "flonum", "float", 0.0, 5, "obj-63", "flonum", "float", 0.0, 5, "obj-62", "flonum", "float", 0.0, 5, "obj-61", "flonum", "float", 0.0, 5, "obj-60", "flonum", "float", 0.0, 5, "obj-13", "flonum", "float", 0.0, 5, "obj-108", "flonum", "float", 7.0, 5, "obj-120", "flonum", "float", -7.0, 5, "obj-132", "flonum", "float", 0.0, 5, "obj-134", "flonum", "float", 0.0, 5, "obj-136", "flonum", "float", 0.0, 5, "obj-46", "flonum", "float", 0.888999998569489, 5, "obj-59", "flonum", "float", 1.0 ]
+		}
+ ]
+}
