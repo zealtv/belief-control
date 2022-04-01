@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 563.0, 79.0, 652.0, 787.0 ],
+		"rect" : [ 615.0, 189.0, 614.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -788,7 +788,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 3,
 					"presentation_rect" : [ 7.479689978873921, 635.778657269780979, 445.094207999999981, 59.0 ],
-					"text" : "/objectUpdate : [45, 0.855, 944.166, -700., 500.],\n/objectStart : [46, 0, 0, 0.855, 3470.85, -900., 500.],\n/objectEnd : 40"
+					"text" : "/objectUpdate : [224, 0.855, 2639.61, 2300., 500.],\n/objectStart : [225, 0, 0, 0.855, 3900.94, -900., 500.],\n/objectEnd : 220"
 				}
 
 			}
