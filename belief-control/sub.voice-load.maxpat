@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 119.0, 640.0, 480.0 ],
+		"rect" : [ 340.0, 477.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,36 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"automation" : "loop off",
+					"automationon" : "loop on",
+					"id" : "obj-1",
+					"maxclass" : "live.text",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 235.50001060962677, 127.0, 44.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 157.053597077258473, 26.957318449626655, 44.0, 22.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "loop off", "loop on" ],
+							"parameter_longname" : "live.text",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.text",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"text" : "loop",
+					"texton" : "LOOP",
+					"varname" : "live.text"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "message",
@@ -82,7 +112,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 23.0, 246.000002145767212, 87.999998807907104, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 9.153586372264272, 4.957318449626655, 202.57974405633604, 20.0 ]
+					"presentation_rect" : [ 9.153586372264272, 4.957318449626655, 191.900010704994202, 20.0 ],
+					"text" : "voice-slot #1"
 				}
 
 			}
@@ -132,7 +163,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 123.308616663848852, 206.800001561641693, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 9.153586372264272, 26.957318449626655, 24.0, 24.0 ]
+					"presentation_rect" : [ 9.153586372264272, 26.957318449626655, 22.0, 22.0 ]
 				}
 
 			}
@@ -150,33 +181,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-130",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 266.80000114440918, 102.0, 44.666663527488708, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 167.066666901111603, 28.957318449626655, 44.666663527488708, 20.0 ],
-					"text" : "loop"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-128",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 240.80000114440918, 100.0, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 139.599999904632568, 26.957318449626655, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-124",
 					"items" : [ "animals", ",", "gender-equality", ",", "people", ",", "bright-mass", ",", "horns", ",", "pessimistic-social", ",", "creativity", ",", "music", ",", "piano", ",", "cymbals", ",", "nature-personal", ",", "politics", ",", "education", ",", "objects", ",", "self-emotion", ",", "food-and-drink", ",", "optimistic-social" ],
 					"maxclass" : "umenu",
@@ -186,7 +190,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 123.108606900608038, 246.000002145767212, 100.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 37.599999904632568, 26.957318449626655, 100.0, 22.0 ]
+					"presentation_rect" : [ 33.153586372264272, 26.957318449626655, 121.900010704994202, 22.0 ]
 				}
 
 			}
@@ -205,15 +209,15 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-139", 0 ],
-					"source" : [ "obj-124", 1 ]
+					"destination" : [ "obj-140", 0 ],
+					"source" : [ "obj-1", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-140", 0 ],
-					"source" : [ "obj-128", 0 ]
+					"destination" : [ "obj-139", 0 ],
+					"source" : [ "obj-124", 1 ]
 				}
 
 			}
@@ -288,8 +292,18 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-1" : [ "live.text", "live.text", 0 ],
+			"parameterbanks" : 			{
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
 		"dependency_cache" : [  ],
-		"autosave" : 0
+		"autosave" : 0,
+		"bgcolor" : [ 1.0, 1.0, 1.0, 0.68 ]
 	}
 
 }
