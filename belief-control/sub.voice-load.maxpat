@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 608.0, 100.0, 732.0, 983.0 ],
+		"rect" : [ 579.0, 100.0, 758.0, 983.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,8 +40,47 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 422.5, 33.0, 5.0, 100.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 196.099989295005798, 9.457318449626655, 5.0, 53.5 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 307.0, 165.5, 41.0, 48.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_linknames" : 1,
+							"parameter_longname" : "Gain",
+							"parameter_mmax" : 2.0,
+							"parameter_shortname" : "Gain",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1
+						}
+
+					}
+,
+					"varname" : "Gain"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"automation" : "set off",
 					"automationon" : "set on",
+					"bordercolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ],
+					"fontface" : 1,
 					"id" : "obj-11",
 					"maxclass" : "live.text",
 					"mode" : 0,
@@ -51,8 +90,12 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 154.800009727478027, 217.0, 44.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 274.099989295005798, 43.957318449626655, 44.0, 15.0 ],
+					"presentation_rect" : [ 143.099989295005798, 47.957318449626655, 31.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
+						"bordercolor" : 						{
+							"expression" : "themecolor.theme_textcolor_inverse"
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "set off", "set on" ],
 							"parameter_longname" : "live.text[3]",
@@ -90,7 +133,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 183.0, 245.800001561641693, 100.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 137.153586372264272, 43.957318449626655, 100.0, 15.0 ],
+					"presentation_rect" : [ 6.153586372264272, 47.957318449626655, 100.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "animals", "gender-equality", "people", "bright-mass", "horns", "pessimistic-social", "creativity", "music", "piano", "cymbals", "nature-personal", "politics", "education", "objects", "self-emotion", "food-and-drink", "optimistic-social" ],
@@ -128,7 +171,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 147.0, 92.0, 233.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.153586372264272, 4.957318449626655, 124.0, 30.0 ],
+					"presentation_rect" : [ 4.153586372264272, 4.957318449626655, 106.0, 30.0 ],
 					"text" : "#2",
 					"textcolor" : [ 0.129411764705882, 0.129411764705882, 0.129411764705882, 0.87 ],
 					"underline" : 1
@@ -147,7 +190,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 216.0, 179.0, 67.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 58.153586372264272, 36.957318449626655, 52.0, 22.0 ],
+					"presentation_rect" : [ 251.099989295005798, 31.957318449626655, 22.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "\"Right Speaker Off\"", "\"Right Speaker On\"" ],
@@ -177,7 +220,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 147.0, 179.0, 67.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.153586372264272, 36.957318449626655, 52.0, 22.0 ],
+					"presentation_rect" : [ 251.099989295005798, 16.957318449626655, 22.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "\"Left Speakr Off\"", "\"Left Speaker On\"" ],
@@ -207,7 +250,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 290.50001060962677, 245.800001561641693, 44.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 239.153586372264272, 43.957318449626655, 32.946402922741527, 15.0 ],
+					"presentation_rect" : [ 108.153586372264272, 47.957318449626655, 32.946402922741527, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "loop off", "loop on" ],
@@ -269,7 +312,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 16.0, 89.000002145767212, 87.999998807907104, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 137.153586372264272, 21.957318449626655, 82.846413627735728, 20.0 ],
+					"presentation_rect" : [ 4.153586372264272, 31.957318449626655, 82.846413627735728, 20.0 ],
 					"text" : "voice-slot #1",
 					"underline" : 1
 				}
@@ -400,6 +443,7 @@
 			"obj-18" : [ "live.text[5]", "live.text[5]", 0 ],
 			"obj-2" : [ "live.text[1]", "live.text[5]", 0 ],
 			"obj-4" : [ "live.menu", "live.menu", 0 ],
+			"obj-5" : [ "Gain", "Gain", 0 ],
 			"parameterbanks" : 			{
 
 			}
