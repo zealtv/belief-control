@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 2,
+			"minor" : 3,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 304.0, 123.0, 1130.0, 920.0 ],
+		"rect" : [ 304.0, 123.0, 703.0, 920.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -1054,7 +1054,8 @@
 					"orientation" : 0,
 					"patching_rect" : [ 16.447801189971415, 44.52746547840502, 505.052094170444889, 544.655714264282551 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.083349999999996, 6.666644000000019, 263.38542370738412, 162.086410421922778 ]
+					"presentation_rect" : [ 4.083349999999996, 6.666644000000019, 263.38542370738412, 162.086410421922778 ],
+					"tabname" : "XY"
 				}
 
 			}

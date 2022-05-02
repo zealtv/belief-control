@@ -40,6 +40,46 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 183.0, 60.0, 32.0, 22.0 ],
+					"text" : "gate"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "live.text",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 183.0, 20.0, 72.0, 23.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 7.0, 7.0, 84.0, 23.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "val1", "val2" ],
+							"parameter_longname" : "live.text",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.text",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"text" : "Weather Off",
+					"texton" : "Weather On",
+					"varname" : "live.text"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
 					"blinkcolor" : [ 0.905882352941176, 0.623529411764706, 0.623529411764706, 1.0 ],
 					"blinktime" : 100,
@@ -54,7 +94,7 @@
 					"parameter_mappable" : 0,
 					"patching_rect" : [ 296.0, 316.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 67.5, 24.0, 24.0, 24.0 ]
+					"presentation_rect" : [ 66.5, 51.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -153,7 +193,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 154.0, 419.0, 41.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 60.0, 10.0, 41.0, 48.0 ],
+					"presentation_rect" : [ 59.0, 37.0, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_linknames" : 1,
@@ -230,7 +270,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 43.0, 199.0, 50.0, 63.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.0, 10.0, 50.0, 63.0 ],
+					"presentation_rect" : [ 7.0, 37.0, 50.0, 63.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_linknames" : 1,
@@ -274,7 +314,7 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
+					"destination" : [ "obj-6", 1 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -381,6 +421,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-7", 0 ]
 				}
@@ -397,6 +451,7 @@
 		"parameters" : 		{
 			"obj-15" : [ "windSpeed", "speed", 0 ],
 			"obj-2" : [ "windDirection", "direction", 0 ],
+			"obj-4" : [ "live.text", "live.text", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
