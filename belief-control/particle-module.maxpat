@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 2,
+			"minor" : 3,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -231,8 +231,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -542,8 +542,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -816,8 +816,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1270,8 +1270,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1402,8 +1402,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 2,
+											"minor" : 3,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1809,18 +1809,18 @@
 					"id" : "obj-118",
 					"maxclass" : "preset",
 					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "preset", "int", "preset", "int" ],
+					"numoutlets" : 5,
+					"outlettype" : [ "preset", "int", "preset", "int", "" ],
 					"patching_rect" : [ 461.0, 157.676605247070313, 100.0, 40.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 304.0, 83.803354516372622, 105.0, 47.0 ],
 					"preset_data" : [ 						{
 							"number" : 1,
-							"data" : [ 5, "obj-91", "number", "int", 100, 5, "obj-89", "number", "int", 30, 5, "obj-84", "number", "int", 1, 5, "obj-82", "number", "int", 0, 5, "obj-41", "number", "int", 6, 5, "obj-40", "flonum", "float", -5.0, 5, "obj-39", "flonum", "float", -10.0, 5, "obj-38", "flonum", "float", 0.0, 5, "obj-36", "flonum", "float", -25.0, 5, "obj-35", "flonum", "float", 10.0, 5, "obj-34", "flonum", "float", 0.0, 5, "obj-31", "toggle", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "obj-29", "flonum", "float", 50.0, 5, "obj-28", "flonum", "float", 50.0, 5, "obj-26", "flonum", "float", -50.0, 5, "obj-25", "flonum", "float", -50.0, 5, "obj-18", "flonum", "float", 0.0, 5, "obj-63", "flonum", "float", 0.0, 5, "obj-62", "flonum", "float", 0.0, 5, "obj-61", "flonum", "float", 0.0, 5, "obj-60", "flonum", "float", 0.0, 5, "obj-13", "flonum", "float", 0.0, 5, "obj-108", "flonum", "float", 50.0, 5, "obj-120", "flonum", "float", -50.0, 5, "obj-132", "flonum", "float", 0.0, 5, "obj-134", "flonum", "float", 1.0, 5, "obj-136", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 5.001999855041504, 5, "<invalid>", "flonum", "float", 0.855000019073486 ]
+							"data" : [ 5, "obj-91", "number", "int", 100, 5, "obj-89", "number", "int", 30, 5, "obj-84", "number", "int", 1, 5, "obj-82", "number", "int", 0, 5, "obj-41", "number", "int", 6, 5, "obj-40", "flonum", "float", -5.0, 5, "obj-39", "flonum", "float", -10.0, 5, "obj-38", "flonum", "float", 0.0, 5, "obj-36", "flonum", "float", -25.0, 5, "obj-35", "flonum", "float", 10.0, 5, "obj-34", "flonum", "float", 0.0, 5, "obj-31", "toggle", "int", 0, 5, "obj-29", "flonum", "float", 50.0, 5, "obj-28", "flonum", "float", 50.0, 5, "obj-26", "flonum", "float", -50.0, 5, "obj-25", "flonum", "float", -50.0, 5, "obj-18", "flonum", "float", 0.0, 5, "obj-63", "flonum", "float", 0.0, 5, "obj-62", "flonum", "float", 0.0, 5, "obj-61", "flonum", "float", 0.0, 5, "obj-60", "flonum", "float", 0.0, 5, "obj-13", "flonum", "float", 0.0, 5, "obj-108", "flonum", "float", 50.0, 5, "obj-120", "flonum", "float", -50.0, 5, "obj-132", "flonum", "float", 0.0, 5, "obj-134", "flonum", "float", 1.0, 5, "obj-136", "flonum", "float", 0.0, 5, "obj-44", "live.dial", "float", 0.74015748500824, 5, "obj-30", "live.dial", "float", 20.0 ]
 						}
 , 						{
 							"number" : 2,
-							"data" : [ 5, "obj-91", "number", "int", 100, 5, "obj-89", "number", "int", 20, 5, "obj-84", "number", "int", 1, 5, "obj-82", "number", "int", 0, 5, "obj-41", "number", "int", 3, 5, "obj-40", "flonum", "float", -5.0, 5, "obj-39", "flonum", "float", -5.0, 5, "obj-38", "flonum", "float", 0.0, 5, "obj-36", "flonum", "float", -25.0, 5, "obj-35", "flonum", "float", -25.0, 5, "obj-34", "flonum", "float", 0.0, 5, "obj-31", "toggle", "int", 0, 5, "<invalid>", "number", "int", 2, 5, "obj-29", "flonum", "float", 50.0, 5, "obj-28", "flonum", "float", 50.0, 5, "obj-26", "flonum", "float", -10.0, 5, "obj-25", "flonum", "float", -10.0, 5, "obj-18", "flonum", "float", 0.0, 5, "obj-63", "flonum", "float", 0.0, 5, "obj-62", "flonum", "float", 0.0, 5, "obj-61", "flonum", "float", 0.0, 5, "obj-60", "flonum", "float", 0.0, 5, "obj-13", "flonum", "float", 0.0, 5, "obj-108", "flonum", "float", 50.0, 5, "obj-120", "flonum", "float", -10.0, 5, "obj-132", "flonum", "float", 0.0, 5, "obj-134", "flonum", "float", 0.0, 5, "obj-136", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 10.0, 5, "<invalid>", "flonum", "float", 0.855000019073486 ]
+							"data" : [ 5, "obj-91", "number", "int", 100, 5, "obj-89", "number", "int", 20, 5, "obj-84", "number", "int", 1, 5, "obj-82", "number", "int", 0, 5, "obj-41", "number", "int", 3, 5, "obj-40", "flonum", "float", -5.0, 5, "obj-39", "flonum", "float", -5.0, 5, "obj-38", "flonum", "float", 0.0, 5, "obj-36", "flonum", "float", -25.0, 5, "obj-35", "flonum", "float", -25.0, 5, "obj-34", "flonum", "float", 0.0, 5, "obj-31", "toggle", "int", 0, 5, "obj-29", "flonum", "float", 50.0, 5, "obj-28", "flonum", "float", 50.0, 5, "obj-26", "flonum", "float", -10.0, 5, "obj-25", "flonum", "float", -10.0, 5, "obj-18", "flonum", "float", 0.0, 5, "obj-63", "flonum", "float", 0.0, 5, "obj-62", "flonum", "float", 0.0, 5, "obj-61", "flonum", "float", 0.0, 5, "obj-60", "flonum", "float", 0.0, 5, "obj-13", "flonum", "float", 0.0, 5, "obj-108", "flonum", "float", 50.0, 5, "obj-120", "flonum", "float", -10.0, 5, "obj-132", "flonum", "float", 0.0, 5, "obj-134", "flonum", "float", 0.0, 5, "obj-136", "flonum", "float", 0.0, 5, "obj-44", "live.dial", "float", 1.0, 5, "obj-30", "live.dial", "float", 13.464567184448242 ]
 						}
 , 						{
 							"number" : 3,
@@ -1828,7 +1828,11 @@
 						}
 , 						{
 							"number" : 4,
-							"data" : [ 5, "obj-91", "number", "int", 400, 5, "obj-89", "number", "int", 30, 5, "obj-84", "number", "int", 1, 5, "obj-82", "number", "int", 0, 5, "obj-41", "number", "int", 6, 5, "obj-40", "flonum", "float", -5.0, 5, "obj-39", "flonum", "float", -10.0, 5, "obj-38", "flonum", "float", 0.0, 5, "obj-36", "flonum", "float", -25.0, 5, "obj-35", "flonum", "float", 0.0, 5, "obj-34", "flonum", "float", 0.0, 5, "obj-31", "toggle", "int", 0, 5, "<invalid>", "number", "int", 1, 5, "obj-29", "flonum", "float", 50.0, 5, "obj-28", "flonum", "float", 50.0, 5, "obj-26", "flonum", "float", -10.0, 5, "obj-25", "flonum", "float", -10.0, 5, "obj-18", "flonum", "float", 0.0, 5, "obj-63", "flonum", "float", 0.0, 5, "obj-62", "flonum", "float", 0.0, 5, "obj-61", "flonum", "float", 0.0, 5, "obj-60", "flonum", "float", 0.0, 5, "obj-13", "flonum", "float", 0.0, 5, "obj-108", "flonum", "float", 50.0, 5, "obj-120", "flonum", "float", -10.0, 5, "obj-132", "flonum", "float", 0.0, 5, "obj-134", "flonum", "float", 0.230000004172325, 5, "obj-136", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 5.0, 5, "<invalid>", "flonum", "float", 0.855000019073486 ]
+							"data" : [ 5, "obj-91", "number", "int", 200, 5, "obj-89", "number", "int", 100, 5, "obj-84", "number", "int", 2, 5, "obj-82", "number", "int", 1, 5, "obj-41", "number", "int", 3, 5, "obj-40", "flonum", "float", -5.0, 5, "obj-39", "flonum", "float", -10.0, 5, "obj-38", "flonum", "float", 0.0, 5, "obj-36", "flonum", "float", -25.0, 5, "obj-35", "flonum", "float", 0.0, 5, "obj-34", "flonum", "float", 0.0, 5, "obj-31", "toggle", "int", 0, 5, "obj-29", "flonum", "float", 50.0, 5, "obj-28", "flonum", "float", 50.0, 5, "obj-26", "flonum", "float", -10.0, 5, "obj-25", "flonum", "float", -10.0, 5, "obj-18", "flonum", "float", 0.0, 5, "obj-63", "flonum", "float", 0.0, 5, "obj-62", "flonum", "float", 0.0, 5, "obj-61", "flonum", "float", 0.0, 5, "obj-60", "flonum", "float", 0.0, 5, "obj-13", "flonum", "float", 0.0, 5, "obj-108", "flonum", "float", 50.0, 5, "obj-120", "flonum", "float", -10.0, 5, "obj-132", "flonum", "float", 0.0, 5, "obj-134", "flonum", "float", 0.600000023841858, 5, "obj-136", "flonum", "float", 0.0, 5, "obj-44", "live.dial", "float", 1.0, 5, "obj-30", "live.dial", "float", 13.464567184448242 ]
+						}
+, 						{
+							"number" : 5,
+							"data" : [ 5, "obj-91", "number", "int", 200, 5, "obj-89", "number", "int", 100, 5, "obj-84", "number", "int", 2, 5, "obj-82", "number", "int", 1, 5, "obj-41", "number", "int", 3, 5, "obj-40", "flonum", "float", -5.0, 5, "obj-39", "flonum", "float", -5.0, 5, "obj-38", "flonum", "float", 0.0, 5, "obj-36", "flonum", "float", 0.0, 5, "obj-35", "flonum", "float", -20.0, 5, "obj-34", "flonum", "float", 0.0, 5, "obj-31", "toggle", "int", 0, 5, "obj-29", "flonum", "float", 50.0, 5, "obj-28", "flonum", "float", 50.0, 5, "obj-26", "flonum", "float", -10.0, 5, "obj-25", "flonum", "float", -10.0, 5, "obj-18", "flonum", "float", 0.0, 5, "obj-63", "flonum", "float", 0.0, 5, "obj-62", "flonum", "float", 0.0, 5, "obj-61", "flonum", "float", 0.0, 5, "obj-60", "flonum", "float", 0.0, 5, "obj-13", "flonum", "float", 0.0, 5, "obj-108", "flonum", "float", 50.0, 5, "obj-120", "flonum", "float", -10.0, 5, "obj-132", "flonum", "float", 0.600000023841858, 5, "obj-134", "flonum", "float", 0.300000011920929, 5, "obj-136", "flonum", "float", 0.0, 5, "obj-44", "live.dial", "float", 0.590551197528839, 5, "obj-30", "live.dial", "float", 13.464567184448242 ]
 						}
 , 						{
 							"number" : 9,
@@ -2072,8 +2076,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2156.329666000000088, 193.293318999999997, 29.5, 22.0 ],
-					"text" : "-10"
+					"patching_rect" : [ 2156.329666000000088, 193.293318999999997, 33.0, 22.0 ],
+					"text" : "-100"
 				}
 
 			}
@@ -2085,7 +2089,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1970.329666000000088, 208.293318999999997, 29.5, 22.0 ],
-					"text" : "50"
+					"text" : "200"
 				}
 
 			}
