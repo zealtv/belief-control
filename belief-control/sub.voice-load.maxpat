@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 2,
+			"minor" : 3,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 579.0, 100.0, 758.0, 983.0 ],
+		"rect" : [ 34.0, 100.0, 1310.0, 983.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -44,9 +44,7 @@
 					"maxclass" : "live.line",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 422.5, 33.0, 5.0, 100.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 196.099989295005798, 9.457318449626655, 5.0, 53.5 ]
+					"patching_rect" : [ 422.5, 33.0, 5.0, 100.0 ]
 				}
 
 			}
@@ -58,7 +56,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 307.0, 165.5, 41.0, 48.0 ],
+					"patching_rect" : [ 610.0, 50.5, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_linknames" : 1,
@@ -136,9 +134,9 @@
 					"presentation_rect" : [ 6.153586372264272, 47.957318449626655, 100.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "animals", "gender-equality", "people", "bright-mass", "horns", "pessimistic-social", "creativity", "music", "piano", "cymbals", "nature-personal", "politics", "education", "objects", "self-emotion", "food-and-drink", "optimistic-social" ],
+							"parameter_enum" : [ "animals", "gender-equality", "pessimistic-social", "horns", "piano", "bright-mass", "music", "politics", "creativity", "nature-personal", "self-emotion", "cymbals", "objects", "string-bath", "education", "optimistic-social", "food-and-drink", "people", "swarms" ],
 							"parameter_longname" : "live.menu",
-							"parameter_mmax" : 16,
+							"parameter_mmax" : 18,
 							"parameter_shortname" : "live.menu",
 							"parameter_type" : 2
 						}
@@ -188,9 +186,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 216.0, 179.0, 67.0, 21.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 251.099989295005798, 31.957318449626655, 22.0, 15.0 ],
+					"patching_rect" : [ 519.0, 64.0, 67.0, 21.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "\"Right Speaker Off\"", "\"Right Speaker On\"" ],
@@ -218,9 +214,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 147.0, 179.0, 67.0, 21.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 251.099989295005798, 16.957318449626655, 22.0, 15.0 ],
+					"patching_rect" : [ 450.0, 64.0, 67.0, 21.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "\"Left Speakr Off\"", "\"Left Speaker On\"" ],
