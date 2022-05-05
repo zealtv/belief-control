@@ -153,6 +153,7 @@
 							"parameter_longname" : "density",
 							"parameter_mmax" : 100.0,
 							"parameter_shortname" : "Density",
+							"parameter_speedlim" : 50.0,
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 5
 						}
@@ -274,6 +275,7 @@
 							"parameter_longname" : "polyphony",
 							"parameter_mmin" : 1.0,
 							"parameter_shortname" : "Poly",
+							"parameter_speedlim" : 50.0,
 							"parameter_type" : 1,
 							"parameter_unitstyle" : 0
 						}
@@ -294,7 +296,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 312.0, 44.0, 41.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 110.166661262512207, 40.0, 41.0, 48.0 ],
+					"presentation_rect" : [ 8.0, 98.0, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 0.5 ],
@@ -302,6 +304,7 @@
 							"parameter_longname" : "Gain Min",
 							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "Gain Min",
+							"parameter_speedlim" : 50.0,
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
 						}
@@ -322,7 +325,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 269.0, 44.0, 41.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 153.166661262512207, 40.0, 41.0, 48.0 ],
+					"presentation_rect" : [ 51.0, 98.0, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 1.0 ],
@@ -330,6 +333,7 @@
 							"parameter_longname" : "Gain Max",
 							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "Gain Max",
+							"parameter_speedlim" : 50.0,
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
 						}

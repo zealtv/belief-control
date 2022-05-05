@@ -56,8 +56,9 @@
 							"parameter_mmax" : 10.0,
 							"parameter_mmin" : -10.0,
 							"parameter_shortname" : "vy",
+							"parameter_speedlim" : 50.0,
 							"parameter_type" : 0,
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 1
 						}
 
 					}
@@ -84,8 +85,9 @@
 							"parameter_mmax" : 10.0,
 							"parameter_mmin" : -10.0,
 							"parameter_shortname" : "vx",
+							"parameter_speedlim" : 50.0,
 							"parameter_type" : 0,
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 1
 						}
 
 					}
@@ -115,6 +117,7 @@
 							"parameter_mmax" : 100.0,
 							"parameter_mmin" : -100.0,
 							"parameter_shortname" : "vary",
+							"parameter_speedlim" : 50.0,
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
 						}
@@ -146,6 +149,7 @@
 							"parameter_mmax" : 100.0,
 							"parameter_mmin" : -100.0,
 							"parameter_shortname" : "vary",
+							"parameter_speedlim" : 50.0,
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
 						}
@@ -176,6 +180,7 @@
 							"parameter_mmax" : 100.0,
 							"parameter_mmin" : -100.0,
 							"parameter_shortname" : "init y",
+							"parameter_speedlim" : 50.0,
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
 						}
@@ -206,6 +211,7 @@
 							"parameter_mmax" : 100.0,
 							"parameter_mmin" : -100.0,
 							"parameter_shortname" : "init x",
+							"parameter_speedlim" : 50.0,
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
 						}
@@ -234,6 +240,7 @@
 							"parameter_mmax" : 50.0,
 							"parameter_mmin" : 1.0,
 							"parameter_shortname" : "number",
+							"parameter_speedlim" : 50.0,
 							"parameter_type" : 1,
 							"parameter_unitstyle" : 0
 						}
@@ -261,6 +268,7 @@
 							"parameter_linknames" : 1,
 							"parameter_longname" : "emit_var",
 							"parameter_shortname" : "vary",
+							"parameter_speedlim" : 50.0,
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 0
 						}
@@ -287,6 +295,7 @@
 							"parameter_linknames" : 1,
 							"parameter_longname" : "emit[1]",
 							"parameter_shortname" : "emit",
+							"parameter_speedlim" : 50.0,
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 0
 						}
@@ -314,6 +323,7 @@
 							"parameter_linknames" : 1,
 							"parameter_longname" : "life_var",
 							"parameter_shortname" : "vary",
+							"parameter_speedlim" : 50.0,
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 0
 						}
@@ -342,6 +352,7 @@
 							"parameter_mmax" : 256.0,
 							"parameter_mmin" : 1.0,
 							"parameter_shortname" : "life",
+							"parameter_speedlim" : 50.0,
 							"parameter_type" : 1,
 							"parameter_unitstyle" : 0
 						}
@@ -373,8 +384,9 @@
 							"parameter_longname" : "Radius",
 							"parameter_mmax" : 30.0,
 							"parameter_shortname" : "Radius",
+							"parameter_speedlim" : 50.0,
 							"parameter_type" : 0,
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 1
 						}
 
 					}
@@ -404,6 +416,7 @@
 							"parameter_longname" : "live.dial[1]",
 							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "Gain",
+							"parameter_speedlim" : 50.0,
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
 						}
@@ -455,7 +468,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 724.0, 83.0, 34.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 141.500284507721062, 209.676605247070256, 34.0, 22.0 ],
+					"presentation_rect" : [ 156.500284507721062, 209.676605247070256, 34.0, 22.0 ],
 					"text" : "write"
 				}
 
@@ -2047,7 +2060,7 @@
 					"outlettype" : [ "preset", "int", "preset", "int", "" ],
 					"patching_rect" : [ 461.0, 157.676605247070313, 100.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.500284507721062, 184.676605247070256, 174.0, 47.0 ],
+					"presentation_rect" : [ 1.500284507721062, 184.676605247070256, 189.0, 47.0 ],
 					"preset_data" : [ 						{
 							"number" : 1,
 							"data" : [ 5, "<invalid>", "number", "int", 100, 5, "<invalid>", "number", "int", 30, 5, "obj-84", "number", "int", 1, 5, "obj-82", "number", "int", 0, 5, "<invalid>", "number", "int", 6, 5, "<invalid>", "flonum", "float", -5.0, 5, "<invalid>", "flonum", "float", -10.0, 5, "obj-38", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", -25.0, 5, "<invalid>", "flonum", "float", 10.0, 5, "obj-34", "flonum", "float", 0.0, 5, "obj-31", "toggle", "int", 0, 5, "obj-29", "flonum", "float", 50.0, 5, "obj-28", "flonum", "float", 50.0, 5, "obj-26", "flonum", "float", -50.0, 5, "obj-25", "flonum", "float", -50.0, 5, "obj-18", "flonum", "float", 0.0, 5, "obj-63", "flonum", "float", 0.0, 5, "obj-62", "flonum", "float", 0.0, 5, "obj-61", "flonum", "float", 0.0, 5, "obj-60", "flonum", "float", 0.0, 5, "obj-13", "flonum", "float", 0.0, 5, "obj-108", "flonum", "float", 50.0, 5, "obj-120", "flonum", "float", -50.0, 5, "<invalid>", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 1.0, 5, "obj-136", "flonum", "float", 0.0, 5, "obj-44", "live.dial", "float", 0.74015748500824, 5, "obj-30", "live.dial", "float", 20.0 ]
