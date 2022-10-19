@@ -77,7 +77,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 422.333333333333314, 186.0, 73.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 219.333333333333314, 40.408163265306115, 69.0, 30.0 ],
+					"presentation_rect" : [ 228.5, 40.408163265306115, 69.0, 30.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
@@ -108,7 +108,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 503.229800344558498, 164.0, 41.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 172.729800344558498, 31.408163265306115, 41.0, 48.0 ],
+					"presentation_rect" : [ 180.5, 31.408163265306115, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 1 ],
@@ -144,10 +144,9 @@
 							"parameter_initial" : [ 1.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "speakerIndex[1]",
-							"parameter_mmax" : 120.0,
-							"parameter_mmin" : 1.0,
-							"parameter_shortname" : "Speaker",
+							"parameter_longname" : "speaker-index",
+							"parameter_mmax" : 119.0,
+							"parameter_shortname" : "speaker",
 							"parameter_speedlim" : 50.0,
 							"parameter_type" : 1,
 							"parameter_unitstyle" : 0
@@ -155,7 +154,7 @@
 
 					}
 ,
-					"varname" : "speakerIndex[1]"
+					"varname" : "speaker-index"
 				}
 
 			}
@@ -168,7 +167,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 91.0, 485.0, 112.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 9.0, 5.408163265306115, 275.0, 20.0 ],
+					"presentation_rect" : [ 9.0, 5.408163265306115, 288.5, 20.0 ],
 					"text" : "SNIPER",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -285,7 +284,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 43.333333333333314, 169.5, 49.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 296.0, 13.0, 60.0, 57.408163265306115 ],
+					"presentation_rect" : [ 311.0, 13.0, 60.0, 57.408163265306115 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
@@ -334,9 +333,9 @@
 							"parameter_initial" : [ 1.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "Gain",
+							"parameter_longname" : "gain",
 							"parameter_mmax" : 1.0,
-							"parameter_shortname" : "Gain",
+							"parameter_shortname" : "gain",
 							"parameter_speedlim" : 50.0,
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
@@ -344,7 +343,7 @@
 
 					}
 ,
-					"varname" : "Gain"
+					"varname" : "gain"
 				}
 
 			}
@@ -361,10 +360,12 @@
 					"presentation_rect" : [ 90.5, 31.408163265306115, 45.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_initial" : [ 0 ],
+							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "recordingID",
+							"parameter_longname" : "sample-index",
 							"parameter_mmax" : 255.0,
-							"parameter_shortname" : "Recording",
+							"parameter_shortname" : "sample",
 							"parameter_speedlim" : 50.0,
 							"parameter_type" : 1,
 							"parameter_unitstyle" : 0
@@ -372,7 +373,7 @@
 
 					}
 ,
-					"varname" : "recordingID"
+					"varname" : "sample-index"
 				}
 
 			}
@@ -509,12 +510,12 @@
  ],
 		"parameters" : 		{
 			"obj-1" : [ "bank", "bank", 0 ],
-			"obj-18" : [ "speakerIndex[1]", "Speaker", 0 ],
+			"obj-18" : [ "speaker-index", "speaker", 0 ],
 			"obj-24" : [ "rateMultiply", "rate", 0 ],
 			"obj-26" : [ "playtoend", "play to end", 0 ],
 			"obj-3" : [ "live.text[1]", "live.text", 0 ],
-			"obj-4" : [ "recordingID", "Recording", 0 ],
-			"obj-5" : [ "Gain", "Gain", 0 ],
+			"obj-4" : [ "sample-index", "sample", 0 ],
+			"obj-5" : [ "gain", "gain", 0 ],
 			"obj-7" : [ "go", "go", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{

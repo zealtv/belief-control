@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 408.0, 100.0, 1224.0, 1013.0 ],
+		"rect" : [ 141.0, 181.0, 1301.0, 623.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,32 +40,6 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-7",
-					"maxclass" : "live.line",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 8.0, 592.0, 1053.0, 10.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 0,
-					"id" : "obj-6",
-					"linecount" : 32,
-					"maxclass" : "o.compose",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 8.0, 628.0, 433.0, 420.0 ],
-					"saved_bundle_data" : [  ],
-					"saved_bundle_length" : 0,
-					"text" : "\nOBJECT\n\t- Paths\n\t- Weather\n- Particles\n- Touch\n\n\nTARGET\n- Sniper\n\n\t- Scatter\n\n\t- Sequence\n\t\t  - Sequence Index\n\t\t  - Speed\n\t\t  - Loop (on/off/ping-pong)\n\t\t  - step (advance n samples on each step) (float)\n  \t\t- go (pulse)\n\n\t- Sweep\n  \t\t- Angle\n\t\t  - Speed\n\t\t  - Polyphony\n\t\t  - Density\n\t\t  - Offset\n\t\t  - go (pulse)\n\t\n- Group\n  \t\t- Group index\n\t\t  - Recording-id\n\t"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgmode" : 2,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -79,7 +53,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 8.0, 324.0, 708.0, 246.0 ],
+					"patching_rect" : [ 514.0, 188.0, 399.0, 222.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -99,7 +73,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 8.0, 199.0, 376.0, 93.0 ],
+					"patching_rect" : [ 8.0, 199.0, 381.0, 85.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -119,7 +93,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 8.0, 8.0, 885.0, 179.0 ],
+					"patching_rect" : [ 8.0, 8.0, 982.0, 168.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -154,6 +128,7 @@
 			"obj-2::obj-47" : [ "exponent", "exponent", 0 ],
 			"obj-2::obj-48" : [ "kill", "kill", 0 ],
 			"obj-2::obj-50" : [ "textbutton[2]", "textbutton[2]", 0 ],
+			"obj-2::obj-57" : [ "osc-enable", "OSC enable", 0 ],
 			"obj-2::obj-7" : [ "live.numbox[1]", "live.numbox", 0 ],
 			"obj-2::obj-8" : [ "live.numbox", "live.numbox", 0 ],
 			"obj-2::obj-93" : [ "live.dial[4]", "Freq", 0 ],
@@ -164,12 +139,12 @@
 			"obj-2::obj-97::obj-4" : [ "live.menu[2]", "live.menu", 0 ],
 			"obj-2::obj-97::obj-5" : [ "Gain[5]", "Gain", 0 ],
 			"obj-3::obj-1" : [ "bank", "bank", 0 ],
-			"obj-3::obj-18" : [ "speakerIndex[1]", "Speaker", 0 ],
+			"obj-3::obj-18" : [ "speakerIndex[1]", "speaker", 0 ],
 			"obj-3::obj-24" : [ "rateMultiply[1]", "rate", 0 ],
 			"obj-3::obj-26" : [ "playtoend", "play to end", 0 ],
 			"obj-3::obj-3" : [ "live.text[14]", "live.text", 0 ],
-			"obj-3::obj-4" : [ "recordingID", "Recording", 0 ],
-			"obj-3::obj-5" : [ "Gain[3]", "Gain", 0 ],
+			"obj-3::obj-4" : [ "recordingID", "sample", 0 ],
+			"obj-3::obj-5" : [ "Gain[3]", "gain", 0 ],
 			"obj-3::obj-7" : [ "live.text[16]", "live.text", 0 ],
 			"obj-4::obj-1::obj-13" : [ "squish-x-var", "squish-x-var", 0 ],
 			"obj-4::obj-1::obj-136" : [ "vel-z", "vel-z", 0 ],
@@ -258,12 +233,20 @@
 					"parameter_longname" : "Gain[5]"
 				}
 ,
+				"obj-3::obj-18" : 				{
+					"parameter_longname" : "speakerIndex[1]"
+				}
+,
 				"obj-3::obj-24" : 				{
 					"parameter_longname" : "rateMultiply[1]"
 				}
 ,
 				"obj-3::obj-3" : 				{
 					"parameter_longname" : "live.text[14]"
+				}
+,
+				"obj-3::obj-4" : 				{
+					"parameter_longname" : "recordingID"
 				}
 ,
 				"obj-3::obj-5" : 				{
