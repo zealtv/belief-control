@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 408.0, 75.0, 1224.0, 1013.0 ],
+		"rect" : [ 408.0, 100.0, 1224.0, 1013.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,7 @@
 					"maxclass" : "live.line",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 8.0, 592.0, 1100.0, 44.0 ]
+					"patching_rect" : [ 8.0, 592.0, 1053.0, 10.0 ]
 				}
 
 			}
@@ -52,15 +52,15 @@
 				"box" : 				{
 					"fontface" : 0,
 					"id" : "obj-6",
-					"linecount" : 29,
+					"linecount" : 32,
 					"maxclass" : "o.compose",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 379.0, 611.0, 433.0, 382.0 ],
+					"patching_rect" : [ 8.0, 628.0, 433.0, 420.0 ],
 					"saved_bundle_data" : [  ],
 					"saved_bundle_length" : 0,
-					"text" : "\n\t- Paths\n\t- Weather\n- Particles\n- Touch\n\n- Sniper\n\n\t- Scatter\n\n\t- Sequence\n\t\t  - Sequence Index\n\t\t  - Speed\n\t\t  - Loop (on/off/ping-pong)\n\t\t  - step (advance n samples on each step) (float)\n  \t\t- go (pulse)\n\n\t- Sweep\n  \t\t- Angle\n\t\t  - Speed\n\t\t  - Polyphony\n\t\t  - Density\n\t\t  - Offset\n\t\t  - go (pulse)\n\t\n- Group\n  \t\t- Group index\n\t\t  - Recording-id\n\t"
+					"text" : "\nOBJECT\n\t- Paths\n\t- Weather\n- Particles\n- Touch\n\n\nTARGET\n- Sniper\n\n\t- Scatter\n\n\t- Sequence\n\t\t  - Sequence Index\n\t\t  - Speed\n\t\t  - Loop (on/off/ping-pong)\n\t\t  - step (advance n samples on each step) (float)\n  \t\t- go (pulse)\n\n\t- Sweep\n  \t\t- Angle\n\t\t  - Speed\n\t\t  - Polyphony\n\t\t  - Density\n\t\t  - Offset\n\t\t  - go (pulse)\n\t\n- Group\n  \t\t- Group index\n\t\t  - Recording-id\n\t"
 				}
 
 			}
@@ -99,7 +99,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 8.0, 199.0, 405.0, 107.0 ],
+					"patching_rect" : [ 8.0, 199.0, 376.0, 93.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -119,28 +119,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 8.0, 8.0, 959.0, 177.0 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 2,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-1",
-					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "scatter.module.maxpat",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 19.0, 616.0, 298.0, 227.0 ],
+					"patching_rect" : [ 8.0, 8.0, 885.0, 179.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -148,12 +127,6 @@
  ],
 		"lines" : [  ],
 		"parameters" : 		{
-			"obj-1::obj-109" : [ "number[7]", "number[7]", 0 ],
-			"obj-1::obj-13" : [ "Gain Max", "Gain Max", 0 ],
-			"obj-1::obj-14" : [ "Gain Min", "Gain Min", 0 ],
-			"obj-1::obj-15" : [ "live.text", "live.text", 0 ],
-			"obj-1::obj-16" : [ "polyphony", "Poly", 0 ],
-			"obj-1::obj-26" : [ "density", "Density", 0 ],
 			"obj-2::obj-10" : [ "live.numbox[2]", "live.numbox", 0 ],
 			"obj-2::obj-15" : [ "live.numbox[3]", "live.numbox", 0 ],
 			"obj-2::obj-16" : [ "live.numbox[5]", "live.numbox", 0 ],
@@ -179,6 +152,7 @@
 			"obj-2::obj-42" : [ "live.dial[2]", "Gain", 0 ],
 			"obj-2::obj-45" : [ "textbutton[1]", "textbutton[1]", 0 ],
 			"obj-2::obj-47" : [ "exponent", "exponent", 0 ],
+			"obj-2::obj-48" : [ "kill", "kill", 0 ],
 			"obj-2::obj-50" : [ "textbutton[2]", "textbutton[2]", 0 ],
 			"obj-2::obj-7" : [ "live.numbox[1]", "live.numbox", 0 ],
 			"obj-2::obj-8" : [ "live.numbox", "live.numbox", 0 ],
@@ -320,7 +294,7 @@
 			}
 , 			{
 				"name" : "conductor.module.maxpat",
-				"bootpath" : "~/repos/belief-control/max4live",
+				"bootpath" : "~/repos/belief-control/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -362,49 +336,35 @@
 			}
 , 			{
 				"name" : "particles.module.maxpat",
-				"bootpath" : "~/repos/belief-control/max4live",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "scatter.module.maxpat",
-				"bootpath" : "~/repos/belief-control/max4live",
+				"bootpath" : "~/repos/belief-control/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sniper.module.maxpat",
-				"bootpath" : "~/repos/belief-control/max4live",
+				"bootpath" : "~/repos/belief-control/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sub.UNICAST14.maxpat",
-				"bootpath" : "~/repos/belief-control/max4live",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "sub.common.maxpat",
-				"bootpath" : "~/repos/belief-control/max4live",
+				"bootpath" : "~/repos/belief-control/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sub.load-bank.maxpat",
-				"bootpath" : "~/repos/belief-control/max4live",
+				"bootpath" : "~/repos/belief-control/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sub.particle-engine.maxpat",
-				"bootpath" : "~/repos/belief-control/max4live",
+				"bootpath" : "~/repos/belief-control/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

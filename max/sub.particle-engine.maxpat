@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 847.0, 100.0, 847.0, 983.0 ],
+		"rect" : [ 847.0, 100.0, 565.0, 983.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -97,14 +97,14 @@
 				"box" : 				{
 					"bubbleside" : 2,
 					"fontname" : "Arial",
-					"fontsize" : 13.0,
+					"fontsize" : 9.0,
 					"id" : "obj-16",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 297.014778309239773, 586.245669085689997, 168.0, 21.0 ],
+					"patching_rect" : [ 297.014778309239773, 586.245669085689997, 120.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 204.500284507721062, 102.676605247070256, 189.0, 21.0 ],
+					"presentation_rect" : [ 395.500284507721062, 31.176605247070256, 110.0, 17.0 ],
 					"text" : "- Shift+alt+click to delete"
 				}
 
@@ -113,14 +113,14 @@
 				"box" : 				{
 					"bubbleside" : 2,
 					"fontname" : "Arial",
-					"fontsize" : 13.0,
+					"fontsize" : 9.0,
 					"id" : "obj-6",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 297.014778309239773, 561.245669085689997, 168.0, 21.0 ],
+					"patching_rect" : [ 297.014778309239773, 561.245669085689997, 122.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 204.500284507721062, 56.676605247070256, 189.0, 21.0 ],
+					"presentation_rect" : [ 395.500284507721062, 4.676605247070256, 111.0, 17.0 ],
 					"text" : "- Click to recall"
 				}
 
@@ -129,14 +129,14 @@
 				"box" : 				{
 					"bubbleside" : 2,
 					"fontname" : "Arial",
-					"fontsize" : 13.0,
+					"fontsize" : 9.0,
 					"id" : "obj-2",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 297.014778309239773, 537.0, 168.0, 21.0 ],
+					"patching_rect" : [ 297.014778309239773, 537.0, 120.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 204.500284507721062, 79.676605247070256, 189.0, 21.0 ],
+					"presentation_rect" : [ 395.500284507721062, 17.676605247070256, 110.0, 17.0 ],
 					"text" : "- Shift+click to store"
 				}
 

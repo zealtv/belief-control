@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 898.0, 100.0, 232.0, 983.0 ],
+		"rect" : [ 126.0, 100.0, 961.0, 983.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -48,7 +48,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 181.229800344558498, 666.049306482924749, 41.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 275.229800344558498, 50.049306482924749, 41.0, 48.0 ],
+					"presentation_rect" : [ 44.229800344558498, 53.049306482924749, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 1 ],
@@ -70,14 +70,14 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.093121, 0.536852, 0.511438, 1.0 ],
+					"bgcolor" : [ 0.439216, 0.74902, 0.254902, 1.0 ],
 					"id" : "obj-4",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 150.0, 173.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 448.185002043005852, 2.672425524987119, 242.93464349775104, 20.0 ],
+					"presentation_rect" : [ 6.185002043005852, 5.672425524987119, 402.65278074755895, 20.0 ],
 					"text" : "PARTICLES",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -94,8 +94,6 @@
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1128.095544042705569, -13.607863185838596, 66.0, 35.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 222.185002043005852, 5.672425524987119, 99.0, 35.0 ],
 					"rounded" : 10.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -1288,7 +1286,7 @@
 					"outlettype" : [ "jit_matrix", "" ],
 					"patching_rect" : [ 1109.0, 212.454564306893644, 280.0, 280.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.508373961821235, 5.672425524987119, 201.352252131363855, 201.0 ],
+					"presentation_rect" : [ 531.508373961821235, 5.672425524987119, 201.352252131363855, 201.0 ],
 					"sync" : 1
 				}
 
@@ -1450,7 +1448,7 @@
 					"outlettype" : [ "jit_matrix", "" ],
 					"patching_rect" : [ 716.07525136653112, 413.493940655903316, 229.600002229213715, 17.851580983402528 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 448.185002043005852, 22.672425524987119, 242.93464349775104, 10.0 ],
+					"presentation_rect" : [ 531.508373961821235, 208.672425524987119, 201.352252131363855, 10.0 ],
 					"sync" : 1
 				}
 
@@ -1581,7 +1579,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 168.521942734718323, 478.156106911281313, 74.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 331.48039105963403, 5.672425524987119, 74.0, 27.0 ],
+					"presentation_rect" : [ 430.879291959188095, 5.672425524987119, 74.0, 27.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
@@ -3653,7 +3651,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 51.729800344558726, 842.549306482924749, 350.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 441.508373961821235, 170.531160124933422, 236.37091799736686, 30.0 ]
+					"presentation_rect" : [ 212.508373961821235, 105.531160124933422, 292.37091799736686, 30.0 ]
 				}
 
 			}
@@ -3723,7 +3721,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 70.933096886726389, 212.454564306893644, 392.0, 214.905662593502711 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 232.54574756188299, 45.552133699009573, 458.573897978873902, 180.60000079870224 ],
+					"presentation_rect" : [ 6.185002043005852, 44.552133699009573, 507.573897978873902, 180.60000079870224 ],
 					"varname" : "system-module",
 					"viewvisibility" : 1
 				}
@@ -4225,7 +4223,7 @@
 			}
 , 			{
 				"name" : "sub.particle-engine.maxpat",
-				"bootpath" : "~/repos/belief-control/max4live",
+				"bootpath" : "~/repos/belief-control/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

@@ -40,14 +40,14 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"bgcolor" : [ 0.337303, 0.352808, 0.54972, 1.0 ],
+					"bgcolor" : [ 0.862745, 0.741176, 0.137255, 1.0 ],
 					"id" : "obj-1",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 135.0, 158.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 16.0, 175.79185782369953, 97.0, 20.0 ],
+					"presentation_rect" : [ 10.833338737487793, 12.79185782369953, 97.0, 20.0 ],
 					"text" : "SCATTER",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -192,7 +192,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 482.0, 35.0, 44.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 22.0, 40.5, 44.0, 48.0 ],
+					"presentation_rect" : [ 20.0, 95.5, 44.0, 48.0 ],
 					"prototypename" : "amount",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -315,7 +315,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 407.0, 35.0, 41.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 68.0, 40.5, 41.0, 48.0 ],
+					"presentation_rect" : [ 66.0, 95.5, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 1.0 ],
@@ -345,7 +345,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 364.0, 35.0, 41.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 22.0, 98.5, 41.0, 48.0 ],
+					"presentation_rect" : [ 20.0, 153.5, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 0.5 ],
@@ -374,7 +374,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 321.0, 35.0, 41.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 65.0, 98.5, 41.0, 48.0 ],
+					"presentation_rect" : [ 63.0, 153.5, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 1.0 ],
@@ -462,7 +462,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 66.33330553372582, 42.0, 78.666677474975586, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 22.0, 8.0, 78.666677474975586, 27.0 ],
+					"presentation_rect" : [ 20.0, 63.0, 78.666677474975586, 27.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
@@ -801,7 +801,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "sub.common.maxpat",
-				"bootpath" : "~/repos/belief-control/max4live",
+				"bootpath" : "~/repos/belief-control/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 100.0, 796.0, 983.0 ],
+		"rect" : [ 291.0, 100.0, 796.0, 983.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -124,7 +124,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 74.0, 246.300001561641693, 44.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.099989295005798, 4.457318449626655, 34.946402922741527, 20.0 ],
+					"presentation_rect" : [ 218.992795140488852, 1.957318449626655, 26.946402922741527, 25.0 ],
 					"saved_attribute_attributes" : 					{
 						"bordercolor" : 						{
 							"expression" : "themecolor.theme_textcolor_inverse"
@@ -140,7 +140,7 @@
 
 					}
 ,
-					"text" : "Set",
+					"text" : "GO",
 					"varname" : "live.text[3]"
 				}
 
@@ -155,7 +155,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 159.200024962425232, 219.0, 52.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 109.046392217747325, 6.957318449626655, 100.0, 15.0 ],
+					"presentation_rect" : [ 79.046392217747325, 6.957318449626655, 100.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "animals", "grains", "people", "bright-mass", "grains-lr", "pessimistic-social", "clusters", "horns", "piano", "creativity", "iblv", "politics", "cymbals", "index.txt", "self-emotion", "education", "music", "string-bath", "food-and-drink", "nature-personal", "swarms", "gender-equality", "objects", "grain-tones", "optimistic-social" ],
@@ -193,7 +193,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 147.0, 92.0, 186.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 37.046392217747325, 1.957318449626655, 70.0, 25.0 ],
+					"presentation_rect" : [ 7.046392217747325, 1.957318449626655, 70.0, 25.0 ],
 					"text" : "Bank #1",
 					"textcolor" : [ 0.129411764705882, 0.129411764705882, 0.129411764705882, 0.87 ],
 					"underline" : 1
@@ -268,7 +268,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 217.700024962425232, 254.300001561641693, 44.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 211.046392217747325, 6.957318449626655, 32.946402922741527, 15.0 ],
+					"presentation_rect" : [ 181.046392217747325, 6.957318449626655, 32.946402922741527, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "loop off", "loop on" ],
