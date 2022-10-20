@@ -88,43 +88,9 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-8",
-					"maxclass" : "live.line",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 422.5, 33.0, 5.0, 100.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-5",
-					"maxclass" : "live.dial",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "float" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 610.0, 50.5, 41.0, 48.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_linknames" : 1,
-							"parameter_longname" : "Gain",
-							"parameter_mmax" : 2.0,
-							"parameter_shortname" : "Gain",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 1
-						}
-
-					}
-,
-					"varname" : "Gain"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"automation" : "set off",
-					"automationon" : "set on",
+					"appearance" : 2,
+					"automation" : "go off",
+					"automationon" : "go on",
 					"bordercolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ],
 					"fontface" : 1,
 					"id" : "obj-11",
@@ -143,22 +109,23 @@
 						}
 ,
 						"valueof" : 						{
-							"parameter_enum" : [ "set off", "set on" ],
-							"parameter_longname" : "live.text[3]",
-							"parameter_mmax" : 1,
-							"parameter_shortname" : "live.text[3]",
-							"parameter_type" : 2
+							"parameter_enum" : [ "go off", "go on" ],
+							"parameter_longname" : "go",
+							"parameter_mmax" : 1.0,
+							"parameter_shortname" : "go",
+							"parameter_type" : 1
 						}
 
 					}
 ,
 					"text" : "GO",
-					"varname" : "live.text[3]"
+					"varname" : "go"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"appearance" : 1,
 					"id" : "obj-4",
 					"maxclass" : "live.menu",
 					"numinlets" : 1,
@@ -171,9 +138,9 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "animals", "grains", "people", "bright-mass", "grains-lr", "pessimistic-social", "clusters", "horns", "piano", "creativity", "iblv", "politics", "cymbals", "index.txt", "self-emotion", "education", "music", "string-bath", "food-and-drink", "nature-personal", "swarms", "gender-equality", "objects", "grain-tones", "optimistic-social" ],
-							"parameter_longname" : "live.menu",
+							"parameter_longname" : "bank name",
 							"parameter_mmax" : 24,
-							"parameter_shortname" : "live.menu",
+							"parameter_shortname" : "bank",
 							"parameter_type" : 2
 						}
 
@@ -214,62 +181,7 @@
 			}
 , 			{
 				"box" : 				{
-					"automation" : "\"Right Speaker Off\"",
-					"automationon" : "\"Right Speaker On\"",
-					"id" : "obj-2",
-					"maxclass" : "live.text",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 519.0, 64.0, 67.0, 21.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_enum" : [ "\"Right Speaker Off\"", "\"Right Speaker On\"" ],
-							"parameter_longname" : "live.text[1]",
-							"parameter_mmax" : 1,
-							"parameter_shortname" : "live.text[5]",
-							"parameter_type" : 2
-						}
-
-					}
-,
-					"text" : "R",
-					"texton" : "R",
-					"varname" : "live.text[1]"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"automation" : "\"Left Speakr Off\"",
-					"automationon" : "\"Left Speaker On\"",
-					"id" : "obj-18",
-					"maxclass" : "live.text",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 450.0, 64.0, 67.0, 21.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_enum" : [ "\"Left Speakr Off\"", "\"Left Speaker On\"" ],
-							"parameter_longname" : "live.text[5]",
-							"parameter_mmax" : 1,
-							"parameter_shortname" : "live.text[5]",
-							"parameter_type" : 2
-						}
-
-					}
-,
-					"text" : "L",
-					"texton" : "L",
-					"varname" : "live.text[2]"
-				}
-
-			}
-, 			{
-				"box" : 				{
+					"appearance" : 2,
 					"automation" : "loop off",
 					"automationon" : "loop on",
 					"id" : "obj-1",
@@ -284,10 +196,10 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "loop off", "loop on" ],
-							"parameter_longname" : "live.text",
-							"parameter_mmax" : 1,
-							"parameter_shortname" : "live.text",
-							"parameter_type" : 2
+							"parameter_longname" : "loop",
+							"parameter_mmax" : 1.0,
+							"parameter_shortname" : "loop",
+							"parameter_type" : 1
 						}
 
 					}
@@ -407,12 +319,9 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1" : [ "live.text", "live.text", 0 ],
-			"obj-11" : [ "live.text[3]", "live.text[3]", 0 ],
-			"obj-18" : [ "live.text[5]", "live.text[5]", 0 ],
-			"obj-2" : [ "live.text[1]", "live.text[5]", 0 ],
-			"obj-4" : [ "live.menu", "live.menu", 0 ],
-			"obj-5" : [ "Gain", "Gain", 0 ],
+			"obj-1" : [ "loop", "loop", 0 ],
+			"obj-11" : [ "go", "go", 0 ],
+			"obj-4" : [ "bank name", "bank", 0 ],
 			"parameterbanks" : 			{
 
 			}
