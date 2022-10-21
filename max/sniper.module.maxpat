@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 777.0, 295.0, 893.0, 713.0 ],
+		"rect" : [ 777.0, 295.0, 373.0, 713.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -63,14 +63,14 @@
 					"presentation_rect" : [ 47.5, 31.408163265306115, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "0", "1", "2" ],
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
 							"parameter_longname" : "bank",
-							"parameter_mmax" : 2.0,
+							"parameter_mmax" : 2,
 							"parameter_shortname" : "bank",
-							"parameter_type" : 1,
-							"parameter_unitstyle" : 0
+							"parameter_type" : 2
 						}
 
 					}
@@ -81,6 +81,8 @@
 			}
 , 			{
 				"box" : 				{
+					"automation" : "play to end off",
+					"automationon" : "play to end on",
 					"id" : "obj-26",
 					"maxclass" : "live.text",
 					"numinlets" : 1,
@@ -92,21 +94,21 @@
 					"presentation_rect" : [ 228.5, 40.408163265306115, 69.0, 30.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "val1", "val2" ],
+							"parameter_enum" : [ "play to end off", "play to end on" ],
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "playtoend",
-							"parameter_mmax" : 1.0,
+							"parameter_longname" : "play-to-end",
+							"parameter_mmax" : 1,
 							"parameter_shortname" : "play to end",
-							"parameter_type" : 1
+							"parameter_type" : 2
 						}
 
 					}
 ,
 					"text" : "play to end",
 					"texton" : "PLAY TO END",
-					"varname" : "playtoend"
+					"varname" : "play-to-end"
 				}
 
 			}
@@ -126,7 +128,7 @@
 							"parameter_initial" : [ 1 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "rateMultiply",
+							"parameter_longname" : "rate-multiply",
 							"parameter_mmax" : 2.0,
 							"parameter_mmin" : -1.0,
 							"parameter_shortname" : "rate",
@@ -136,7 +138,7 @@
 
 					}
 ,
-					"varname" : "rateMultiply"
+					"varname" : "rate-multiply"
 				}
 
 			}
@@ -236,6 +238,8 @@
 			}
 , 			{
 				"box" : 				{
+					"automation" : "go off",
+					"automationon" : "go on",
 					"id" : "obj-7",
 					"maxclass" : "live.text",
 					"mode" : 0,
@@ -248,7 +252,7 @@
 					"presentation_rect" : [ 311.0, 13.0, 60.0, 57.408163265306115 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "val1", "val2" ],
+							"parameter_enum" : [ "go off", "go on" ],
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
@@ -262,6 +266,7 @@
 					}
 ,
 					"text" : "GO",
+					"transition" : 1,
 					"varname" : "go"
 				}
 
@@ -440,8 +445,8 @@
 		"parameters" : 		{
 			"obj-1" : [ "bank", "bank", 0 ],
 			"obj-18" : [ "speaker-index", "speaker", 0 ],
-			"obj-24" : [ "rateMultiply", "rate", 0 ],
-			"obj-26" : [ "playtoend", "play to end", 0 ],
+			"obj-24" : [ "rate-multiply", "rate", 0 ],
+			"obj-26" : [ "play-to-end", "play to end", 0 ],
 			"obj-4" : [ "sample-index", "sample", 0 ],
 			"obj-5" : [ "gain", "gain", 0 ],
 			"obj-7" : [ "go", "go", 0 ],
