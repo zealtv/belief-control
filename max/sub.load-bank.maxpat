@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 291.0, 100.0, 796.0, 983.0 ],
+		"rect" : [ 483.0, 212.0, 773.0, 788.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,105 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"appearance" : 1,
+					"id" : "obj-4",
+					"maxclass" : "live.menu",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 153.700024962425232, 214.0, 100.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 69.046392217747325, 6.957318449626655, 100.0, 15.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "animals", "grains", "people", "bright-mass", "grains-lr", "pessimistic-social", "clusters", "horns", "piano", "creativity", "iblv", "politics", "cymbals", "index.txt", "self-emotion", "education", "music", "string-bath", "food-and-drink", "nature-personal", "swarms", "gender-equality", "objects", "grain-tones", "optimistic-social" ],
+							"parameter_initial" : [ 0.0 ],
+							"parameter_initial_enable" : 1,
+							"parameter_linknames" : 1,
+							"parameter_longname" : "bank-name",
+							"parameter_mmax" : 24,
+							"parameter_shortname" : "bank",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"varname" : "bank-name"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"appearance" : 2,
+					"automation" : "go off",
+					"automationon" : "go on",
+					"id" : "obj-1",
+					"maxclass" : "live.text",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"outputmode" : 1,
+					"parameter_enable" : 1,
+					"patching_rect" : [ 67.0, 194.0, 31.0, 31.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 217.046392217747325, 3.957318449626655, 21.0, 20.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "go off", "go on" ],
+							"parameter_linknames" : 1,
+							"parameter_longname" : "go",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "go",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"text" : "go",
+					"texton" : "GO",
+					"varname" : "go"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"appearance" : 2,
+					"automation" : "loop off",
+					"automationon" : "loop on",
+					"id" : "obj-2",
+					"maxclass" : "live.text",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"outputmode" : 1,
+					"parameter_enable" : 1,
+					"patching_rect" : [ 227.0, 240.0, 44.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 171.046392217747325, 6.957318449626655, 44.0, 15.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "loop off", "loop on" ],
+							"parameter_initial" : [ 0.0 ],
+							"parameter_initial_enable" : 1,
+							"parameter_linknames" : 1,
+							"parameter_longname" : "loop",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "loop",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"text" : "loop",
+					"texton" : "LOOP",
+					"varname" : "loop"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-12",
 					"maxclass" : "newobj",
@@ -88,70 +187,6 @@
 			}
 , 			{
 				"box" : 				{
-					"appearance" : 2,
-					"automation" : "go off",
-					"automationon" : "go on",
-					"bordercolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ],
-					"fontface" : 1,
-					"id" : "obj-11",
-					"maxclass" : "live.text",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 62.0, 216.300001561641693, 44.0, 15.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 218.992795140488852, 1.957318449626655, 26.946402922741527, 25.0 ],
-					"saved_attribute_attributes" : 					{
-						"bordercolor" : 						{
-							"expression" : "themecolor.theme_textcolor_inverse"
-						}
-,
-						"valueof" : 						{
-							"parameter_enum" : [ "go off", "go on" ],
-							"parameter_longname" : "go",
-							"parameter_mmax" : 1.0,
-							"parameter_shortname" : "go",
-							"parameter_type" : 1
-						}
-
-					}
-,
-					"text" : "GO",
-					"varname" : "go"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"appearance" : 1,
-					"id" : "obj-4",
-					"maxclass" : "live.menu",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "float" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 159.200024962425232, 219.0, 52.0, 15.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 79.046392217747325, 6.957318449626655, 100.0, 15.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_enum" : [ "animals", "grains", "people", "bright-mass", "grains-lr", "pessimistic-social", "clusters", "horns", "piano", "creativity", "iblv", "politics", "cymbals", "index.txt", "self-emotion", "education", "music", "string-bath", "food-and-drink", "nature-personal", "swarms", "gender-equality", "objects", "grain-tones", "optimistic-social" ],
-							"parameter_longname" : "bank name",
-							"parameter_mmax" : 24,
-							"parameter_shortname" : "bank",
-							"parameter_type" : 2
-						}
-
-					}
-,
-					"varname" : "live.menu"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-9",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -176,37 +211,6 @@
 					"text" : "Bank #1",
 					"textcolor" : [ 0.129411764705882, 0.129411764705882, 0.129411764705882, 0.87 ],
 					"underline" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"appearance" : 2,
-					"automation" : "loop off",
-					"automationon" : "loop on",
-					"id" : "obj-1",
-					"maxclass" : "live.text",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 217.700024962425232, 254.300001561641693, 44.0, 15.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 181.046392217747325, 6.957318449626655, 32.946402922741527, 15.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_enum" : [ "loop off", "loop on" ],
-							"parameter_longname" : "loop",
-							"parameter_mmax" : 1.0,
-							"parameter_shortname" : "loop",
-							"parameter_type" : 1
-						}
-
-					}
-,
-					"text" : "loop",
-					"texton" : "LOOP",
-					"varname" : "live.text"
 				}
 
 			}
@@ -249,7 +253,7 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-15", 2 ],
+					"destination" : [ "obj-12", 0 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -258,13 +262,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-10", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-12", 0 ],
-					"source" : [ "obj-11", 0 ]
 				}
 
 			}
@@ -286,6 +283,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-144", 0 ],
 					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 2 ],
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -319,9 +323,9 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1" : [ "loop", "loop", 0 ],
-			"obj-11" : [ "go", "go", 0 ],
-			"obj-4" : [ "bank name", "bank", 0 ],
+			"obj-1" : [ "go", "go", 0 ],
+			"obj-2" : [ "loop", "loop", 0 ],
+			"obj-4" : [ "bank-name", "bank", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -331,7 +335,7 @@
 ,
 		"dependency_cache" : [  ],
 		"autosave" : 0,
-		"bgcolor" : [ 1.0, 1.0, 1.0, 0.68 ]
+		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ]
 	}
 
 }
