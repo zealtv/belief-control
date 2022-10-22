@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 483.0, 212.0, 773.0, 788.0 ],
+		"rect" : [ 1012.0, 269.0, 318.0, 788.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,21 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
+					"id" : "obj-5",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 147.0, 85.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1.046392217747325, 0.957318449626655, 169.0, 20.0 ],
+					"text" : "Bank #1",
+					"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"appearance" : 1,
 					"id" : "obj-4",
 					"maxclass" : "live.menu",
@@ -49,7 +64,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 153.700024962425232, 214.0, 100.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 69.046392217747325, 6.957318449626655, 100.0, 15.0 ],
+					"presentation_rect" : [ 1.046392217747325, 27.957318449626655, 100.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "animals", "grains", "people", "bright-mass", "grains-lr", "pessimistic-social", "clusters", "horns", "piano", "creativity", "iblv", "politics", "cymbals", "index.txt", "self-emotion", "education", "music", "string-bath", "food-and-drink", "nature-personal", "swarms", "gender-equality", "objects", "grain-tones", "optimistic-social" ],
@@ -83,7 +98,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 67.0, 194.0, 31.0, 31.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 217.046392217747325, 3.957318449626655, 21.0, 20.0 ],
+					"presentation_rect" : [ 149.046392217747353, 24.957318449626655, 21.0, 21.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "go off", "go on" ],
@@ -116,7 +131,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 227.0, 240.0, 44.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 171.046392217747325, 6.957318449626655, 44.0, 15.0 ],
+					"presentation_rect" : [ 103.046392217747325, 27.957318449626655, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "loop off", "loop on" ],
@@ -192,25 +207,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 147.0, 45.0, 72.0, 22.0 ],
-					"text" : "set Bank #1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Futura",
-					"fontsize" : 14.0,
-					"id" : "obj-7",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 147.0, 92.0, 186.0, 25.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 7.046392217747325, 1.957318449626655, 70.0, 25.0 ],
-					"text" : "Bank #1",
-					"textcolor" : [ 0.129411764705882, 0.129411764705882, 0.129411764705882, 0.87 ],
-					"underline" : 1
+					"patching_rect" : [ 147.0, 45.0, 71.0, 22.0 ],
+					"text" : "set bank #1"
 				}
 
 			}
@@ -316,7 +314,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
+					"destination" : [ "obj-5", 0 ],
 					"source" : [ "obj-9", 0 ]
 				}
 
