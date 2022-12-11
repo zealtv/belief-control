@@ -1,0 +1,246 @@
+[
+    {
+        "id": "361910fa3f7853d1",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6c694ae21dcbd3e8",
+        "type": "pimcp3008",
+        "z": "361910fa3f7853d1",
+        "name": "",
+        "dev": "3008",
+        "pin": 0,
+        "dnum": 0,
+        "bus": 0,
+        "x": 340,
+        "y": 300,
+        "wires": [
+            [
+                "d007937a58280e8d"
+            ]
+        ]
+    },
+    {
+        "id": "d9290bfdadabadc9",
+        "type": "inject",
+        "z": "361910fa3f7853d1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 300,
+        "wires": [
+            [
+                "6c694ae21dcbd3e8"
+            ]
+        ]
+    },
+    {
+        "id": "d007937a58280e8d",
+        "type": "osc",
+        "z": "361910fa3f7853d1",
+        "name": "",
+        "path": "/wind/dir",
+        "metadata": false,
+        "x": 590,
+        "y": 300,
+        "wires": [
+            [
+                "7cd73b0e4ad4ce8a"
+            ]
+        ]
+    },
+    {
+        "id": "7cd73b0e4ad4ce8a",
+        "type": "udp out",
+        "z": "361910fa3f7853d1",
+        "name": "",
+        "addr": "255.255.255.255",
+        "iface": "",
+        "port": "9021",
+        "ipv": "udp4",
+        "outport": "",
+        "base64": false,
+        "multicast": "broad",
+        "x": 820,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "c62bd9b4fd7744fa",
+        "type": "pimcp3008",
+        "z": "361910fa3f7853d1",
+        "name": "",
+        "dev": "3008",
+        "pin": "1",
+        "dnum": 0,
+        "bus": 0,
+        "x": 340,
+        "y": 380,
+        "wires": [
+            [
+                "b6a8aae3bcfe5039"
+            ]
+        ]
+    },
+    {
+        "id": "9bb00b27ca187b07",
+        "type": "inject",
+        "z": "361910fa3f7853d1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 380,
+        "wires": [
+            [
+                "c62bd9b4fd7744fa"
+            ]
+        ]
+    },
+    {
+        "id": "b6a8aae3bcfe5039",
+        "type": "osc",
+        "z": "361910fa3f7853d1",
+        "name": "",
+        "path": "/wind/speed",
+        "metadata": false,
+        "x": 590,
+        "y": 380,
+        "wires": [
+            [
+                "7cd73b0e4ad4ce8a"
+            ]
+        ]
+    },
+    {
+        "id": "ca4e67dd4bd4ede3",
+        "type": "inject",
+        "z": "361910fa3f7853d1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 460,
+        "wires": [
+            [
+                "9e380b5e6fbdfc29"
+            ]
+        ]
+    },
+    {
+        "id": "9e380b5e6fbdfc29",
+        "type": "exec",
+        "z": "361910fa3f7853d1",
+        "command": "sudo shutdown -h now",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 370,
+        "y": 460,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "d86b79151e2540b2",
+        "type": "inject",
+        "z": "361910fa3f7853d1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 520,
+        "wires": [
+            [
+                "82c946e8fb8b7205"
+            ]
+        ]
+    },
+    {
+        "id": "82c946e8fb8b7205",
+        "type": "exec",
+        "z": "361910fa3f7853d1",
+        "command": "sudo reboot",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 330,
+        "y": 520,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    }
+]
