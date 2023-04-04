@@ -1,7 +1,4 @@
-#include <OSCMessage.h> // https://github.com/CNMAT/OSC/blob/master/API.md
-#include <OSCBoards.h>
-#include <OSCBundle.h>
-//#include <LibPrintf.h> // https://github.com/embeddedartistry/arduino-printf
+//Belief system weather station sketch
 
 #ifdef BOARD_HAS_USB_SERIAL
 #include <SLIPEncodedUSBSerial.h>
@@ -11,89 +8,120 @@ SLIPEncodedUSBSerial SLIPSerial( thisBoardsSerialUSB );
  SLIPEncodedSerial SLIPSerial(Serial); // Change to Serial1 or Serial2 etc. for boards with multiple serial ports that don’t have Serial
 #endif
 
-/***************************************************
- MODES:
- 0 - Normal: Sends OSC data over USB
- 1 - Calibration: Prints raw sensor data to Serial
- ***************************************************/
-const bool CALIBRATION_MODE = 0;
+//OSC stuff
+// #include <WiFiUdp.h>
+#include <OSCMessage.h>
+#include <OSCBundle.h>
+#include <OSCData.h>
 
-// Physical pin numbers
-const int SQUEEZE_PIN = A1;
-const int POWER_PIN = A0;
+OSCErrorCode error;
+
+//Developed for Arduino Nano
+const int DIRPIN = A0; //A0
+const int SPEEDPIN = A1; //A1
+
+int dirValue = 0;
+int speedValue = 0;
+//unsigned long lastTurnTime = 0;
+//int lastTurnValue = 0;
+//unsigned int turnCount = 0;
+//unsigned int lastTurnCount = 0;
+
+// unsigned long lastMessageTime = 0;
+
 
 void setup() {
-  pinMode(SQUEEZE_PIN, INPUT);
+  delay(100);
+  // Serial.begin(115200);
 
-  pinMode(POWER_PIN, INPUT_PULLUP);
-  
-  if (CALIBRATION_MODE){
-    Serial.begin(115200);
-    while(!Serial) {};
-  } else {
-    //begin SLIPSerial just like Serial
-    SLIPSerial.begin(115200);   // set this as high as you can reliably run on your platform
+  //SLIP SERIAL IS CAUSING A HANG...
+  //begin SLIPSerial just like Serial
+  SLIPSerial.begin(115200);   // set this as high as you can reliably run on your platform
+
+  // Serial.println("setting up pins...");
+
+  pinMode(SPEEDPIN, INPUT);
+  pinMode(DIRPIN, INPUT);
+}
+
+void loop() {
+//  Portal.handleClient();
+  delay(100);
+
+  // Reading potentiometer value
+  dirValue = get_wind_direction();
+  speedValue = analogRead(SPEEDPIN);
+  if(speedValue > 500){
+    speedValue = 1;
   }
-}
-
-void loop(){
-  if (CALIBRATION_MODE){
-    // Just print raw sensor data to Serial
-    int reading = analogRead(SQUEEZE_PIN);
-    Serial.println(getDirection(reading));
-    Serial.println();
-    Serial.print(digitalRead(POWER_PIN));    
-    Serial.println("\n");
-
-    delay(500);
-  } else {
-    // Not in calibration mode. Send data over OSC
-  
-    // Declare OSC bundle
-    OSCBundle bundle;
-  
-    bundle.add("/wind/direction").add(getDirection(analogRead(SQUEEZE_PIN)));
-
-    int power = 1 - digitalRead(POWER_PIN);
-    bundle.add("/wind/speed").add(power);
-    
-    // Send via serial over USB.
-    SLIPSerial.beginPacket();  
-    // send the bytes to the SLIP stream
-    bundle.send(SLIPSerial);
-    SLIPSerial.endPacket(); // mark the end of the OSC Packet
-  
-    // Free space occupied by messages
-    bundle.empty();
-
-    // Worry about performance later
-    delay(10);
+  else{
+    speedValue = 0;
   }
+
+  // Serial.print("dir: "); 
+  // Serial.println(dirValue); 
+
+  // Serial.print("spd: "); 
+  // Serial.println(speedValue); 
+
+  OSCMessage msg("/wind");
+  msg.add( dirValue );
+  msg.add( speedValue );
+
+  SLIPSerial.beginPacket();
+  msg.send(SLIPSerial);
+  SLIPSerial.endPacket();
+  msg.empty();  
+
 }
 
 
 
-int getDirection(int rawValue){
+//Read the wind direction sensor, return heading in degrees
+int get_wind_direction() 
+{
+  unsigned int adc;
+  adc = analogRead(DIRPIN); // get the current reading from the sensor
 
-int angleList[8] = {4, 5, 6, 3, 7, 2, 1, 0};
+  // The following table is ADC readings for the wind direction sensor output, sorted from low to high.
+  // Each threshold is the midpoint between adjacent headings. The output is degrees for that ADC reading.
+  // Note that these are not in compass degree order! See Weather Meters datasheet for more information.
 
-//  s 91
-//  sw 183
-//  w 286
-//  se 460
-//  nw 630
-//  e 786
-//  ne 887
-//  n 945
+  if (adc > 930) return (270);
+  if (adc > 860) return (315);
+  if (adc > 805) return (293);
+  if (adc > 740) return (0);
+  if (adc > 665) return (338);
+  if (adc > 615) return (225);
+  if (adc > 510) return (248);
+  if (adc > 430) return (45);
+  if (adc > 340) return (23);
+  if (adc > 260) return (180);
+  if (adc > 210) return (203);
+  if (adc > 150) return (135);
+  if (adc > 105) return (158);
+  if (adc > 86) return (90);
+  if (adc > 70) return (68);
+  if (adc > 60) return (113);
 
-  int dirID = 0;
-  if( rawValue > 120 ) dirID = 1;
-  if( rawValue > 230 ) dirID = 2;
-  if( rawValue > 350 ) dirID = 3;
-  if( rawValue > 500 ) dirID = 4;
-  if( rawValue > 690 ) dirID = 5;
-  if( rawValue > 800 ) dirID = 6;
-  if( rawValue > 920 ) dirID = 7;
+  return (-1); // error, disconnected?
 
-  return angleList[dirID] * 45;
+// 112.5	ESE	  64 - 65
+// 67.5		ENE	  81 - 83
+// 90	  	E	    90 - 92
+// 157.5	SSE	  124 - 126
+// 135		SE	  183 - 184
+// 202.5	SSW	  242 - 244
+// 180		S	    285 - 287
+// 22.5 	NNE	  403 - 405
+// 45	  	NE	  459 - 460
+// 247.5	WSW	  597 - 599
+// 225		SW	  628 - 631
+// 337.5	NNW	  699 - 703
+// 0	  	N	    784 - 789
+// 292.5 	WNW	  825 - 828
+// 315		NW	  885 - 888
+// 270		W	    943 - 949
 }
+
+
