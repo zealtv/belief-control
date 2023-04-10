@@ -133,7 +133,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 8.0, 8.0, 631.0, 173.0 ],
+					"patching_rect" : [ 8.0, 8.0, 511.0, 170.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -158,6 +158,7 @@
 			"obj-2::obj-180::obj-4" : [ "live.menu[1]", "bank", 0 ],
 			"obj-2::obj-19" : [ "gain", "gain", 0 ],
 			"obj-2::obj-22" : [ "freq", "freq", 0 ],
+			"obj-2::obj-24" : [ "broadcast", "broadcast", 0 ],
 			"obj-2::obj-3" : [ "debug-start", "debug start", 0 ],
 			"obj-2::obj-4" : [ "debug-update", "debug update", 0 ],
 			"obj-2::obj-48" : [ "kill", "kill", 0 ],
@@ -421,6 +422,13 @@
 				"bootpath" : "~/repos/belief-control/max",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sub.UNICAST120.maxpat",
+				"bootpath" : "~/repos/belief-control/max",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
