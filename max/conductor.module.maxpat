@@ -829,8 +829,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1046.497617313317278, 339.67232082805117, 57.0, 29.0 ],
-					"text" : "/killAll",
+					"patching_rect" : [ 1046.497617313317278, 339.67232082805117, 71.0, 29.0 ],
+					"text" : "/killAll 1",
 					"textcolor" : [ 0.968627450980392, 0.968627450980392, 0.968627450980392, 0.84 ],
 					"textjustification" : 1
 				}
