@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 81.0, 100.0, 1541.0, 910.0 ],
+		"rect" : [ 81.0, 100.0, 1045.0, 910.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,48 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-70",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 51.036274313926697, 553.67232082805117, 150.0, 20.0 ],
+					"text" : "prior to 2023-000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"appearance" : 1,
+					"id" : "obj-33",
+					"maxclass" : "live.menu",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 57.536274313926697, 575.67232082805117, 100.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 55.036274313926697, 575.742953164202618, 100.0, 15.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "air", "animals", "clusters", "creativity", "education", "eh-falling-arps-000", "eh-falling-arps-001", "eh-falling-motif", "eh-falling-motif-3s", "eh-falling-motif-3s-8vb-000", "eh-falling-motif-3s-8vb-001", "eh-five-limit-open-000", "eh-five-limit-open-001", "eh-five-limit-open-top-down-000", "eh-five-limit-open-top-down-001", "eh-flugel-tones-000", "eh-flugel-tones-001", "eh-harmon", "eh-harmon-airtone", "eh-harmon-stem-airtone-000", "eh-harmon-stem-airtone-001", "eh-harmon-tone-000", "eh-harmon-tone-001", "eh-harmon-tone-002", "eh-melodies-000", "eh-melodies-001", "eh-open-air", "eh-warmups", "food-and-drink", "gender-equality", "music", "nature-personal", "numbers", "objects", "optimistic-social", "people", "pessimistic-social", "politics", "self-emotion", "sine-decay", "sine-hard", "sine-short", "sine-soft", "swarms", "syllables" ],
+							"parameter_initial" : [ 0.0 ],
+							"parameter_initial_enable" : 1,
+							"parameter_invisible" : 2,
+							"parameter_linknames" : 1,
+							"parameter_longname" : "bank-0[1]",
+							"parameter_mmax" : 44,
+							"parameter_shortname" : "bank-0",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"varname" : "bank-0[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
 					"fontsize" : 9.0,
 					"id" : "obj-59",
@@ -68,11 +110,11 @@
 					"presentation_rect" : [ 200.33587525141786, 147.742953164202618, 100.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "air", "animals", "clusters", "creativity", "education", "eh-falling-arps-000", "eh-falling-arps-001", "eh-falling-motif", "eh-falling-motif-3s", "eh-falling-motif-3s-8vb-000", "eh-falling-motif-3s-8vb-001", "eh-five-limit-open-000", "eh-five-limit-open-001", "eh-five-limit-open-top-down-000", "eh-five-limit-open-top-down-001", "eh-flugel-tones-000", "eh-flugel-tones-001", "eh-harmon", "eh-harmon-airtone", "eh-harmon-stem-airtone-000", "eh-harmon-stem-airtone-001", "eh-harmon-tone-000", "eh-harmon-tone-001", "eh-harmon-tone-002", "eh-melodies-000", "eh-melodies-001", "eh-open-air", "eh-warmups", "food-and-drink", "gender-equality", "music", "nature-personal", "numbers", "objects", "optimistic-social", "people", "pessimistic-social", "politics", "self-emotion", "sine-decay", "sine-hard", "sine-short", "sine-soft", "swarms", "syllables" ],
+							"parameter_enum" : [ "br-activities", "br-animals", "br-art-soul", "br-behaviour-physicality2", "br-care-memory", "br-cities-power", "br-clothes-shoes-footage", "br-communication", "br-community-world", "br-correction", "br-culture", "br-death1", "br-drugs-ritual", "br-education", "br-emotions", "br-family1", "br-family2", "br-food1", "br-food2-institutions2", "br-fun-sport", "br-happy-joy", "br-health-healing1", "br-home", "br-humour", "br-insitutions1", "br-kids-myth", "br-love1", "br-mind-relaxation1", "br-money-trauma", "br-people", "br-physicality1", "br-relationships1", "br-selfawareness1", "br-spiritual1", "br-spiritual2", "br-work", "cl-activities", "cl-animals", "cl-art-soul", "cl-behaviour-physicality2", "cl-care-memory", "cl-cities-power", "cl-clothes-shoes-feelings", "cl-communication", "cl-community-world", "cl-connection", "cl-culture", "cl-death1", "cl-drugs-ritual", "cl-education", "cl-emotions", "cl-family1", "cl-family2", "cl-food1", "cl-food2-institutions2", "cl-fun-sport", "cl-happy-joy", "cl-health-healing1", "cl-home", "cl-humour", "cl-institutions1", "cl-kids-myth", "cl-love1", "cl-mind-relaxtion1", "cl-money-trauma", "cl-people", "cl-physicality1", "cl-relationships1", "cl-selfawareness1", "cl-spiritual2", "cl-spritual1", "cl-work", "eh-arp-hi", "eh-arp-lo", "eh-flugel-harmon", "eh-lydian-stack", "eh-melodies", "eh-warmups", "focus-aliens-knowledge", "focus-beauty-order-senses", "focus-chaos-ghosts-morality", "focus-conspiracy-fear", "focus-dreams-loneliness-love2", "focus-ethics-health-healing", "focus-future1", "focus-future2", "focus-identity1", "focus-identity2-intimacy", "focus-karma-magic-plants", "focus-objects", "focus-philosophy1", "focus-philosophy2", "focus-psychology", "focus-relationships2-sleep", "focus-science-society", "focus-selfawareness2-superstition", "numbers-warmups", "sines-noise-air", "sw-aspiration-freedom", "sw-capitalism-purpose", "sw-change-mix-words", "sw-climate-travel", "sw-clothes-shoes-feeling", "sw-conflict-diversity-music", "sw-creativity-death", "sw-energy-friends-kindness-struggle", "sw-equality", "sw-friends-kindess-struggle", "sw-gender", "sw-humans-reincarnation", "sw-life", "sw-mental-music", "sw-nature", "sw-politics", "sw-technology-time" ],
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "bank-2",
-							"parameter_mmax" : 44,
+							"parameter_mmax" : 114,
 							"parameter_shortname" : "bank-2",
 							"parameter_type" : 2
 						}
@@ -254,12 +296,12 @@
 					"presentation_rect" : [ 200.33587525141786, 97.596772561972671, 100.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "air", "animals", "clusters", "creativity", "education", "eh-falling-arps-000", "eh-falling-arps-001", "eh-falling-motif", "eh-falling-motif-3s", "eh-falling-motif-3s-8vb-000", "eh-falling-motif-3s-8vb-001", "eh-five-limit-open-000", "eh-five-limit-open-001", "eh-five-limit-open-top-down-000", "eh-five-limit-open-top-down-001", "eh-flugel-tones-000", "eh-flugel-tones-001", "eh-harmon", "eh-harmon-airtone", "eh-harmon-stem-airtone-000", "eh-harmon-stem-airtone-001", "eh-harmon-tone-000", "eh-harmon-tone-001", "eh-harmon-tone-002", "eh-melodies-000", "eh-melodies-001", "eh-open-air", "eh-warmups", "food-and-drink", "gender-equality", "music", "nature-personal", "numbers", "objects", "optimistic-social", "people", "pessimistic-social", "politics", "self-emotion", "sine-decay", "sine-hard", "sine-short", "sine-soft", "swarms", "syllables" ],
+							"parameter_enum" : [ "br-activities", "br-animals", "br-art-soul", "br-behaviour-physicality2", "br-care-memory", "br-cities-power", "br-clothes-shoes-footage", "br-communication", "br-community-world", "br-correction", "br-culture", "br-death1", "br-drugs-ritual", "br-education", "br-emotions", "br-family1", "br-family2", "br-food1", "br-food2-institutions2", "br-fun-sport", "br-happy-joy", "br-health-healing1", "br-home", "br-humour", "br-insitutions1", "br-kids-myth", "br-love1", "br-mind-relaxation1", "br-money-trauma", "br-people", "br-physicality1", "br-relationships1", "br-selfawareness1", "br-spiritual1", "br-spiritual2", "br-work", "cl-activities", "cl-animals", "cl-art-soul", "cl-behaviour-physicality2", "cl-care-memory", "cl-cities-power", "cl-clothes-shoes-feelings", "cl-communication", "cl-community-world", "cl-connection", "cl-culture", "cl-death1", "cl-drugs-ritual", "cl-education", "cl-emotions", "cl-family1", "cl-family2", "cl-food1", "cl-food2-institutions2", "cl-fun-sport", "cl-happy-joy", "cl-health-healing1", "cl-home", "cl-humour", "cl-institutions1", "cl-kids-myth", "cl-love1", "cl-mind-relaxtion1", "cl-money-trauma", "cl-people", "cl-physicality1", "cl-relationships1", "cl-selfawareness1", "cl-spiritual2", "cl-spritual1", "cl-work", "eh-arp-hi", "eh-arp-lo", "eh-flugel-harmon", "eh-lydian-stack", "eh-melodies", "eh-warmups", "focus-aliens-knowledge", "focus-beauty-order-senses", "focus-chaos-ghosts-morality", "focus-conspiracy-fear", "focus-dreams-loneliness-love2", "focus-ethics-health-healing", "focus-future1", "focus-future2", "focus-identity1", "focus-identity2-intimacy", "focus-karma-magic-plants", "focus-objects", "focus-philosophy1", "focus-philosophy2", "focus-psychology", "focus-relationships2-sleep", "focus-science-society", "focus-selfawareness2-superstition", "numbers-warmups", "sines-noise-air", "sw-aspiration-freedom", "sw-capitalism-purpose", "sw-change-mix-words", "sw-climate-travel", "sw-clothes-shoes-feeling", "sw-conflict-diversity-music", "sw-creativity-death", "sw-energy-friends-kindness-struggle", "sw-equality", "sw-friends-kindess-struggle", "sw-gender", "sw-humans-reincarnation", "sw-life", "sw-mental-music", "sw-nature", "sw-politics", "sw-technology-time" ],
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
 							"parameter_longname" : "bank-1",
-							"parameter_mmax" : 44,
+							"parameter_mmax" : 114,
 							"parameter_shortname" : "bank-1",
 							"parameter_type" : 2
 						}
@@ -441,12 +483,12 @@
 					"presentation_rect" : [ 200.33587525141786, 46.596772561972671, 100.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "air", "animals", "clusters", "creativity", "education", "eh-falling-arps-000", "eh-falling-arps-001", "eh-falling-motif", "eh-falling-motif-3s", "eh-falling-motif-3s-8vb-000", "eh-falling-motif-3s-8vb-001", "eh-five-limit-open-000", "eh-five-limit-open-001", "eh-five-limit-open-top-down-000", "eh-five-limit-open-top-down-001", "eh-flugel-tones-000", "eh-flugel-tones-001", "eh-harmon", "eh-harmon-airtone", "eh-harmon-stem-airtone-000", "eh-harmon-stem-airtone-001", "eh-harmon-tone-000", "eh-harmon-tone-001", "eh-harmon-tone-002", "eh-melodies-000", "eh-melodies-001", "eh-open-air", "eh-warmups", "food-and-drink", "gender-equality", "music", "nature-personal", "numbers", "objects", "optimistic-social", "people", "pessimistic-social", "politics", "self-emotion", "sine-decay", "sine-hard", "sine-short", "sine-soft", "swarms", "syllables" ],
+							"parameter_enum" : [ "br-activities", "br-animals", "br-art-soul", "br-behaviour-physicality2", "br-care-memory", "br-cities-power", "br-clothes-shoes-footage", "br-communication", "br-community-world", "br-correction", "br-culture", "br-death1", "br-drugs-ritual", "br-education", "br-emotions", "br-family1", "br-family2", "br-food1", "br-food2-institutions2", "br-fun-sport", "br-happy-joy", "br-health-healing1", "br-home", "br-humour", "br-insitutions1", "br-kids-myth", "br-love1", "br-mind-relaxation1", "br-money-trauma", "br-people", "br-physicality1", "br-relationships1", "br-selfawareness1", "br-spiritual1", "br-spiritual2", "br-work", "cl-activities", "cl-animals", "cl-art-soul", "cl-behaviour-physicality2", "cl-care-memory", "cl-cities-power", "cl-clothes-shoes-feelings", "cl-communication", "cl-community-world", "cl-connection", "cl-culture", "cl-death1", "cl-drugs-ritual", "cl-education", "cl-emotions", "cl-family1", "cl-family2", "cl-food1", "cl-food2-institutions2", "cl-fun-sport", "cl-happy-joy", "cl-health-healing1", "cl-home", "cl-humour", "cl-institutions1", "cl-kids-myth", "cl-love1", "cl-mind-relaxtion1", "cl-money-trauma", "cl-people", "cl-physicality1", "cl-relationships1", "cl-selfawareness1", "cl-spiritual2", "cl-spritual1", "cl-work", "eh-arp-hi", "eh-arp-lo", "eh-flugel-harmon", "eh-lydian-stack", "eh-melodies", "eh-warmups", "focus-aliens-knowledge", "focus-beauty-order-senses", "focus-chaos-ghosts-morality", "focus-conspiracy-fear", "focus-dreams-loneliness-love2", "focus-ethics-health-healing", "focus-future1", "focus-future2", "focus-identity1", "focus-identity2-intimacy", "focus-karma-magic-plants", "focus-objects", "focus-philosophy1", "focus-philosophy2", "focus-psychology", "focus-relationships2-sleep", "focus-science-society", "focus-selfawareness2-superstition", "numbers-warmups", "sines-noise-air", "sw-aspiration-freedom", "sw-capitalism-purpose", "sw-change-mix-words", "sw-climate-travel", "sw-clothes-shoes-feeling", "sw-conflict-diversity-music", "sw-creativity-death", "sw-energy-friends-kindness-struggle", "sw-equality", "sw-friends-kindess-struggle", "sw-gender", "sw-humans-reincarnation", "sw-life", "sw-mental-music", "sw-nature", "sw-politics", "sw-technology-time" ],
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
 							"parameter_longname" : "bank-0",
-							"parameter_mmax" : 44,
+							"parameter_mmax" : 114,
 							"parameter_shortname" : "bank-0",
 							"parameter_type" : 2
 						}
@@ -1786,6 +1828,7 @@
 			"obj-29" : [ "bank-0", "bank-0", 0 ],
 			"obj-3" : [ "debug-start", "debug start", 0 ],
 			"obj-30" : [ "go-0", "go-0", 0 ],
+			"obj-33" : [ "bank-0[1]", "bank-0", 0 ],
 			"obj-37" : [ "loop-0", "loop-0", 0 ],
 			"obj-4" : [ "debug-update", "debug update", 0 ],
 			"obj-43" : [ "bank-1", "bank-1", 0 ],
