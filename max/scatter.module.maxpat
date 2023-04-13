@@ -337,8 +337,8 @@
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
 							"parameter_longname" : "rate-multiply",
-							"parameter_mmax" : 2.0,
-							"parameter_mmin" : -1.0,
+							"parameter_mmax" : 5.0,
+							"parameter_mmin" : -5.0,
 							"parameter_shortname" : "rate",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 898.0, 100.0, 796.0, 983.0 ],
+		"rect" : [ 898.0, 100.0, 149.0, 983.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -390,8 +390,8 @@
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
 							"parameter_longname" : "rate-multiply",
-							"parameter_mmax" : 2.0,
-							"parameter_mmin" : -1.0,
+							"parameter_mmax" : 4.0,
+							"parameter_mmin" : -4.0,
 							"parameter_shortname" : "rate",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
