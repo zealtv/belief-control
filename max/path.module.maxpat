@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 98.0, 139.0, 1024.0, 983.0 ],
+		"rect" : [ 34.0, 100.0, 1220.0, 983.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,17 +40,57 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 441.0, 138.0, 87.0, 22.0 ],
+					"text" : "sprintf Path-%i"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-11",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 409.333333333333485, 244.0, 191.0, 22.0 ],
+					"text" : "script send miraframe tabname $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 409.333333333333485, 280.0, 69.0, 22.0 ],
+					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
+					"text" : "thispatcher"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"color" : [ 0.75, 0.75, 0.75, 0.2 ],
-					"id" : "obj-63",
-					"ignoreclick" : 1,
+					"id" : "obj-5",
 					"maxclass" : "mira.multitouch",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 58.750017642974854, 117.0, 400.772212438389261, 390.89815629126997 ],
+					"patching_rect" : [ 72.035367828153994, 149.0, 200.0, 150.0 ],
 					"pinch_enabled" : 0,
 					"presentation" : 1,
-					"presentation_rect" : [ 4.86062609318509, 22.049306482924749, 447.193504028123186, 146.414141336146741 ],
+					"presentation_rect" : [ 8.27383617184671, 177.256770934761107, 450.0, 120.0 ],
 					"rotate_enabled" : 0,
 					"swipe_enabled" : 0,
 					"swipe_touch_count" : 0,
@@ -481,7 +521,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 532.0, 160.0, 78.0, 22.0 ],
+					"patching_rect" : [ 533.0, 202.0, 78.0, 22.0 ],
 					"text" : "s #0-id-offset"
 				}
 
@@ -877,7 +917,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 254.127426660438005, 724.516512758129466, 171.0, 22.0 ],
-					"text" : "0 1 0.826642 0.474587"
+					"text" : "0 1 0.672414 0.303414"
 				}
 
 			}
@@ -901,7 +941,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 265.794087207694474, 681.333333015441895, 246.112830460071564, 22.0 ],
-					"text" : "0.826642 0.474587 1 0 0 MiraWeb-dd55ba"
+					"text" : "0.672414 0.303414 1 0 0 MiraWeb-18d202"
 				}
 
 			}
@@ -962,9 +1002,11 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 532.0, 71.447299790714226, 44.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 76.0, 2.549306482924749, 44.0, 15.0 ],
+					"presentation_rect" : [ 45.27383617184671, 5.756770934761107, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_initial" : [ 0.0 ],
+							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
 							"parameter_longname" : "id-offset",
 							"parameter_shortname" : "id offset",
@@ -990,7 +1032,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1113.619234171846529, 80.894599581428452, 50.0, 63.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 580.77383617184671, 14.756770934761107, 63.0, 63.0 ],
+					"presentation_rect" : [ 131.77383617184671, 23.256770934761107, 63.0, 63.0 ],
 					"prototypename" : "gain",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -1024,7 +1066,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1039.619234171846529, 80.894599581428452, 50.0, 63.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 515.77383617184671, 14.756770934761107, 63.0, 63.0 ],
+					"presentation_rect" : [ 66.77383617184671, 23.256770934761107, 63.0, 63.0 ],
 					"prototypename" : "gain",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -1059,7 +1101,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 942.583357930183411, 459.833333015441895, 44.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 457.27383617184671, 14.756770934761107, 56.5, 63.0 ],
+					"presentation_rect" : [ 8.27383617184671, 26.256770934761107, 56.5, 60.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
@@ -1092,7 +1134,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 969.339425628884783, 80.894599581428452, 50.0, 63.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 645.77383617184671, 94.756770934761107, 62.999999999999886, 63.0 ],
+					"presentation_rect" : [ 196.77383617184671, 94.256770934761107, 62.999999999999886, 63.0 ],
 					"prototypename" : "gain",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -1125,7 +1167,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1180.178851257769793, 80.894599581428452, 50.0, 63.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 645.77383617184671, 14.756770934761107, 63.0, 63.0 ],
+					"presentation_rect" : [ 196.77383617184671, 23.256770934761107, 63.0, 63.0 ],
 					"prototypename" : "gain",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -1157,7 +1199,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 910.964632171846461, 80.894599581428452, 50.0, 63.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 457.27383617184671, 94.756770934761107, 56.5, 63.0 ],
+					"presentation_rect" : [ 8.27383617184671, 94.256770934761107, 56.5, 63.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 0.0 ],
@@ -1188,7 +1230,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 846.738468343693057, 80.894599581428452, 50.0, 63.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 515.77383617184671, 94.756770934761107, 63.0, 63.0 ],
+					"presentation_rect" : [ 66.77383617184671, 94.256770934761107, 63.0, 63.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "0", "1", "2" ],
@@ -1219,7 +1261,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1311.107169505180082, 80.894599581428452, 50.0, 63.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 580.77383617184671, 94.756770934761107, 63.0, 63.0 ],
+					"presentation_rect" : [ 131.77383617184671, 94.256770934761107, 63.0, 63.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 1.0 ],
@@ -1258,10 +1300,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 58.750017642974854, 675.833333015441895, 101.752420938392106, 78.903958677687569 ],
-					"pic" : "Macintosh HD:/Users/bob/REPOS/belief-control/touch-control/bs-points-unclipped.png",
+					"patching_rect" : [ 409.333333333333485, 392.28063280615612, 382.490889282085163, 128.937148076484903 ],
+					"pic" : "speakers.png",
 					"presentation" : 1,
-					"presentation_rect" : [ 335.86062609318509, 591.049306482924749, 219.193504028123215, 215.414141336146741 ]
+					"presentation_rect" : [ 8.27383617184671, 177.256770934761107, 450.0, 120.0 ]
 				}
 
 			}
@@ -1272,10 +1314,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, 0.0, 150.0, 20.0 ],
+					"patching_rect" : [ 583.662836331052631, 158.447299790714226, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.86062609318509, 0.049306482924749, 126.413210078661564, 20.0 ],
-					"text" : "PATHS",
+					"presentation_rect" : [ 4.067231132515985, 3.256770934761107, 126.413210078661564, 20.0 ],
+					"text" : "PATH ",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -1284,16 +1326,19 @@
 				"box" : 				{
 					"aspect" : 6,
 					"background" : 1,
+					"draw_tab_name" : 0,
 					"id" : "obj-10",
 					"ignoreclick" : 1,
 					"maxclass" : "mira.frame",
+					"miraweb_aspect" : 0,
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"orientation" : 0,
-					"patching_rect" : [ 11.447801189971415, 60.194098011478445, 491.109155811920118, 506.655714264282551 ],
+					"patching_rect" : [ 21.447801189971415, 71.447299790714226, 326.109155811920118, 319.655714264282551 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.86062609318509, 0.049306482924749, 447.193504028123186, 168.414141336146741 ],
-					"tabname" : "XY"
+					"presentation_rect" : [ 8.27383617184671, 177.256770934761107, 450.0, 120.0 ],
+					"tabname" : "Path-0",
+					"varname" : "miraframe"
 				}
 
 			}
@@ -1349,6 +1394,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-138", 0 ],
 					"source" : [ "obj-118", 0 ]
 				}
@@ -1372,6 +1424,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-118", 0 ],
 					"source" : [ "obj-122", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-13", 0 ]
 				}
 
 			}
@@ -1637,6 +1696,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-120", 0 ],
+					"order" : 0,
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"order" : 1,
 					"source" : [ "obj-25", 0 ]
 				}
 
@@ -1689,6 +1757,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-142", 0 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-57", 0 ],
 					"source" : [ "obj-54", 0 ]
 				}
@@ -1733,13 +1808,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-78", 0 ],
 					"source" : [ "obj-61", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-142", 0 ],
-					"source" : [ "obj-63", 0 ]
 				}
 
 			}
@@ -1860,7 +1928,14 @@
 			"inherited_shortname" : 1
 		}
 ,
-		"dependency_cache" : [  ],
+		"dependency_cache" : [ 			{
+				"name" : "speakers.png",
+				"bootpath" : "~/repos/belief-control/max",
+				"patcherrelativepath" : ".",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+ ],
 		"autosave" : 0
 	}
 
