@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
+			"minor" : 3,
 			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 81.0, 100.0, 1045.0, 910.0 ],
+		"rect" : [ 81.0, 100.0, 1377.0, 910.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,49 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-71",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 926.75, 232.742953164202618, 29.5, 22.0 ],
+					"text" : "* 1."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"appearance" : 3,
+					"id" : "obj-69",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 999.997617313317278, 156.742953164202618, 50.0, 63.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 55.508373961821235, 46.596772561972671, 50.0, 63.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_initial" : [ 1 ],
+							"parameter_initial_enable" : 1,
+							"parameter_linknames" : 1,
+							"parameter_longname" : "attenuate",
+							"parameter_mmax" : 1.0,
+							"parameter_shortname" : "attenuate",
+							"parameter_speedlim" : 50.0,
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1
+						}
+
+					}
+,
+					"varname" : "attenuate"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-70",
 					"maxclass" : "comment",
@@ -705,8 +748,6 @@
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1130.0, 232.742953164202618, 50.0, 63.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 55.508373961821235, 46.596772561972671, 50.0, 63.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 20000 ],
@@ -736,7 +777,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 964.0, 193.742953164202618, 50.0, 63.0 ],
+					"patching_rect" : [ 898.5, 131.742953164202618, 50.0, 63.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 3.508373961821235, 46.596772561972671, 50.0, 63.0 ],
 					"saved_attribute_attributes" : 					{
@@ -805,8 +846,6 @@
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 843.185002043005852, 236.37484715595042, 50.0, 63.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 571.185002043005852, 36.8689020942345, 50.0, 63.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 0.0 ],
@@ -1473,7 +1512,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-31", 0 ],
+					"destination" : [ "obj-71", 0 ],
 					"source" : [ "obj-19", 0 ]
 				}
 
@@ -1804,8 +1843,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-71", 1 ],
+					"source" : [ "obj-69", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"source" : [ "obj-71", 0 ]
 				}
 
 			}
@@ -1839,6 +1892,7 @@
 			"obj-60" : [ "bank-2", "bank-2", 0 ],
 			"obj-61" : [ "go-2", "go-2", 0 ],
 			"obj-62" : [ "loop-2", "loop-2", 0 ],
+			"obj-69" : [ "attenuate", "attenuate", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
@@ -1864,14 +1918,14 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "sub.UNICAST120.maxpat",
-				"bootpath" : "~/repos/belief-control/max",
+				"bootpath" : "~/BELIEF-SYSTEM/belief-control/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sub.unicast14.maxpat",
-				"bootpath" : "~/repos/belief-control/max",
+				"bootpath" : "~/BELIEF-SYSTEM/belief-control/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
