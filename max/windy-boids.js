@@ -1,6 +1,7 @@
 
 /*
 adapted from maxmsp->examples->js->simulation
+------------------------==adpated-by-hakushu------------------------------------
 
 	simple agent simulation using "boids" like rules
 	each agent has a position, a velocity and a set of rules which acts upon its velocity
@@ -12,7 +13,6 @@ adapted from maxmsp->examples->js->simulation
 
 	for more info on boids/agent simulation check out Craig Reynolds' site:
 	http://www.red3d.com/cwr/
-	-----------------------------------------hakushu--------------------------------------
 */
 
 // set up inlets/outlets/assist strings
@@ -22,8 +22,8 @@ setinletassist(0,"bang calculates one iteration of simulation");
 
 setoutletassist(2,"bang once for each series of x/y/vx/vy lists");
 // setoutletassist(1,"average x/y/vx/vy list");
-setoutletassist(1, "start and end updates")
-setoutletassist(0,"series of x/y/vx/vy lists");
+setoutletassist(0, "start and end updates")
+setoutletassist(1,"series of x/y/vx/vy lists");
 
 // global varables and code
 var centroid_x = 0.;
@@ -82,7 +82,7 @@ function addAgent(){
 			// the array. could add/remove rules here
 
 	agents.push(a);
-	outlet(1, "start", agents.push() * -1, x, y);
+	outlet(0, "start", agents.push() * -1, x, y);
 
 	myagentcount = agents.push();
 	post("particles size: " + agents.push() + "/" + myagentcount + "\n");
@@ -96,7 +96,7 @@ function removeAgent(){
 		return;
 	}
 	agentToEnd = agents[agents.push() - 1];
-	outlet(1, "end",agents.push() * -1, agentToEnd.x, agentToEnd.y);
+	outlet(0, "end",agents.push() * -1, agentToEnd.x, agentToEnd.y);
 
 	agents.pop();
 
@@ -181,10 +181,15 @@ function bang()
 	avgvelocity_y = cvy/myagentcount;
 
 	outlet(2,"bang");
+
+	//out center of mass and average velocity~
 	// outlet(1,centroid_x,centroid_y,avgvelocity_x,avgvelocity_y);
 
 	for (i=0;i<myagentcount;i++) {
-		outlet(0,([i] + 1) * -1,agents[i].x,agents[i].y,agents[i].vx,agents[i].vy);
+
+		outlet(1,(parseInt([i],10) + 1) * -1,agents[i].x,agents[i].y,agents[i].vx,agents[i].vy);
+
+		// outlet(1,([i] + 1) * -1,agents[i].x,agents[i].y,agents[i].vx,agents[i].vy);
 	}
 }
 
@@ -195,9 +200,10 @@ function agent(x,y,vx,vy)
 	this.y = y;
 	this.vx = vx;
 	this.vy = vy;
+
+ 	//vars random variation rule (held by agent for a number of ticks)
 	this.random_vx = 0;
 	this.random_vy = 0
-
 	this.randomWait = Math.floor(Math.random() * 30);
 
 	this.rulecount = 0;
@@ -224,11 +230,12 @@ function agent_tick()
 	this.x += this.vx;
 
   wrap(this); // torus space
-	// bounce(this);
+	// bounce(this); //bounce on edges (glitchy)
 }
 
 // rules
 function randomVar(a){
+	//update random variation vector after randomWait ticks
 	if(tickCount % a.randomWait == 0){
 		a.random_vx = Math.random() * 0.01 - 0.005;
 		a.random_vy = Math.random() * 0.01 - 0.005;
@@ -237,6 +244,7 @@ function randomVar(a){
 		// post("update \n");
 
 	}
+	//update position based on random variation vectors every tick
 	a.x += a.random_vx;
 	a.y += a.random_vy;
 
