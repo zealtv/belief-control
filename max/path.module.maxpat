@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
+			"minor" : 3,
 			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 100.0, 1220.0, 983.0 ],
+		"rect" : [ 34.0, 87.0, 1220.0, 959.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -164,7 +164,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1120.411909269532543, 1081.774084698936804, 100.0, 22.0 ],
+					"patching_rect" : [ 1120.411909269532543, 1119.774084698936804, 100.0, 22.0 ],
 					"text" : "s oscout"
 				}
 
@@ -212,8 +212,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 1366.455954634766158, 946.079331183834256, 129.0, 22.0 ],
-					"text" : "% 9999999999999999"
+					"patching_rect" : [ 1366.455954634766158, 946.079331183834256, 56.0, 22.0 ],
+					"text" : "% 25560"
 				}
 
 			}
@@ -236,7 +236,7 @@
 					"numinlets" : 9,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1120.455954634766158, 991.079331183834256, 325.0, 22.0 ],
+					"patching_rect" : [ 1120.455954634766158, 1029.079331183834256, 325.0, 22.0 ],
 					"text" : "join 9"
 				}
 
@@ -404,7 +404,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1120.411909269532543, 1032.294140982594399, 117.0, 22.0 ],
+					"patching_rect" : [ 1120.411909269532543, 1070.294140982594399, 117.0, 22.0 ],
 					"text" : "prepend /objectStart"
 				}
 
@@ -510,8 +510,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 533.0, 113.0, 39.0, 22.0 ],
-					"text" : "+ 500"
+					"patching_rect" : [ 533.0, 113.0, 32.0, 22.0 ],
+					"text" : "+ 10"
 				}
 
 			}
@@ -1171,11 +1171,11 @@
 					"prototypename" : "gain",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 5.0 ],
+							"parameter_initial" : [ 1000.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
 							"parameter_longname" : "radius-0",
-							"parameter_mmax" : 30.0,
+							"parameter_mmax" : 5000.0,
 							"parameter_shortname" : "radius",
 							"parameter_speedlim" : 50.0,
 							"parameter_type" : 0,
@@ -1930,7 +1930,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "speakers.png",
-				"bootpath" : "~/repos/belief-control/max",
+				"bootpath" : "~/BELIEF-SYSTEM/belief-control/max",
 				"patcherrelativepath" : ".",
 				"type" : "PNG",
 				"implicit" : 1
