@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
+			"minor" : 3,
 			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 898.0, 100.0, 796.0, 983.0 ],
+		"rect" : [ 898.0, 100.0, 396.0, 983.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -565,7 +565,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
 							"parameter_longname" : "gain",
-							"parameter_mmax" : 1.0,
+							"parameter_mmax" : 2.0,
 							"parameter_shortname" : "gain",
 							"parameter_speedlim" : 50.0,
 							"parameter_type" : 0,
