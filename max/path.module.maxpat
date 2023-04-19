@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 3,
+			"minor" : 5,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 1220.0, 959.0 ],
+		"rect" : [ 34.0, 85.0, 1398.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,54 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1518.0, 1082.0, 50.0, 36.0 ],
+					"text" : "/objectEnd 10"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1291.0, 478.28063280615612, 572.0, 22.0 ],
+					"text" : "/objectStart 10 0 0 1. 5360.63 1356.181102 2889.76378 13461 1."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1319.455954634766158, 522.780632806156063, 320.0, 22.0 ],
+					"text" : "/objectUpdate 10 1. 5740.15748 2420.748031 5000."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 867.0, 492.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-13",
 					"maxclass" : "newobj",
@@ -545,7 +593,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1359.0, 388.28063280615612, 545.0, 33.0 ],
+					"patching_rect" : [ 1359.0, 427.78063280615612, 545.0, 34.0 ],
 					"text" : "KILL\n/objectEnd sound-object-id "
 				}
 
@@ -557,7 +605,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1354.0, 425.614000273082695, 545.0, 33.0 ],
+					"patching_rect" : [ 1359.0, 388.28063280615612, 545.0, 34.0 ],
 					"text" : "UPDATE\n/objectStart sound-object-id gain x y radius "
 				}
 
@@ -569,7 +617,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1359.0, 347.67878909742609, 545.0, 33.0 ],
+					"patching_rect" : [ 1359.0, 347.67878909742609, 545.0, 34.0 ],
 					"text" : "START\n/objectStart sound-object-id bank recording-id gain x y radius start-time-in-millis rate-multiply"
 				}
 
@@ -975,7 +1023,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 476.333333333333485, 768.440725099823339, 150.0, 87.0 ],
+					"patching_rect" : [ 476.333333333333485, 768.440725099823339, 150.0, 89.0 ],
 					"text" : "finger x y state\nstate 0 = up\nstate 1 = down\nstate 2 = moving\nusing state 2 to trigger objectUpdate"
 				}
 
@@ -987,7 +1035,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 694.0, 791.912664199276151, 119.0, 33.0 ],
+					"patching_rect" : [ 694.0, 791.912664199276151, 119.0, 34.0 ],
 					"text" : "ID offset for multiple modules"
 				}
 
@@ -1492,13 +1540,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-192", 0 ],
-					"source" : [ "obj-161", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-118", 2 ],
 					"source" : [ "obj-164", 0 ]
 				}
@@ -1541,7 +1582,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-18", 1 ],
+					"order" : 0,
+					"source" : [ "obj-184", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-182", 0 ],
+					"order" : 1,
 					"source" : [ "obj-184", 0 ]
 				}
 
@@ -1930,7 +1980,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "speakers.png",
-				"bootpath" : "~/BELIEF-SYSTEM/belief-control/max",
+				"bootpath" : "~/IdeaProjects/belief-control-master/belief-control-master/max",
 				"patcherrelativepath" : ".",
 				"type" : "PNG",
 				"implicit" : 1
