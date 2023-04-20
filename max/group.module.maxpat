@@ -57,7 +57,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 119.333333333333314, 581.0, 57.0, 22.0 ],
+					"patching_rect" : [ 184.833333333333314, 558.0, 57.0, 22.0 ],
 					"text" : "tosymbol"
 				}
 
@@ -81,7 +81,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 50.0, 478.0, 50.0, 22.0 ],
+					"patching_rect" : [ 174.333333333333314, 495.0, 50.0, 22.0 ],
 					"text" : "1"
 				}
 
@@ -166,7 +166,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 55.0, 345.0, 49.0, 22.0 ],
+					"patching_rect" : [ 69.833333333333314, 348.0, 49.0, 22.0 ],
 					"text" : "s #0-go"
 				}
 
@@ -189,7 +189,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 217.0, 454.0, 88.0, 22.0 ],
+					"patching_rect" : [ 203.333333333333314, 415.0, 88.0, 22.0 ],
 					"text" : "s #0-to-sample"
 				}
 
@@ -212,7 +212,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 114.333333333333314, 679.5, 67.0, 22.0 ],
+					"patching_rect" : [ 184.833333333333314, 630.5, 67.0, 22.0 ],
 					"text" : "s #0-to-coll"
 				}
 
@@ -224,7 +224,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 139.333333333333314, 412.0, 29.5, 22.0 ],
+					"patching_rect" : [ 144.333333333333314, 441.0, 29.5, 22.0 ],
 					"text" : "- 1"
 				}
 
@@ -236,7 +236,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 119.333333333333314, 615.5, 94.0, 22.0 ],
+					"patching_rect" : [ 184.833333333333314, 592.5, 94.0, 22.0 ],
 					"text" : "prepend symbol"
 				}
 
@@ -250,7 +250,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 84.333333333333314, 541.0, 100.0, 15.0 ],
+					"patching_rect" : [ 144.333333333333314, 528.0, 100.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "group-01", "group-02", "group-03", "group-04", "group-05", "group-06", "group-07", "group-08", "group-09", "group-10", "group-11", "group-12", "groups-01-02-03", "groups-04-05-06", "groups-07-08-09", "groups-10-11-12", "all", "odds-left", "evens-right", "1/2", "2/2", "1/3", "2/3", "3/3" ],
@@ -300,7 +300,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 84.333333333333314, 412.0, 50.333333333333314, 20.0 ],
+					"patching_rect" : [ 144.333333333333314, 399.0, 50.333333333333314, 20.0 ],
 					"text" : "velocity"
 				}
 
