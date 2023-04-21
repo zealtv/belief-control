@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
+			"minor" : 3,
 			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 100.0, 796.0, 983.0 ],
+		"rect" : [ 34.0, 87.0, 1555.0, 959.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -697,7 +697,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
 							"parameter_longname" : "radius",
-							"parameter_mmax" : 30.0,
+							"parameter_mmax" : 50.0,
 							"parameter_shortname" : "radius",
 							"parameter_speedlim" : 50.0,
 							"parameter_type" : 0,
@@ -780,7 +780,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
+							"minor" : 3,
 							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -1052,7 +1052,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ -81.440795999999864, 0.547683247070324, 79.0, 23.0 ],
+					"patching_rect" : [ -81.440795999999864, 44.547683247070324, 79.0, 23.0 ],
 					"text" : "set-all $1"
 				}
 
@@ -1075,7 +1075,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ -81.440795999999864, 40.676605247070313, 100.0, 22.0 ],
+					"patching_rect" : [ -81.440795999999864, 114.676605247070313, 100.0, 22.0 ],
 					"text" : "s #0-to-radius"
 				}
 
@@ -1091,7 +1091,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
+							"minor" : 3,
 							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -1365,7 +1365,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
+							"minor" : 3,
 							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -1739,7 +1739,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
+							"minor" : 3,
 							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -1871,7 +1871,7 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
+											"minor" : 3,
 											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
@@ -3302,7 +3302,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
+							"minor" : 3,
 							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -3506,7 +3506,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
+							"minor" : 3,
 							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -4134,7 +4134,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
+							"minor" : 3,
 							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -4788,7 +4788,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
+							"minor" : 3,
 							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -5645,7 +5645,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
+							"minor" : 3,
 							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -7860,8 +7860,8 @@
 			}
 , 			{
 				"name" : "o.accum.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/odot/patchers/namespace",
-				"patcherrelativepath" : "../../../Documents/Max 8/Packages/odot/patchers/namespace",
+				"bootpath" : "~/Documents/Max 8/Library/odot/patchers/namespace",
+				"patcherrelativepath" : "../../../Documents/Max 8/Library/odot/patchers/namespace",
 				"type" : "JSON",
 				"implicit" : 1
 			}
