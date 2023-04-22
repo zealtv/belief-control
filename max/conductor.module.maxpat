@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 747.0, 104.0, 1135.0, 926.0 ],
+		"rect" : [ 747.0, 104.0, 735.0, 926.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -240,11 +240,12 @@
 					"presentation_rect" : [ 336.508373961821235, 34.946372160858473, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 100.0 ],
+							"parameter_initial" : [ 50.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
 							"parameter_longname" : "cutoff frequency",
 							"parameter_mmax" : 8000.0,
+							"parameter_mmin" : 50.0,
 							"parameter_shortname" : "cutoff",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 3
