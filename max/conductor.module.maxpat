@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 154.0, 104.0, 1328.0, 926.0 ],
+		"rect" : [ 552.0, 104.0, 930.0, 926.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,17 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 306.286274313926697, 1033.0, 104.0, 22.0 ],
+					"text" : "sub.UNICAST120"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-101",
 					"maxclass" : "comment",
@@ -95,7 +106,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 332.536274313926697, 401.67232082805117, 150.0, 20.0 ],
+					"patching_rect" : [ 241.336249351501465, 11.67232082805117, 150.0, 20.0 ],
 					"text" : "for pcontrol"
 				}
 
@@ -109,19 +120,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 301.336249351501465, 394.17232082805117, 30.0, 30.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-80",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 322.036274313926697, 963.0, 171.0, 22.0 ],
-					"text" : "loadmess maxqueuesize 5096"
+					"patching_rect" : [ 210.136224389076233, 4.17232082805117, 30.0, 30.0 ]
 				}
 
 			}
@@ -132,8 +131,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 665.0, 902.0, 171.0, 22.0 ],
-					"text" : "loadmess maxqueuesize 5096"
+					"patching_rect" : [ 665.0, 902.0, 60.0, 22.0 ],
+					"text" : "loadmess"
 				}
 
 			}
@@ -189,7 +188,6 @@
 							"parameter_linknames" : 1,
 							"parameter_longname" : "throttle",
 							"parameter_mmax" : 1000.0,
-							"parameter_mmin" : 1.0,
 							"parameter_shortname" : "throttle",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 2
@@ -232,8 +230,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1330.0, 251.37484715595042, 140.0, 22.0 ],
-					"text" : "scale 0. 8000. 1. 3."
+					"patching_rect" : [ 1330.0, 251.37484715595042, 110.0, 22.0 ],
+					"text" : "scale 0. 8000. 1. 4."
 				}
 
 			}
@@ -341,7 +339,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 329.286274313926697, 783.0, 91.0, 22.0 ],
+					"patching_rect" : [ 552.286274313926697, 851.0, 91.0, 22.0 ],
 					"text" : "r oscout-control"
 				}
 
@@ -483,46 +481,6 @@
 					}
 ,
 					"varname" : "attenuate"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-70",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 88.336249351501465, 379.67232082805117, 150.0, 20.0 ],
-					"text" : "prior to 2023-000"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"appearance" : 1,
-					"id" : "obj-33",
-					"maxclass" : "live.menu",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "float" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 94.836249351501465, 401.67232082805117, 100.0, 15.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_enum" : [ "air", "animals", "clusters", "creativity", "education", "eh-falling-arps-000", "eh-falling-arps-001", "eh-falling-motif", "eh-falling-motif-3s", "eh-falling-motif-3s-8vb-000", "eh-falling-motif-3s-8vb-001", "eh-five-limit-open-000", "eh-five-limit-open-001", "eh-five-limit-open-top-down-000", "eh-five-limit-open-top-down-001", "eh-flugel-tones-000", "eh-flugel-tones-001", "eh-harmon", "eh-harmon-airtone", "eh-harmon-stem-airtone-000", "eh-harmon-stem-airtone-001", "eh-harmon-tone-000", "eh-harmon-tone-001", "eh-harmon-tone-002", "eh-melodies-000", "eh-melodies-001", "eh-open-air", "eh-warmups", "food-and-drink", "gender-equality", "music", "nature-personal", "numbers", "objects", "optimistic-social", "people", "pessimistic-social", "politics", "self-emotion", "sine-decay", "sine-hard", "sine-short", "sine-soft", "swarms", "syllables" ],
-							"parameter_initial" : [ 0.0 ],
-							"parameter_initial_enable" : 1,
-							"parameter_invisible" : 2,
-							"parameter_linknames" : 1,
-							"parameter_longname" : "bank-0[1]",
-							"parameter_mmax" : 44,
-							"parameter_shortname" : "bank-0",
-							"parameter_type" : 2
-						}
-
-					}
-,
-					"varname" : "bank-0[1]"
 				}
 
 			}
@@ -1052,18 +1010,6 @@
 			}
 , 			{
 				"box" : 				{
-					"color" : [ 1.0, 0.101960784313725, 0.101960784313725, 1.0 ],
-					"id" : "obj-28",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 306.286274313926697, 997.0, 147.0, 22.0 ],
-					"text" : "sub.UNICAST120.maxpat"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-27",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -1286,17 +1232,6 @@
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1218.867567414934229, 1062.793953101629768, 41.0, 32.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-14",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 118.766074658485422, 491.401325179101377, 83.0, 22.0 ],
-					"text" : "sub.unicast14"
 				}
 
 			}
@@ -1851,7 +1786,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-28", 0 ],
+					"destination" : [ "obj-14", 0 ],
 					"source" : [ "obj-26", 0 ]
 				}
 
@@ -2249,13 +2184,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-28", 0 ],
-					"source" : [ "obj-80", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-69", 0 ],
 					"source" : [ "obj-82", 0 ]
 				}
@@ -2263,7 +2191,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-26", 1 ],
+					"destination" : [ "obj-49", 0 ],
 					"source" : [ "obj-83", 0 ]
 				}
 
@@ -2342,7 +2270,6 @@
 			"obj-29" : [ "bank-0", "bank-0", 0 ],
 			"obj-3" : [ "debug-start", "debug start", 0 ],
 			"obj-30" : [ "go-0", "go-0", 0 ],
-			"obj-33" : [ "bank-0[1]", "bank-0", 0 ],
 			"obj-37" : [ "loop-0", "loop-0", 0 ],
 			"obj-4" : [ "debug-update", "debug update", 0 ],
 			"obj-43" : [ "bank-1", "bank-1", 0 ],
@@ -2390,7 +2317,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "sub.unicast14.maxpat",
+				"name" : "sub.unicast.filter.maxpat",
 				"bootpath" : "~/BELIEF-SYSTEM/belief-control/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
