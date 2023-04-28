@@ -10,7 +10,9 @@ flocking algorithm from maxmsp->examples->js->simulation
 
 // inlets/outlets for max obj
 inlets = 2;
-outlets = 3;
+outlets = 4;
+spaceWidth = 18000;
+spaceHeight = 4800;
 setinletassist(0,"bang calculates one iteration of simulation");
 setinletassist(1, "parameters go here")
 
@@ -108,7 +110,7 @@ function addSoundObject() {
 	soundObjects.push(soundObject); //add to the js soundObject array
 
 	//pass the objectStart OSC message through outlet 0asd
-	outlet(2, "/objectStart", soundObject.id, bank, soundObject.id, soundObject.x, soundObject.y, radius, Date.now(), rate);
+	outlet(2, "/objectStart", soundObject.id, bank, soundObject.id, gain, soundObject.x * (spaceWidth + 4 * radius) - 2 * radius, soundObject.y * (spaceHeight + 4 * radius) - 2 * radius, radius);
 	//post("particles size: " + soundObjects.length + "\n");
 }
 
@@ -142,7 +144,8 @@ function bang() {
 		//first update each object in js particle system
 		soundObjects[i].tick();
 		//then send object updates
-		outlet(1, "/objectUpdate", soundObjects[i].id, gain, soundObjects[i].x, soundObjects[i].y, radius);
+		outlet(1, "/objectUpdate", soundObjects[i].id, gain, soundObjects[i].x * (spaceWidth + 4 * radius) - 2 * radius, soundObjects[i].y * (spaceHeight + 4 * radius) - 2 * radius, radius);
+		outlet(3, soundObjects[i].x, soundObjects[i].y, radius);
 
 		// calculate average position/velocity for next tick
 		cx += soundObjects[i].x;

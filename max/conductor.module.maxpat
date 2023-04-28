@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 552.0, 104.0, 930.0, 926.0 ],
+		"rect" : [ 322.0, 104.0, 1160.0, 926.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -178,7 +178,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 486.036274313926697, 728.759746958363166, 50.0, 63.0 ],
+					"patching_rect" : [ 574.229800344558726, 449.759746958363166, 50.0, 63.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 252.508373961821235, 15.446372160858473, 50.0, 63.0 ],
 					"saved_attribute_attributes" : 					{
@@ -218,7 +218,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 431.836249351501465, 813.433132705349635, 73.0, 22.0 ],
+					"patching_rect" : [ 553.029775382133494, 522.433132705349635, 73.0, 22.0 ],
 					"text" : "speedlim 50"
 				}
 
@@ -1772,13 +1772,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-26", 1 ],
-					"source" : [ "obj-22", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-27", 0 ],
 					"source" : [ "obj-24", 0 ]
 				}
@@ -2010,7 +2003,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-22", 0 ],
+					"destination" : [ "obj-26", 1 ],
 					"order" : 1,
 					"source" : [ "obj-56", 0 ]
 				}
@@ -2311,13 +2304,6 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "sub.UNICAST120.maxpat",
-				"bootpath" : "~/BELIEF-SYSTEM/belief-control/max",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "sub.unicast.filter.maxpat",
 				"bootpath" : "~/BELIEF-SYSTEM/belief-control/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
