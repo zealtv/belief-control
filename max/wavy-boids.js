@@ -6,20 +6,23 @@ var vel = 0.03;
 var HARD_LIMIT = 25;
 
 var baseIndex = 0;
+var nextIndex = 0;
 
 var agents = new Array();
+
 function addAgent(){
 	if(agents.push() >= HARD_LIMIT){
 		post("Maximum size reached !! (" + agents.push() + ")\n");
 		return;
 	}
-	outlet(0, "start", agents.push() + baseIndex);
-	agents.push(new agent(agents.push()));
+	outlet(0, "start", nextIndex + baseIndex);
+	agents.push(new agent(nextIndex++));
 	}
 
 function removeAgentIndex(a){
 	removeMe = a.id;
 	agents.splice(agents.indexOf(a), 1);
+	//agents.remove(a);
 	outlet(0, "end", removeMe + baseIndex);
 }
 

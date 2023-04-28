@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1378.0, 869.0, 540.0, 211.0 ],
+		"rect" : [ 890.0, 495.0, 996.0, 585.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,59 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-44",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 33.0, 10.0, 39.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 33.0, 90.0, 39.0, 20.0 ],
+					"text" : "clear"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-42",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 7.0, 10.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 68.0, 90.0, 20.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-40",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 435.0, 339.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 33.0, 156.0, 150.0, 20.0 ],
+					"text" : "Ethernet connected?"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-39",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 439.0, 320.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 33.0, 134.0, 150.0, 20.0 ],
+					"text" : "WIFI on?"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-37",
 					"maxclass" : "newobj",
@@ -100,7 +153,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 685.0, 394.0, 50.0, 22.0 ],
-					"text" : "10"
+					"text" : "21"
 				}
 
 			}
@@ -268,7 +321,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 569.0, 182.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 253.0, 64.0, 81.0, 20.0 ],
+					"presentation_rect" : [ 284.0, 64.0, 81.0, 20.0 ],
 					"text" : "swarm / other"
 				}
 
@@ -281,7 +334,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 571.0, 159.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 253.0, 40.0, 46.0, 20.0 ],
+					"presentation_rect" : [ 284.0, 40.0, 46.0, 20.0 ],
 					"text" : "focus"
 				}
 
@@ -294,7 +347,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 741.0, 140.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 253.0, 16.0, 46.0, 20.0 ],
+					"presentation_rect" : [ 284.0, 16.0, 46.0, 20.0 ],
 					"text" : "br / cl"
 				}
 
@@ -308,8 +361,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 43.0, 230.0, 292.999999999999943, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 84.0, 64.0, 164.999999999999943, 22.0 ],
-					"text" : "_noise-pink 1"
+					"presentation_rect" : [ 84.0, 64.0, 193.999999999999943, 22.0 ]
 				}
 
 			}
@@ -322,8 +374,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 43.0, 189.0, 293.000000000000057, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 84.0, 40.0, 165.000000000000057, 22.0 ],
-					"text" : "E-focus-philosophy1 0"
+					"presentation_rect" : [ 84.0, 40.0, 194.000000000000057, 22.0 ]
 				}
 
 			}
@@ -336,8 +387,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 43.0, 146.0, 293.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 84.0, 16.0, 165.0, 22.0 ],
-					"text" : "E-br-relationships1 0"
+					"presentation_rect" : [ 84.0, 16.0, 194.0, 22.0 ],
+					"text" : "_numbers 0"
 				}
 
 			}
@@ -501,6 +552,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-42", 0 ]
 				}
 
 			}
