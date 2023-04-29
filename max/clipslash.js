@@ -20,10 +20,6 @@ function log() {
   }
   post("\n");
 }
- 
-
-
-
 
 log("___________________________________________________");
 log("Reload:", new Date);
@@ -32,14 +28,11 @@ log("Reload:", new Date);
 var slashClips = new Array();
 
 
-
 function osc(){
 	var args = arrayfromargs(arguments);
 	var targetAddress = args.join(' ');
 	log("target Address: " + targetAddress);
 	
-
-
 	for(var i = 0; i < slashClips.length; i++){
 		
 		if(slashClips[i].address == targetAddress){
