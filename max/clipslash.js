@@ -1,5 +1,5 @@
 inlets = 1;
-outlets = 2;
+outlets = 1;
 
 function log() {
   for(var i=0,len=arguments.length; i<len; i++) {
@@ -31,14 +31,14 @@ var slashClips = new Array();
 function osc(){
 	var args = arrayfromargs(arguments);
 	var targetAddress = args.join(' ');
-	log("target Address: " + targetAddress);
+	//log("target Address: " + targetAddress);
 	
 	for(var i = 0; i < slashClips.length; i++){
 		
 		if(slashClips[i].address == targetAddress){
 			var clip = new LiveAPI("live_set tracks " + slashClips[i].track + " clip_slots " + slashClips[i].clipslot + " clip");
 			clip.call("fire");
-			outlet(1, "bang");
+			outlet(0, targetAddress);
 		}
 	}
 
@@ -76,15 +76,16 @@ function findSlashClips(){
 						clipslot:  j
 					}
 					slashClips.push(slashClip);
+					log(slashClip);
 				}
 			}
 		}
 
 	}
 	
-	log("--- slashClips");
-	log(slashClips);
-	log("---");
+	// log("--- slashClips");
+	// log(slashClips);
+	// log("---");
 
 }
 

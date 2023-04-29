@@ -3,7 +3,7 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
+			"minor" : 3,
 			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
@@ -40,25 +40,64 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-1",
+					"id" : "obj-14",
 					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 307.0, 277.0, 32.0, 22.0 ],
+					"text" : "gate"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 385.0, 223.0, 32.0, 22.0 ],
+					"patching_rect" : [ 333.0, 243.0, 94.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 31.0, 136.0, 94.0, 20.0 ],
 					"text" : "print"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-6",
+					"id" : "obj-10",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 307.0, 243.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 5.0, 136.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 307.0, 313.0, 120.0, 22.0 ],
+					"text" : "print \"fired slashclip \""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 32.0, 88.0, 102.0, 20.0 ],
+					"patching_rect" : [ 5.0, 87.400000000000034, 102.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 29.0, 59.0, 102.0, 20.0 ],
-					"text" : "fired slashclip!"
+					"presentation_rect" : [ 5.0, 87.400000000000034, 131.0, 20.0 ],
+					"text" : "last fired:"
 				}
 
 			}
@@ -72,20 +111,6 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 29.0, 30.400000000000034, 102.0, 20.0 ],
 					"text" : "reload"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 199.0, 293.0, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 5.0, 57.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -108,7 +133,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 392.0, 94.0, 46.0, 22.0 ],
+					"patching_rect" : [ 341.0, 100.0, 46.0, 22.0 ],
 					"text" : "port $1"
 				}
 
@@ -134,7 +159,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 237.0, 59.0, 102.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.0, 87.400000000000034, 123.0, 20.0 ],
+					"presentation_rect" : [ 5.0, 58.400000000000034, 131.0, 20.0 ],
 					"text" : "listening on port 5145"
 				}
 
@@ -158,18 +183,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 80.0, 293.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-9",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 139.0, 293.0, 32.0, 22.0 ],
-					"text" : "print"
+					"patching_rect" : [ 80.0, 293.0, 159.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 5.0, 109.400000000000034, 159.0, 22.0 ]
 				}
 
 			}
@@ -193,8 +209,8 @@
 					"id" : "obj-3",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 139.0, 242.5, 79.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "clipslash.js",
@@ -234,8 +250,22 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
 					"source" : [ "obj-105", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-14", 0 ]
 				}
 
 			}
@@ -262,16 +292,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"order" : 0,
-					"source" : [ "obj-26", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"order" : 1,
 					"source" : [ "obj-26", 0 ]
 				}
 
@@ -286,14 +307,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
-					"source" : [ "obj-3", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
+					"destination" : [ "obj-14", 1 ],
 					"order" : 0,
 					"source" : [ "obj-3", 0 ]
 				}
@@ -302,6 +316,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-105", 0 ],
+					"disabled" : 1,
 					"source" : [ "obj-76", 0 ]
 				}
 
@@ -309,7 +324,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "clipslash.js",
-				"bootpath" : "~/repos/belief-control/max/working files",
+				"bootpath" : "~/repos/belief-control/max",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
