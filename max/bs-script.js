@@ -19,6 +19,16 @@ var currentState = {
 	bank0: "",
 	bank1: "",
 	bank2: "",
+	
+	//delays in bars
+	delay0: 0,
+	delay1: 24,
+	delay2: 48,
+
+	//durations in bars
+	duration0: 64,
+	duration1: 64,
+	duration2: 64
 
 //todo create getters and setters
 
@@ -80,7 +90,7 @@ function cueGroup(newIndex){
 
 	//sw or focus?
 	if(Math.random() > 0.5){
-		currentState.fosw = "sw";
+		currentState.fosw = "fo";
 		currentState.bank1 = groups[thisIndex].fo;		
 	}
 	else{
@@ -104,7 +114,8 @@ function cueGroup(newIndex){
 	}
 
 	outlet(0, "/state", currentState.name, currentState.brcl, currentState.fosw, currentState.txto);
-	outlet(0, "/banktypes", currentState.brcl, currentState.fosw, currentState.txto);
+	outlet(0, "/delays", currentState.delay0, currentState.delay1, currentState.delay2);
+	outlet(0, "/durations", currentState.duration0, currentState.duration1, currentState.duration2);
 	outlet(0, "/banks", currentState.bank0, currentState.bank1, currentState.bank2);
 
 	// outlet(0, "/enableosc", 0);
