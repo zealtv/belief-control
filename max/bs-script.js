@@ -6,6 +6,8 @@ var tones = new Array();
 var textures = new Array();
 
 
+
+
 var currentState = {
 	
 	index: 0,
@@ -16,21 +18,23 @@ var currentState = {
 	fosw: "fo",
 	//textural/tonal
 	txto: "tx",
+
+	//folders
 	bank0: "",
 	bank1: "",
 	bank2: "",
 	
 	//delays in bars
 	delay0: 0,
-	delay1: 24,
-	delay2: 48,
+	delay1: 1,
+	delay2: 2,
 
 	//durations in bars
-	duration0: 64,
-	duration1: 64,
-	duration2: 64
+	duration0: 4,
+	duration1: 5,
+	duration2: 6
 
-//todo create getters and setters
+	//slashclips
 
 };
 
@@ -69,8 +73,6 @@ makeTextures();
 // MAIN ---------------------------------
 function cueGroup(newIndex){
 	var thisIndex = newIndex%(groups.length);
-	log("newIndex", newIndex);
-	log("thisIndex", thisIndex);
 	var newName = groups[thisIndex].name;
 	
 	currentState.index = newIndex;
