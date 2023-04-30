@@ -40,11 +40,23 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 139.0, 192.0, 61.0, 22.0 ],
+					"text" : "delay 500"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-12",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 152.0, 386.0, 32.0, 22.0 ],
+					"patching_rect" : [ 502.0, 274.0, 32.0, 22.0 ],
 					"text" : "print"
 				}
 
@@ -56,7 +68,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 152.0, 348.0, 234.0, 22.0 ],
+					"patching_rect" : [ 502.0, 236.0, 234.0, 22.0 ],
 					"text" : "finding slashclips. this might take a while..."
 				}
 
@@ -206,7 +218,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 139.0, 197.0, 85.0, 22.0 ],
+					"patching_rect" : [ 139.0, 224.0, 85.0, 22.0 ],
 					"text" : "findSlashClips"
 				}
 
@@ -218,7 +230,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 80.0, 293.0, 159.0, 22.0 ],
+					"patching_rect" : [ 80.0, 320.0, 159.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 5.0, 109.400000000000034, 159.0, 22.0 ]
 				}
@@ -246,7 +258,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 139.0, 242.5, 79.0, 22.0 ],
+					"patching_rect" : [ 139.0, 269.5, 79.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "clipslash.js",
 						"parameter_enable" : 0
@@ -350,7 +362,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-16", 0 ],
+					"destination" : [ "obj-7", 0 ],
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -359,6 +371,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-6", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
