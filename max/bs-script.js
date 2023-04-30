@@ -58,8 +58,6 @@ makeTextures();
 
 // MAIN ---------------------------------
 function cueGroup(newIndex){
-
-
 	var thisIndex = newIndex%(groups.length);
 	log("newIndex", newIndex);
 	log("thisIndex", thisIndex);
@@ -127,7 +125,8 @@ function makeGroups(){
 		br: "A-br-activities",
 		cl:"A-cl-activities", 
 		fo: "A-focus-future1",
-		sw: "A-sw-aspiration-freedom"
+		// sw: "A-sw-aspiration-freedom"
+		sw: "A-sw2-aspiration-freedom"
 		//A-cl-activities-air
 		//A-sw-aspiration-freedom
 		//A-sw-aspiration-freedom-eharplo-ehflugel
@@ -139,7 +138,8 @@ function makeGroups(){
 		br: "B-br-mind-relaxation1",
 		cl:"B-cl-mind-relaxtion1", 
 		fo: "B-focus-identity1",
-		sw: "B-sw-capitalism-purpose"
+		// sw: "B-sw-capitalism-purpose"
+		sw: "B-sw2-capitalism-purpose"
 		//B-br-mind-relaxation1-sine
 	};
 	groups.push(B);
@@ -149,7 +149,8 @@ function makeGroups(){
 		br: "C-br-emotions",
 		cl:"C-cl-emotions", 
 		fo: "C-focus-dreams-loneliness-love2",
-		sw: "C-sw-change-mix-words"
+		sw: "C-sw2-change-mix-words"
+		// sw: "C-sw-change-mix-words"
 	};
 	groups.push(C);
 
@@ -158,7 +159,8 @@ function makeGroups(){
 		br: "D-br-kids-myth",
 		cl:"D-cl-kids-myth", 
 		fo: "D-focus-future2",
-		sw: "D-sw-conflict-diversity-music"
+		// sw: "D-sw-conflict-diversity-music"
+		sw: "D-sw2-conflict-diversity-music"
 	};
 	groups.push(D);
 
@@ -167,7 +169,8 @@ function makeGroups(){
 		br: "E-br-relationships1",
 		cl:"E-cl-relationships1", 
 		fo: "E-focus-philosophy1",
-		sw: "E-sw-clothes-shoes-feeling"
+		// sw: "E-sw-clothes-shoes-feeling"
+		sw: "E-sw2-clothes-shoes-feeling"
 	};
 	groups.push(E);
 
@@ -176,7 +179,8 @@ function makeGroups(){
 		br: "F-br-community-world",
 		cl:"F-cl-community-world", 
 		fo: "F-focus-beauty-order-senses",
-		sw: "F-sw-climate-travel"
+		// sw: "F-sw-climate-travel"
+		sw: "F-sw2-climate-travel"
 	};
 	groups.push(F);
 
@@ -185,7 +189,8 @@ function makeGroups(){
 		br: "G-br-education",
 		cl:"G-cl-education", 
 		fo: "G-focus-aliens-knowledge",
-		sw: "G-sw-creativity-death"
+		// sw: "G-sw-creativity-death"
+		sw: "G-sw2-creativity-death"
 	};
 	groups.push(G);
 
@@ -194,7 +199,8 @@ function makeGroups(){
 		br: "H-br-behaviour-physicality2",
 		cl:"H-cl-behaviour-physicality2", 
 		fo: "H-focus-extended",
-		sw: "H-sw-energy-friends-kindness-struggle"
+		// sw: "H-sw-energy-friends-kindness-struggle"
+		sw: "H-sw2-energy-friends-kindness-struggle"
 	};
 	groups.push(H);
 
@@ -212,7 +218,8 @@ function makeGroups(){
 		br: "J-br-love1",
 		cl:"J-cl-love1", 
 		fo: "J-focus-karma-magic-plants",
-		sw: "J-sw-equality"
+		sw: "J-sw2-equality"
+		// sw: "J-sw-equality"
 	};
 	groups.push(J);
 
@@ -222,7 +229,8 @@ function makeGroups(){
 		br: "K-br-care-memory",
 		cl:"K-cl-care-memory", 
 		fo: "K-focus-conspiracy-fear",
-		sw: "K-sw-friends-kindess-struggle"
+		// sw: "K-sw-friends-kindess-struggle"
+		sw: "K-sw-freinds-kindness-struggle"
 	};
 	groups.push(K);
 
@@ -231,7 +239,8 @@ function makeGroups(){
 		br: "L-br-health-healing1",
 		cl:"L-cl-health-healing1", 
 		fo: "L-focus-ethics-health-healing",
-		sw: "L-sw-politics"
+		// sw: "L-sw-politics"
+		sw: "L-sw2-politics"
 	};
 	groups.push(L);
 
@@ -240,7 +249,8 @@ function makeGroups(){
 		br: "M-br-spiritual1",
 		cl:"M-cl-spritual1", 
 		fo: "M-focus-chaos-ghosts-morality",
-		sw: "M-sw-humans-reincarnation"
+		// sw: "M-sw-humans-reincarnation"
+		sw: "M-sw2-humans-reincarnation"
 	};
 	groups.push(M);
 
@@ -258,7 +268,8 @@ function makeGroups(){
 		br: "O-br-selfawareness1",
 		cl:"O-cl-selfawareness1", 
 		fo: "O-focus-objects",
-		sw: "O-sw-life"
+		sw: "O-sw2-life"
+		// sw: "O-sw-life"
 	};
 	groups.push(O);
 
@@ -267,7 +278,8 @@ function makeGroups(){
 		br: "P-br-food1",
 		cl:"P-cl-food1", 
 		fo: "P-focus-identity2-intimacy",
-		sw: "P-sw-mental-music"
+		// sw: "P-sw-mental-music"
+		sw: "P-sw2-mental-music"
 	};
 	groups.push(P);
 
@@ -276,7 +288,8 @@ function makeGroups(){
 		br: "Q-br-death1",
 		cl:"Q-cl-death1", 
 		fo: "Q-focus-selfawareness2-superstition",
-		sw: "Q-sw-nature"
+		sw: "Q-sw2-nature"
+		// sw: "Q-sw-nature"
 	};
 	groups.push(Q);
 
@@ -285,7 +298,7 @@ function makeGroups(){
 		br: "R-br-connection",
 		cl:"R-cl-connection", 
 		fo: "R-focus-science-society",
-		sw: "R-sw-gender"
+		sw: "R-sw2-gender"
 	};
 	groups.push(R);
 
@@ -294,7 +307,7 @@ function makeGroups(){
 		br: "S-br-culture",
 		cl:"S-cl-culture", 
 		fo: "S-focus-relationships2-sleep",
-		sw: "S-sw-technology-time"
+		sw: "S-sw2-technology-time"
 	};
 	groups.push(S);
 
@@ -303,7 +316,7 @@ function makeGroups(){
 		br: "T-br-animals",
 		cl:"T-cl-animals", 
 		fo: "T-focus-cities-power",
-		sw: "T-sw-change-mix-words"
+		sw: "_eh-harmon-stem"
 	};
 	groups.push(T);
 
@@ -312,7 +325,7 @@ function makeGroups(){
 		br: "U-br-work",
 		cl:"U-cl-work", 
 		// fo: "",
-		sw: "U-sw-humour"
+		sw: "_sine-soft"
 	};
 	groups.push(U);	
 
@@ -321,7 +334,7 @@ function makeGroups(){
 		br: "V-br-home",
 		cl:"V-cl-home", 
 		fo: "V-focus-philosophy2",
-		sw: "V-sw-equality"
+		sw: "J-sw2-equality"
 	};
 	groups.push(V);
 
@@ -330,7 +343,7 @@ function makeGroups(){
 		br: "W-br-physicality1",
 		cl:"W-cl-physicality1", 
 		fo: "W-focus-spirtual2",
-		sw: "W-sw-art-soul"
+		sw: "_eh-air-air-harmon"
 	};
 	groups.push(W);	
 
@@ -339,7 +352,7 @@ function makeGroups(){
 		br: "X-br-people",
 		cl:"X-cl-people", 
 		fo: "X-focus-drugs-ritual",
-		sw: "X-sw-friends-kindess-struggle"
+		sw: "K-sw-freinds-kindness-struggle"
 	};
 	groups.push(X);	
 
@@ -348,7 +361,7 @@ function makeGroups(){
 		br: "Y-br-family1",
 		cl:"Y-cl-family1", 
 		fo: "Y-focus-communication",
-		sw: "Y-sw-mental-music"
+		sw: "P-sw2-mental-music"
 	};
 	groups.push(Y);	
 
@@ -357,7 +370,7 @@ function makeGroups(){
 		br: "Z-br-fun-sport",
 		cl:"Z-cl-fun-sport", 
 		fo: "Z-focus-money-trauma",
-		sw: "Z-sw-technology-time"
+		sw: "_eh-harmon-stem"
 	};
 	groups.push(Z);	
 
@@ -366,7 +379,7 @@ function makeGroups(){
 		br: "ZA-br-food2-institutions2",
 		cl:"ZA-cl-food2-institutions2", 
 		fo: "ZA-happy-joy",
-		sw: "ZA-sw-technology-time"
+		sw: "S-sw2-technology-time"
 	};
 	groups.push(ZA);
 
@@ -375,7 +388,8 @@ function makeGroups(){
 		br: "ZB-br-family2",
 		cl:"ZB-cl-family2", 
 		fo: "ZB-focus-psychology",
-		sw: "ZB-sw-insitutions1"
+		// sw: "ZB-sw-insitutions1"
+		sw: "_sine-soft"
 	};
 	groups.push(ZB);
 
