@@ -40,6 +40,49 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"automation" : "/targetOn",
+					"automationon" : "/targetOnQueue",
+					"id" : "obj-39",
+					"maxclass" : "live.text",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 677.666666666666742, 699.0, 79.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 9.0, 137.408163265306115, 61.0, 22.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "/targetOn", "/targetOnQueue" ],
+							"parameter_linknames" : 1,
+							"parameter_longname" : "queue",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "queue",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"text" : "/targetOn",
+					"texton" : "/targetOnQueue",
+					"varname" : "queue"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-38",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 675.0, 740.0, 41.0, 22.0 ],
+					"text" : "set $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-21",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -648,7 +691,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 833.666666666666742, 559.0, 73.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 9.0, 99.408163265306115, 61.0, 63.0 ],
+					"presentation_rect" : [ 9.0, 99.408163265306115, 61.0, 37.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "play to end off", "play to end on" ],
@@ -1091,6 +1134,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"source" : [ "obj-38", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-38", 0 ],
+					"source" : [ "obj-39", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-6", 2 ],
 					"source" : [ "obj-4", 0 ]
 				}
@@ -1237,6 +1294,7 @@
 			"obj-23" : [ "live.numbox[1]", "live.numbox", 0 ],
 			"obj-24" : [ "rate-multiply", "rate", 0 ],
 			"obj-26" : [ "play-to-end", "play to end", 0 ],
+			"obj-39" : [ "queue", "queue", 0 ],
 			"obj-4" : [ "sample-index", "sample", 0 ],
 			"obj-46" : [ "autostep", "auto", 0 ],
 			"obj-5" : [ "gain", "gain", 0 ],
