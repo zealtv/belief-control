@@ -5,8 +5,7 @@ var groups = new Array();
 var tones = new Array();
 var textures = new Array();
 
-
-
+var previousState = null;
 
 var currentState = {
 	
@@ -34,7 +33,7 @@ var currentState = {
 	duration1: 5,
 	duration2: 6,
 
-	totalDuration: 8
+	totalDuration: 8,
 
 	//slashclips
 
@@ -74,6 +73,9 @@ makeTextures();
 
 // MAIN ---------------------------------
 function cueGroup(newIndex){
+	
+	previousState = JSON.parse(JSON.stringify(currentState));
+	
 	var thisIndex = newIndex%(groups.length);
 	var newName = groups[thisIndex].name;
 	
@@ -81,7 +83,6 @@ function cueGroup(newIndex){
 	currentState.name = newName;
 
 	
-
 	//CHOOSE PAIRS
 	//br or cl?
 	if(Math.random() > 0.2){
@@ -93,7 +94,6 @@ function cueGroup(newIndex){
 		currentState.bank0 = groups[thisIndex].cl;
 	}
 
-
 	//sw or focus?
 	if(Math.random() > 0.5){
 		currentState.fosw = "fo";
@@ -103,7 +103,6 @@ function cueGroup(newIndex){
 		currentState.fosw = "sw";
 		currentState.bank1 = groups[thisIndex].sw;		
 	}
-
 
 	//tones or textures?
 	if(Math.random() > 0.5){
@@ -124,14 +123,13 @@ function cueGroup(newIndex){
 	//calculate total duration (longest of all delay/duration pairs)
 
 
-
 	outlet(0, "/state", currentState.name, currentState.brcl, currentState.fosw, currentState.txto);
 	outlet(0, "/delays", currentState.delay0, currentState.delay1, currentState.delay2);
 	outlet(0, "/durations", currentState.duration0, currentState.duration1, currentState.duration2);
 	outlet(0, "/totalDuration", currentState.totalDuration);
 	outlet(0, "/banks", currentState.bank0, currentState.bank1, currentState.bank2);
 
-	// outlet(0, "/enableosc", 0);
+
 }
 
 
