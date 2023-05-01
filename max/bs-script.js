@@ -439,66 +439,66 @@ function makeTones(){
 	}
 	tones.push(harmon);
 
-	const trumpet = {
-		folder: "_eh-open",
-		clip: ""
-	}
-	tones.push(trumpet);
+	// const trumpet = {
+	// 	folder: "_eh-open",
+	// 	clip: ""
+	// }
+	// tones.push(trumpet);
 
-	const melodies = {
-		folder: "_eh-melodies",
-		clip: ""
-	}
-	tones.push(melodies);
+	// const melodies = {
+	// 	folder: "_eh-melodies",
+	// 	clip: ""
+	// }
+	// tones.push(melodies);
 
-	const lydianstack = {
-		folder: "_eh-lydian-stack",
-		clip: ""
-	}
-	tones.push(lydianstack);
+	// const lydianstack = {
+	// 	folder: "_eh-lydian-stack",
+	// 	clip: ""
+	// }
+	// tones.push(lydianstack);
 
-	const alto = {
-		folder: "_cb-alto",
-		clip: ""
-	}
-	tones.push(alto);
+	// const alto = {
+	// 	folder: "_cb-alto",
+	// 	clip: ""
+	// }
+	// tones.push(alto);
 
-	const arphi = {
-		folder: "_eh-arp-hi",
-		clip: ""
-	}
-	tones.push(arphi);
+	// const arphi = {
+	// 	folder: "_eh-arp-hi",
+	// 	clip: ""
+	// }
+	// tones.push(arphi);
 
-	const arplo = {
-		folder: "_eh-arp-lo",
-		clip: ""
-	}
-	tones.push(arplo);
+	// const arplo = {
+	// 	folder: "_eh-arp-lo",
+	// 	clip: ""
+	// }
+	// tones.push(arplo);
 
-	const sinedecay = {
-		folder: "_sine-decay",
-		clip: ""
-	}
-	tones.push(sinedecay);
+	// const sinedecay = {
+	// 	folder: "_sine-decay",
+	// 	clip: ""
+	// }
+	// tones.push(sinedecay);
 
-	const sinehard = {
-		folder: "_sine-hard",
-		clip: ""
-	}
-	tones.push(sinehard);
+	// const sinehard = {
+	// 	folder: "_sine-hard",
+	// 	clip: ""
+	// }
+	// tones.push(sinehard);
 
 
-	const sineshort = {
-		folder: "_sine-short",
-		clip: ""
-	}
-	tones.push(sineshort);
+	// const sineshort = {
+	// 	folder: "_sine-short",
+	// 	clip: ""
+	// }
+	// tones.push(sineshort);
 
-	const sinesoft = {
-		folder: "_sine-soft",
-		clip: ""
-	}
-	tones.push(sinesoft);
+	// const sinesoft = {
+	// 	folder: "_sine-soft",
+	// 	clip: ""
+	// }
+	// tones.push(sinesoft);
 
 	// _eh-warmups
 	// _numbers
@@ -517,29 +517,28 @@ function makeTextures(){
 	}
 	textures.push(industrial);
 
-
 	const air = {
 		folder: "_eh-air-air-harmon",
 		clip: ""
 	}
 	textures.push(air);
 
-	const pinknoise = {
-		folder: "_noise-pink",
-		clip: ""
-	}
-	textures.push(pinknoise);
+	// const pinknoise = {
+	// 	folder: "_noise-pink",
+	// 	clip: ""
+	// }
+	// textures.push(pinknoise);
 
-	const whitenoise = {
-		folder: "_noise-white",
-		clip: ""
-	}
-	textures.push(whitenoise);
+	// const whitenoise = {
+	// 	folder: "_noise-white",
+	// 	clip: ""
+	// }
+	// textures.push(whitenoise);
 
-	const sinenoiseair = {
-		folder: "_sines-noise-air",
-		clip: ""
-	}
-	textures.push(sinenoiseair);
+	// const sinenoiseair = {
+	// 	folder: "_sines-noise-air",
+	// 	clip: ""
+	// }
+	// textures.push(sinenoiseair);
 
 }
