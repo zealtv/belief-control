@@ -88,7 +88,7 @@ function cueGroup(newIndex){
 	
 	//CHOOSE PAIRS
 	//br or cl?
-	if(Math.random() > 0.2){
+	if(Math.random() > 0.1){
 		currentState.brcl = "br";
 		currentState.bank0 = groups[thisIndex].br;
 	}
