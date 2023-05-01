@@ -25,15 +25,15 @@ var currentState = {
 	
 	//delays in bars
 	delay0: 0,
-	delay1: 16,
-	delay2: 32,
+	delay1: 32,
+	delay2: 60,
 
 	//durations in bars
-	duration0: 32,
-	duration1: 32,
-	duration2: 32,
+	duration0: 140,
+	duration1: 80,
+	duration2: 120,
 
-	totalDuration: 64,
+	totalDuration: 141,
 
 	//slashclips
 	slashclip0: "",

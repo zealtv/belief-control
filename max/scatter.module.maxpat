@@ -853,7 +853,7 @@
 							"parameter_linknames" : 1,
 							"parameter_longname" : "interval",
 							"parameter_mmax" : 6000.0,
-							"parameter_mmin" : 5.0,
+							"parameter_mmin" : 50.0,
 							"parameter_shortname" : "interval",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 0
