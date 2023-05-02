@@ -544,16 +544,16 @@ function makeTextures(){
 	}
 	textures.push(pinknoise);
 
-	const whitenoise = {
-		folder: "_noise-white",
-		clip: ""
-	}
-	textures.push(whitenoise);
+	// const whitenoise = {
+	// 	folder: "_noise-white",
+	// 	clip: ""
+	// }
+	// textures.push(whitenoise);
 
-	const sinenoiseair = {
-		folder: "_sines-noise-air",
-		clip: ""
-	}
-	textures.push(sinenoiseair);
+	// const sinenoiseair = {
+	// 	folder: "_sines-noise-air",
+	// 	clip: ""
+	// }
+	// textures.push(sinenoiseair);
 
 }
