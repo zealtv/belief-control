@@ -136,13 +136,11 @@ function cueGroup(newIndex){
 		currentState.clip2 =  groups[thisIndex].clip2;
 		log("loaded custom slashclip: ", currentState.clip2);
 	}
-
-
-	//CHOOSE DELAYS AND DURATIONS
-	//calculate total duration (longest of all delay/duration pairs)
+	
+	outlet(0, "/clips", currentState.clip0, currentState.clip1, currentState.clip2);
 	outlet(0, "/state", currentState.name, currentState.brcl, currentState.fosw, currentState.txto);
 	outlet(0, "/banks", currentState.bank0, currentState.bank1, currentState.bank2);
-	outlet(0, "/clips", currentState.clip0, currentState.clip1, currentState.clip2);
+	
 
 
 }
@@ -362,6 +360,7 @@ function makeGroups(){
 		name: "U",
 		br: "U-br-work",
 		cl:"U-cl-work", 
+		fo: "C-focus-dreams-loneliness-love2",
 		// fo: "",
 		sw: "_sine-soft",
 		clip1: "/sw/start low"
