@@ -84,50 +84,65 @@ function cueGroup(newIndex){
 	
 	currentState.index = newIndex;
 	currentState.name = newName;
-
 	
 	//CHOOSE PAIRS
 	//br or cl?
 	if(Math.random() > -1.){
+		currentState.clip0 = "/br/start";
 		currentState.brcl = "br";
 		currentState.bank0 = groups[thisIndex].br;
+
 	}
 	else{
+		currentState.clip0 = "/cl/start";
 		currentState.brcl = "cl";
 		currentState.bank0 = groups[thisIndex].cl;
+	}
+	if( groups[thisIndex].clip0 != null){
+		currentState.clip0 =  groups[thisIndex].clip0;
+		log("loaded custom slashclip: ", currentState.clip0);
 	}
 
 	//sw or focus?
 	if(Math.random() > 0.5){
+		currentState.clip1 = "/sw/start";
 		currentState.fosw = "fo";
 		currentState.bank1 = groups[thisIndex].fo;		
 	}
 	else{
+		currentState.clip1 = "/fo/start";
 		currentState.fosw = "sw";
 		currentState.bank1 = groups[thisIndex].sw;		
+	}
+	if( groups[thisIndex].clip1 != null){
+		currentState.clip1 =  groups[thisIndex].clip1;
+		log("loaded custom slashclip: ", currentState.clip1);
 	}
 
 	//tones or textures?
 	if(Math.random() > 0.5){
+		currentState.clip2 = "/to/start";
 		currentState.txto = "to";
 		currentState.bank2 = tones[Math.floor(Math.random()*tones.length)].folder;
 		// currentState.bank2 = tones[0].folder;
-		
 	}
 	else{
+		currentState.clip2 = "/tx/start";
 		currentState.txto = "tx";
 		currentState.bank2 = textures[Math.floor(Math.random()*textures.length)].folder;
 		// currentState.bank2 = textures[0].folder;
-		
+	}
+	if( groups[thisIndex].clip2 != null){
+		currentState.clip2 =  groups[thisIndex].clip2;
+		log("loaded custom slashclip: ", currentState.clip2);
 	}
 
 
 	//CHOOSE DELAYS AND DURATIONS
 	//calculate total duration (longest of all delay/duration pairs)
-
-
 	outlet(0, "/state", currentState.name, currentState.brcl, currentState.fosw, currentState.txto);
 	outlet(0, "/banks", currentState.bank0, currentState.bank1, currentState.bank2);
+	outlet(0, "/clips", currentState.clip0, currentState.clip1, currentState.clip2);
 
 
 }
@@ -338,7 +353,8 @@ function makeGroups(){
 		br: "T-br-animals",
 		cl:"T-cl-animals", 
 		fo: "T-focus-cities-power",
-		sw: "_eh-harmon-stem"
+		sw: "_eh-harmon-stem",
+		clip1: "/sw/start low"
 	};
 	groups.push(T);
 
@@ -347,7 +363,8 @@ function makeGroups(){
 		br: "U-br-work",
 		cl:"U-cl-work", 
 		// fo: "",
-		sw: "_sine-soft"
+		sw: "_sine-soft",
+		clip1: "/sw/start low"
 	};
 	groups.push(U);	
 
@@ -392,7 +409,8 @@ function makeGroups(){
 		br: "Z-br-fun-sport",
 		cl:"Z-cl-fun-sport", 
 		fo: "Z-focus-money-trauma",
-		sw: "_eh-harmon-stem"
+		sw: "_eh-harmon-stem",
+		clip1: "/sw/start low"
 	};
 	groups.push(Z);	
 
@@ -410,8 +428,9 @@ function makeGroups(){
 		br: "ZB-br-family2",
 		cl:"ZB-cl-family2", 
 		fo: "ZB-focus-psychology",
+		sw: "_sine-decay",
 		// sw: "ZB-sw-insitutions1"
-		sw: "_sine-soft"
+		clip1: "/sw/start low"
 	};
 	groups.push(ZB);
 

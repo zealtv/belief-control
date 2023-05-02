@@ -153,7 +153,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 685.0, 394.0, 50.0, 22.0 ],
-					"text" : "27"
+					"text" : "6"
 				}
 
 			}
@@ -246,7 +246,7 @@
 					"patching_rect" : [ 679.0, 103.0, 53.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 374.0, 82.0, 106.0, 22.0 ],
-					"text" : "/wind 0. 1."
+					"text" : "/wind 180. 0."
 				}
 
 			}
@@ -361,7 +361,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 43.0, 230.0, 292.999999999999943, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 84.0, 64.0, 193.999999999999943, 22.0 ]
+					"presentation_rect" : [ 84.0, 64.0, 193.999999999999943, 22.0 ],
+					"text" : "_eh-flugel-harmon 1"
 				}
 
 			}
@@ -374,7 +375,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 43.0, 189.0, 293.000000000000057, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 84.0, 40.0, 194.000000000000057, 22.0 ]
+					"presentation_rect" : [ 84.0, 40.0, 194.000000000000057, 22.0 ],
+					"text" : "A-focus-future1 1"
 				}
 
 			}
@@ -387,7 +389,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 43.0, 146.0, 293.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 84.0, 16.0, 194.0, 22.0 ]
+					"presentation_rect" : [ 84.0, 16.0, 194.0, 22.0 ],
+					"text" : "_numbers 0"
 				}
 
 			}
