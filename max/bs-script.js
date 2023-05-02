@@ -25,15 +25,15 @@ var currentState = {
 	
 	//delays in bars
 	delay0: 0,
-	delay1: 32,
+	delay1: 0,
 	delay2: 60,
 
 	//durations in bars
-	duration0: 140,
-	duration1: 80,
-	duration2: 120,
+	duration0: 280,
+	duration1: 280,
+	duration2: 280,
 
-	totalDuration: 141,
+	totalDuration: 280,
 
 	//slashclips
 	slashclip0: "",
@@ -88,7 +88,7 @@ function cueGroup(newIndex){
 	
 	//CHOOSE PAIRS
 	//br or cl?
-	if(Math.random() > 0.1){
+	if(Math.random() > -1.){
 		currentState.brcl = "br";
 		currentState.bank0 = groups[thisIndex].br;
 	}
@@ -127,9 +127,6 @@ function cueGroup(newIndex){
 
 
 	outlet(0, "/state", currentState.name, currentState.brcl, currentState.fosw, currentState.txto);
-	outlet(0, "/delays", currentState.delay0, currentState.delay1, currentState.delay2);
-	outlet(0, "/durations", currentState.duration0, currentState.duration1, currentState.duration2);
-	outlet(0, "/totalDuration", currentState.totalDuration);
 	outlet(0, "/banks", currentState.bank0, currentState.bank1, currentState.bank2);
 
 
@@ -523,22 +520,22 @@ function makeTextures(){
 	}
 	textures.push(air);
 
-	// const pinknoise = {
-	// 	folder: "_noise-pink",
-	// 	clip: ""
-	// }
-	// textures.push(pinknoise);
+	const pinknoise = {
+		folder: "_noise-pink",
+		clip: ""
+	}
+	textures.push(pinknoise);
 
-	// const whitenoise = {
-	// 	folder: "_noise-white",
-	// 	clip: ""
-	// }
-	// textures.push(whitenoise);
+	const whitenoise = {
+		folder: "_noise-white",
+		clip: ""
+	}
+	textures.push(whitenoise);
 
-	// const sinenoiseair = {
-	// 	folder: "_sines-noise-air",
-	// 	clip: ""
-	// }
-	// textures.push(sinenoiseair);
+	const sinenoiseair = {
+		folder: "_sines-noise-air",
+		clip: ""
+	}
+	textures.push(sinenoiseair);
 
 }
