@@ -105,12 +105,12 @@ function cueGroup(newIndex){
 
 	//sw or focus?
 	if(Math.random() > 0.5){
-		currentState.clip1 = "/sw/start";
+		currentState.clip1 = "/fo/start";
 		currentState.fosw = "fo";
 		currentState.bank1 = groups[thisIndex].fo;		
 	}
 	else{
-		currentState.clip1 = "/fo/start";
+		currentState.clip1 = "/sw/start";
 		currentState.fosw = "sw";
 		currentState.bank1 = groups[thisIndex].sw;		
 	}
