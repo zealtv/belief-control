@@ -351,7 +351,7 @@ function makeGroups(){
 		br: "T-br-animals",
 		cl:"T-cl-animals", 
 		fo: "T-focus-cities-power",
-		sw: "_eh-harmon-stem",
+		sw: "_sine-soft",
 		clip1: "/sw/start low"
 	};
 	groups.push(T);
@@ -381,7 +381,7 @@ function makeGroups(){
 		br: "W-br-physicality1",
 		cl:"W-cl-physicality1", 
 		fo: "W-focus-spirtual2",
-		sw: "_eh-air-air-harmon"
+		sw: "_sine-soft"
 	};
 	groups.push(W);	
 
@@ -408,7 +408,7 @@ function makeGroups(){
 		br: "Z-br-fun-sport",
 		cl:"Z-cl-fun-sport", 
 		fo: "Z-focus-money-trauma",
-		sw: "_eh-harmon-stem",
+		sw: "_sine-soft",
 		clip1: "/sw/start low"
 	};
 	groups.push(Z);	
@@ -432,6 +432,8 @@ function makeGroups(){
 		clip1: "/sw/start low"
 	};
 	groups.push(ZB);
+
+	
 
 }
 
