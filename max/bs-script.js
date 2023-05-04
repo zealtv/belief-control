@@ -120,7 +120,7 @@ function cueGroup(newIndex){
 	}
 
 	//tones or textures?
-	if(Math.random() > 0.5){
+	if(Math.random() > 0.35){
 		currentState.clip2 = "/to/start";
 		currentState.txto = "to";
 		currentState.bank2 = tones[Math.floor(Math.random()*tones.length)].folder;
