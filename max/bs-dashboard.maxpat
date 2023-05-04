@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1387.0, 872.0, 543.0, 208.0 ],
+		"rect" : [ 1379.0, 872.0, 551.0, 208.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -153,7 +153,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 685.0, 394.0, 50.0, 22.0 ],
-					"text" : "47"
+					"text" : "21"
 				}
 
 			}
@@ -246,7 +246,7 @@
 					"patching_rect" : [ 679.0, 103.0, 53.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 374.0, 82.0, 106.0, 22.0 ],
-					"text" : "/wind 90. 1."
+					"text" : "/wind 135. 1."
 				}
 
 			}
@@ -362,7 +362,7 @@
 					"patching_rect" : [ 43.0, 230.0, 292.999999999999943, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 84.0, 64.0, 193.999999999999943, 22.0 ],
-					"text" : "_eh-harmon-stem 1"
+					"text" : "_noise-pink 1"
 				}
 
 			}
@@ -376,7 +376,7 @@
 					"patching_rect" : [ 43.0, 189.0, 293.000000000000057, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 84.0, 40.0, 194.000000000000057, 22.0 ],
-					"text" : "K-sw-freinds-kindness-struggle 1"
+					"text" : "B-focus-identity1 1"
 				}
 
 			}
@@ -390,7 +390,7 @@
 					"patching_rect" : [ 43.0, 146.0, 293.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 84.0, 16.0, 194.0, 22.0 ],
-					"text" : "K-br-care-memory 0"
+					"text" : "B-br-mind-relaxation1 0"
 				}
 
 			}

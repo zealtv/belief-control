@@ -351,8 +351,9 @@ function makeGroups(){
 		br: "T-br-animals",
 		cl:"T-cl-animals", 
 		fo: "T-focus-cities-power",
-		sw: "_sine-soft",
-		clip1: "/sw/start low"
+		// sw: "_sine-soft",
+		// clip1: "/sw/start low"
+		sw: "C-sw2-change-mix-words"		
 	};
 	groups.push(T);
 
@@ -360,10 +361,11 @@ function makeGroups(){
 		name: "U",
 		br: "U-br-work",
 		cl:"U-cl-work", 
-		fo: "C-focus-dreams-loneliness-love2",
+		fo: "C-focus-dreams-loneliness-love2"
 		// fo: "",
-		sw: "_sine-soft",
-		clip1: "/sw/start low"
+		// sw: "_sine-soft",
+		// clip1: "/sw/start low"
+		//!!------
 	};
 	groups.push(U);	
 
@@ -380,8 +382,8 @@ function makeGroups(){
 		name: "W",
 		br: "W-br-physicality1",
 		cl:"W-cl-physicality1", 
-		fo: "W-focus-spirtual2",
-		sw: "_sine-soft"
+		fo: "W-focus-spirtual2"
+		// sw: "_sine-soft"
 	};
 	groups.push(W);	
 
@@ -408,8 +410,9 @@ function makeGroups(){
 		br: "Z-br-fun-sport",
 		cl:"Z-cl-fun-sport", 
 		fo: "Z-focus-money-trauma",
-		sw: "_sine-soft",
-		clip1: "/sw/start low"
+		// sw: "_sine-soft",
+		// clip1: "/sw/start low"
+		sw: "S-sw2-technology-time"
 	};
 	groups.push(Z);	
 
@@ -417,8 +420,8 @@ function makeGroups(){
 		name: "ZA",
 		br: "ZA-br-food2-institutions2",
 		cl:"ZA-cl-food2-institutions2", 
-		fo: "ZA-happy-joy",
-		sw: "S-sw2-technology-time"
+		fo: "ZA-happy-joy"
+
 	};
 	groups.push(ZA);
 
@@ -426,10 +429,10 @@ function makeGroups(){
 		name: "ZB",
 		br: "ZB-br-family2",
 		cl:"ZB-cl-family2", 
-		fo: "ZB-focus-psychology",
-		sw: "_sine-decay",
+		fo: "ZB-focus-psychology"
+		// sw: "_sine-decay",
 		// sw: "ZB-sw-insitutions1"
-		clip1: "/sw/start low"
+		// clip1: "/sw/start low"
 	};
 	groups.push(ZB);
 
