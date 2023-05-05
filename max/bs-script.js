@@ -120,7 +120,7 @@ function cueGroup(newIndex){
 	}
 
 	//tones or textures?
-	if(Math.random() > 0.35){
+	if(Math.random() > 0.4){
 		currentState.clip2 = "/to/start";
 		currentState.txto = "to";
 		currentState.bank2 = tones[Math.floor(Math.random()*tones.length)].folder;
@@ -353,7 +353,7 @@ function makeGroups(){
 		fo: "T-focus-cities-power",
 		// sw: "_sine-soft",
 		// clip1: "/sw/start low"
-		sw: "C-sw2-change-mix-words"		
+		sw: "H-focus-extended"	
 	};
 	groups.push(T);
 
@@ -362,7 +362,7 @@ function makeGroups(){
 		br: "U-br-work",
 		cl:"U-cl-work", 
 		fo: "C-focus-dreams-loneliness-love2",
-		sw: "C-sw2-change-mix-words"
+		sw: "H-focus-extended"
 		// fo: "",
 		// sw: "_sine-soft",
 		// clip1: "/sw/start low"
@@ -414,7 +414,7 @@ function makeGroups(){
 		fo: "Z-focus-money-trauma",
 		// sw: "_sine-soft",
 		// clip1: "/sw/start low"
-		sw: "S-sw2-technology-time"
+		sw: "H-focus-extended"
 	};
 	groups.push(Z);	
 
