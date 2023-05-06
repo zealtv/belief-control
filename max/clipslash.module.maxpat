@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 138.0, 76.0, 74.0, 22.0 ],
+					"text" : "delay 45000"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -289,7 +301,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "int", "int" ],
-					"patching_rect" : [ 139.0, 59.0, 83.0, 22.0 ],
+					"patching_rect" : [ 139.0, 39.0, 83.0, 22.0 ],
 					"text" : "live.thisdevice"
 				}
 
@@ -383,9 +395,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-105", 0 ],
-					"disabled" : 1,
+					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-76", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-105", 0 ],
+					"source" : [ "obj-8", 0 ]
 				}
 
 			}
@@ -399,7 +417,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "clipslash.js",
-				"bootpath" : "~/repos/belief-control/max",
+				"bootpath" : "~/BELIEF-SYSTEM/belief-control/max",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
