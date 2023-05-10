@@ -120,7 +120,7 @@ function cueGroup(newIndex){
 	}
 
 	//tones or textures?
-	if(Math.random() > 0.4){
+	if(Math.random() > 0.3){
 		currentState.clip2 = "/to/start";
 		currentState.txto = "to";
 		currentState.bank2 = tones[Math.floor(Math.random()*tones.length)].folder;
@@ -547,11 +547,11 @@ function makeTextures(){
 	}
 	textures.push(air);
 
-	const pinknoise = {
-		folder: "_noise-pink",
-		clip: ""
-	}
-	textures.push(pinknoise);
+	// const pinknoise = {
+	// 	folder: "_noise-pink",
+	// 	clip: ""
+	// }
+	// textures.push(pinknoise);
 
 	// const whitenoise = {
 	// 	folder: "_noise-white",
