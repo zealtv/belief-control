@@ -69,9 +69,9 @@ log("Reload:", new Date);
 makeGroups();
 makeTones();
 makeTextures();
-// log(textures);
+// log(tones);
 
-
+  
 
 
 // MAIN ---------------------------------
@@ -131,11 +131,17 @@ function cueGroup(newIndex){
 	}
 
 	//tones or textures?
-	if(Math.random() > 0.35){
-		currentState.clip2 = "/to/start";
+	if(Math.random() > 0.0){
+		var toneIndex = Math.floor(Math.random()*tones.length);
+		log("LOADING TONE: ", tones[toneIndex]);
 		currentState.txto = "to";
-		currentState.bank2 = tones[Math.floor(Math.random()*tones.length)].folder;
-		// currentState.bank2 = tones[0].folder;
+		currentState.bank2 = tones[toneIndex].folder;
+		currentState.clip2 = tones[toneIndex].clip;
+
+		if( currentState.clip2 == null){
+			currentState.clip2 =  "/to/start";
+			log("loading fallback slashclip: ", currentState.clip2);
+		}
 	}
 	else{
 		currentState.clip2 = "/tx/start";
@@ -143,10 +149,9 @@ function cueGroup(newIndex){
 		currentState.bank2 = textures[Math.floor(Math.random()*textures.length)].folder;
 		// currentState.bank2 = textures[0].folder;
 	}
-	if( groups[thisIndex].clip2 != null){
-		currentState.clip2 =  groups[thisIndex].clip2;
-		log("loaded custom slashclip: ", currentState.clip2);
-	}
+
+
+
 	
 	outlet(0, "/clips", currentState.clip0, currentState.clip1, currentState.clip2);
 	outlet(0, "/state", currentState.name, currentState.brcl, currentState.fosw, currentState.txto);
@@ -234,8 +239,8 @@ function makeGroups(){
 		// sw: "H-sw-ritual-spirituality3-all"
 		// sw: "H-sw-ritual-spirituality3-mix"
 		// sw: "H-sw-ritual-spirituality3-sep"
-		// sw: "H-sw-ritual-spirituality3-sep-airhi"
-		sw: "H-sw-ritual-spirituality3-sep-airlo"
+		sw: "H-sw-ritual-spirituality3-sep-airhi"
+		// sw: "H-sw-ritual-spirituality3-sep-airlo"
 	};
 	groups.push(H);
 
@@ -262,8 +267,8 @@ function makeGroups(){
 		// sw: "K-sw-foodstuffs-all"
 		// sw: "K-sw-foodstuffs-mix"
 		// sw: "K-sw-foodstuffs-sep"
-		// sw: "K-sw-foodstuffs-sep-airhi"
-		sw: "K-sw-foodstuffs-sep-airlo"
+		sw: "K-sw-foodstuffs-sep-airhi"
+		// sw: "K-sw-foodstuffs-sep-airlo"
 	};
 	groups.push(K);
 
@@ -280,8 +285,8 @@ function makeGroups(){
 		// sw: "M-sw-physicality-all"
 		// sw: "M-sw-physicality-mix"
 		// sw: "M-sw-physicality-sep"
-		// sw: "M-sw-physicality-sep-airhi"
-		sw: "M-sw-physicality-sep-airlo"
+		sw: "M-sw-physicality-sep-airhi"
+		// sw: "M-sw-physicality-sep-airlo"
 	};
 	groups.push(M);
 
@@ -308,8 +313,8 @@ function makeGroups(){
 		// sw: "P-sw-education-sport-all"
 		// sw: "P-sw-education-sport-mix"
 		// sw: "P-sw-education-sport-sep"
-		// sw: "P-sw-education-sport-sep-airhi"
-		sw: "P-sw-education-sport-sep-airlo"
+		sw: "P-sw-education-sport-sep-airhi"
+		// sw: "P-sw-education-sport-sep-airlo"
 	};
 	groups.push(P);
 
@@ -326,8 +331,8 @@ function makeGroups(){
 		// sw: "R-sw-animals-behaviour-all"
 		// sw: "R-sw-animals-behaviour-mix"
 		// sw: "R-sw-animals-behaviour-sep"
-		// sw: "R-sw-animals-behaviour-sep-airhi"
-		sw: "R-sw-animals-behaviour-sep-airlo"
+		sw: "R-sw-animals-behaviour-sep-airhi"
+		// sw: "R-sw-animals-behaviour-sep-airlo"
 	};
 	groups.push(R);
 
@@ -344,8 +349,8 @@ function makeGroups(){
 		// sw: "T-sw-creativity-all"
 		// sw: "T-sw-creativity-mix"
 		// sw: "T-sw-creativity-sep"
-		// sw: "T-sw-creativity-sep-airhi"
-		sw: "T-sw-creativity-sep-airlo"
+		sw: "T-sw-creativity-sep-airhi"
+		// sw: "T-sw-creativity-sep-airlo"
 		// sw: "_sine-soft",
 		// clip1: "/sw/start low"
 	};
@@ -368,72 +373,10 @@ function makeGroups(){
 		// sw: "V-sw-drugs-joy-all"
 		// sw: "V-sw-drugs-joy-mix"
 		// sw: "V-sw-drugs-joy-sep"
-		// sw: "V-sw-drugs-joy-sep-airhi"
-		sw: "V-sw-drugs-joy-sep-airlo"
+		sw: "V-sw-drugs-joy-sep-airhi"
+		// sw: "V-sw-drugs-joy-sep-airlo"
 	};
 	groups.push(V);
-
-	// const W = {
-	// 	name: "W",
-	// 	br: "V-br-people1-sprituality1",
-	// 	fo: "W-focus-spirtual2",
-	// 	sw: "G-sw2-creativity-death"
-	// 	// sw: "_sine-soft"
-	// };
-	// groups.push(W);	
-
-	// const X = {
-	// 	name: "X",
-	// 	br: "X-br-people",
-	// 	cl:"X-cl-people", 
-	// 	fo: "X-focus-drugs-ritual",
-	// 	sw: "K-sw-freinds-kindness-struggle"
-	// };
-	// groups.push(X);	
-
-	// const Y = {
-	// 	name: "Y",
-	// 	br: "Y-br-family1",
-	// 	cl:"Y-cl-family1", 
-	// 	fo: "Y-focus-communication",
-	// 	sw: "P-sw2-mental-music"
-	// };
-	// groups.push(Y);	
-
-	// const Z = {
-	// 	name: "Z",
-	// 	br: "Z-br-fun-sport",
-	// 	cl:"Z-cl-fun-sport", 
-	// 	fo: "Z-focus-money-trauma",
-	// 	// sw: "_sine-soft",
-	// 	// clip1: "/sw/start low"
-	// 	sw: "H-focus-extended"
-	// };
-	// groups.push(Z);	
-
-	// const ZA = {
-	// 	name: "ZA",
-	// 	br: "ZA-br-food2-institutions2",
-	// 	cl:"ZA-cl-food2-institutions2", 
-	// 	fo: "ZA-happy-joy",
-	// 	sw: "C-sw2-change-mix-words"
-
-	// };
-	// groups.push(ZA);
-
-	// const ZB = {
-	// 	name: "ZB",
-	// 	br: "ZB-br-family2",
-	// 	cl:"ZB-cl-family2", 
-	// 	fo: "ZB-focus-psychology",
-	// 	sw: "O-sw2-life"
-	// 	// sw: "_sine-decay",
-	// 	// sw: "ZB-sw-insitutions1"
-	// 	// clip1: "/sw/start low"
-	// };
-	// groups.push(ZB);
-
-	
 
 }
 
@@ -446,15 +389,21 @@ function makeTones(){
 	
 	const flugelharmon = {
 		folder: "_eh-flugel-harmon",
-		clip: ""
+		clip: "/to/flugelharmon"
 	}
 	tones.push(flugelharmon);
 
 	const harmon = {
 		folder: "_eh-harmon-stem",
-		clip: ""
+		clip: "/to/harmonstem"
 	}
 	tones.push(harmon);
+
+	const flugelsine = {
+		folder: "_eh-flugel-sine-soft-long",
+		clip: "/to/flugelsine"
+	}
+	tones.push(flugelsine);
 
 	// const trumpet = {
 	// 	folder: "_eh-open",
@@ -539,6 +488,20 @@ function makeTextures(){
 		clip: ""
 	}
 	textures.push(air);
+
+	const harmonsparks = {
+		folder: "_eh-harmon-sparks",
+		clip: ""
+	}
+	textures.push(harmonsparks);
+
+	const sinedecay = {
+		folder: "_sine-decay",
+		clip: ""
+	}
+	textures.push(sinedecay);
+
+	
 
 	// const pinknoise = {
 	// 	folder: "_noise-pink",

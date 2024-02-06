@@ -26,10 +26,13 @@ var centroid_x = 0.;
 var centroid_y = 0.;
 var avgvelocity_x = 0.;
 var avgvelocity_y = 0.;
+
 var separation = 0.18;
 var separationThreshold = 0.48;
 var alignment = 0.34;
 var coherence = 0.30;
+
+
 
 //params for js-SoundObject
 var maxVelocity = 0.05 * 0.1; //updated from windSpeed
@@ -40,6 +43,7 @@ var baseObjectId = 0; //offset the sample/object ID
 var gain = 1;
 var rate = 1;
 var radius = 3000;
+
 
 var soundObjects = new Array(); // the array of soundObjects to be held in js
 var objectsSpawned = 0; // global var tracking total objects spawned
@@ -59,7 +63,7 @@ var state = {
 		flock: { //flock based on wind direction
 			rules: [separate, align, cohere, limit]
 		},
-		
+
 		flow: { //keep distance, but move to end of installation
 			rules: [ripple, limit]
 		}
@@ -280,7 +284,6 @@ function separate(s)
 
 
 
-
 //flocking behaviors
 function sep(v)
 {
@@ -375,8 +378,6 @@ function clip(x,min,max)
 {
 	return Math.min(Math.max(x,min),max);
 }
-
-
 
 
 

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 1323.0, 959.0 ],
+		"rect" : [ 234.0, 190.0, 1481.0, 783.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,54 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-190",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 788.5, 1459.67563600459971, 101.0, 22.0 ],
+					"text" : "---- OSC Enabled"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-189",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 680.0, 1459.67563600459971, 104.0, 22.0 ],
+					"text" : "---- OSC Disabled"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-187",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "bang", "bang", "" ],
+					"patching_rect" : [ 680.0, 1417.0, 44.0, 22.0 ],
+					"text" : "sel 0 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+					"id" : "obj-170",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 680.0, 1505.0, 68.0, 22.0 ],
+					"text" : "s bs-debug"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-176",
 					"ignoreclick" : 1,
@@ -222,6 +270,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"id" : "obj-223",
 					"ignoreclick" : 1,
 					"maxclass" : "number",
@@ -231,7 +280,9 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1049.0, 727.666699770388732, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 334.435312983598863, 106.160631223719747, 72.0, 22.0 ]
+					"presentation_rect" : [ 141.594623317022922, 73.316642690759664, 72.0, 22.0 ],
+					"textcolor" : [ 0.203921568627451, 0.203921568627451, 0.203921568627451, 1.0 ],
+					"triangle" : 0
 				}
 
 			}
@@ -286,13 +337,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-155",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2115.0, 2070.0, 50.0, 35.0 ],
-					"text" : "/sw/start"
+					"patching_rect" : [ 2115.0, 2070.0, 50.0, 22.0 ],
+					"text" : "/fo/start"
 				}
 
 			}
@@ -518,7 +568,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1478.799975037574768, 1401.457786588931413, 72.0, 32.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 244.000000000000057, 130.160631223719747, 72.0, 18.0 ],
+					"presentation_rect" : [ 281.594623317022979, 73.316642690759664, 72.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "no autotrigger", "autotrigger" ],
@@ -574,7 +624,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1259.0, 1170.0, 72.0, 32.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 537.0, 124.036585355560078, 72.0, 18.0 ],
+					"presentation_rect" : [ 683.508373961821235, 140.160631223719747, 72.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "time correction off", "time correction on" ],
@@ -607,15 +657,16 @@
 			}
 , 			{
 				"box" : 				{
+					"appearance" : 1,
 					"id" : "obj-320",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 976.086249351501465, 471.0, 62.0, 48.0 ],
+					"patching_rect" : [ 976.086249351501465, 471.0, 25.0, 36.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 408.435312983598863, 102.972654157799582, 60.0, 48.0 ],
+					"presentation_rect" : [ 219.594623317022922, 46.644648424279623, 50.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 240.0 ],
@@ -854,7 +905,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 534.836249351501465, 360.022498681811385, 78.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 244.000000000000057, 105.472654157799582, 72.0, 17.0 ],
+					"presentation_rect" : [ 413.702688341488567, 106.948797107165774, 99.999999999999886, 24.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "stop auto off", "stop auto on" ],
@@ -993,7 +1044,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1372.27125139450709, 484.022498681811385, 72.0, 32.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 155.0, 130.160631223719747, 72.0, 18.0 ],
+					"presentation_rect" : [ 281.594623317022979, 35.972654157799582, 72.0, 36.310171117257283 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "no autoload", "autoload" ],
@@ -1025,7 +1076,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 736.0, 582.480285270742797, 72.0, 32.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 334.435312983598863, 130.160631223719747, 72.0, 18.0 ],
+					"presentation_rect" : [ 141.594623317022922, 35.972654157799582, 72.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "no autonext", "autonext" ],
@@ -1052,7 +1103,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 2877.997617313317278, 975.348844966428715, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 643.053172263374108, 118.160631223719747, 113.0, 20.0 ],
+					"presentation_rect" : [ 696.053172263374108, 118.160631223719747, 113.0, 20.0 ],
 					"text" : "osc: [clipslash]"
 				}
 
@@ -1069,7 +1120,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 2636.997617313317278, 1120.933132705349863, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 630.508373961821235, 122.160631223719747, 15.0, 15.0 ],
+					"presentation_rect" : [ 683.508373961821235, 122.160631223719747, 15.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
@@ -1225,7 +1276,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1372.27125139450709, 624.813585500354066, 58.0, 34.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 155.0, 102.972654157799582, 71.0, 22.0 ],
+					"presentation_rect" : [ 413.702688341488567, 133.948797107165774, 99.999999999999886, 26.377805948662882 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "load off", "load on" ],
@@ -1738,20 +1789,19 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2175.263700723648071, 2069.0, 91.0, 22.0 ],
-					"text" : "/sw/start"
+					"text" : "/fo/start"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-241",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1947.313675761222839, 2077.0, 49.0, 35.0 ],
-					"text" : "/sw/start"
+					"patching_rect" : [ 1947.313675761222839, 2077.0, 49.0, 22.0 ],
+					"text" : "/fo/start"
 				}
 
 			}
@@ -1896,7 +1946,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1957.07750129699707, 1732.0, 50.0, 22.0 ],
-					"text" : "sw"
+					"text" : "fo"
 				}
 
 			}
@@ -2144,15 +2194,16 @@
 			}
 , 			{
 				"box" : 				{
+					"appearance" : 1,
 					"id" : "obj-172",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 548.0, 1174.50331517654854, 41.0, 48.0 ],
+					"patching_rect" : [ 548.0, 1174.50331517654854, 25.0, 36.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 476.0, 102.972654157799582, 41.0, 48.0 ],
+					"presentation_rect" : [ 359.594623317022979, 46.644648424279623, 50.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 10000 ],
@@ -2329,7 +2380,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 2268.943526030631801, 873.742953164202618, 100.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 403.000000000000057, 43.246891221200187, 100.0, 15.0 ],
+					"presentation_rect" : [ 281.594623317022979, 116.948797107165774, 100.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "A-br-aliens-mind-change", "A-fo-activities-ethics", "B-br-future2-love2", "B-sw-music-nature-all", "B-sw-music-nature-mix", "B-sw-music-nature-sep", "B-sw-music-nature-sep-airhi", "B-sw-music-nature-sep-airlo", "C-br-clothing1-emotional1", "C-fo-friendship-words", "D-br-communication", "D-sw-family-all", "D-sw-family-mix", "D-sw-family-sep", "D-sw-family-sep-airhi", "D-sw-family-sep-airlo", "E-br-senses-structure", "E-fo-diversity-humans-politics", "F-br-institutions-life", "F-sw-self-all", "F-sw-self-mix", "F-sw-self-sep", "F-sw-self-sep-airhi", "F-sw-self-sep-airlo", "G-br-home-money", "G-fo-intimacy-time", "H-br-children-community", "H-sw-ritual-spirituality3-all", "H-sw-ritual-spirituality3-mix", "H-sw-ritual-spirituality3-sep", "H-sw-ritual-spirituality3-sep-airhi", "H-sw-ritual-spirituality3-sep-airlo", "J-br-feelings-world", "J-fo-cities-knowledge", "K-br-gender-kindness", "K-sw-foodstuffs-all", "K-sw-foodstuffs-mix", "K-sw-foodstuffs-sep", "K-sw-foodstuffs-sep-airhi", "K-sw-foodstuffs-sep-airlo", "L-br-death2-morality", "L-fo-future1-love1", "M-br-nighttime-relationships", "M-sw-physicality-all", "M-sw-physicality-mix", "M-sw-physicality-sep", "M-sw-physicality-sep-airhi", "M-sw-physicality-sep-airlo", "N-br-plants-imagination-psychology", "N-fo-people2-spirituality2", "P-br-death1-mentalhealth", "P-sw-education-sport-all", "P-sw-education-sport-mix", "P-sw-education-sport-sep", "P-sw-education-sport-sep-airhi", "P-sw-education-sport-sep-airlo", "Q-br-identity-society", "Q-fo-clothing2-emotional2", "R-br-aspiration-freedom", "R-sw-animals-behaviour-all", "R-sw-animals-behaviour-mix", "R-sw-animals-behaviour-sep", "R-sw-animals-behaviour-sep-airhi", "R-sw-animals-behaviour-sep-airlo", "S-br-philosophy-superstition", "S-fo-equality-humour", "T-br-struggle-technology", "T-sw-creativity-all", "T-sw-creativity-mix", "T-sw-creativity-sep", "T-sw-creativity-sep-airhi", "T-sw-creativity-sep-airlo", "U-br-chaos-loneliness-relaxation", "U-fo-objects", "V-br-people1-sprituality1", "V-sw-drugs-joy-all", "V-sw-drugs-joy-mix", "V-sw-drugs-joy-sep", "V-sw-drugs-joy-sep-airhi", "V-sw-drugs-joy-sep-airlo", "_cb-alto", "_eh-air-air-harmon", "_eh-arp-hi", "_eh-arp-lo", "_eh-flugel-harmon", "_eh-flugel-sine-soft-long", "_eh-harmon-sparks", "_eh-harmon-stem", "_eh-industrial", "_eh-lydian-stack", "_eh-melodies", "_eh-open", "_eh-run", "_eh-warmups", "_noise-pink", "_noise-white", "_numbers", "_sine-decay", "_sine-hard", "_sine-short", "_sine-soft", "_sine-soft-long", "_sparks" ],
@@ -2362,7 +2413,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 2182.243501068206569, 853.742953164202618, 31.0, 31.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 453.0, 60.246891221200187, 50.0, 21.0 ],
+					"presentation_rect" : [ 331.594623317022922, 133.948797107165774, 50.0, 21.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "load off", "load on" ],
@@ -2395,7 +2446,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 2342.243501068206569, 899.742953164202618, 44.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 403.000000000000057, 60.246891221200187, 44.0, 21.0 ],
+					"presentation_rect" : [ 281.594623317022979, 133.948797107165774, 44.0, 21.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "loop off", "loop on" ],
@@ -2424,7 +2475,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1984.997617313317505, 134.413318727495607, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 389.0, 33.246891221200201, 128.0, 53.0 ]
+					"presentation_rect" : [ 267.594623317022922, 106.948797107165774, 128.0, 53.0 ]
 				}
 
 			}
@@ -2439,7 +2490,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1979.549975037574768, 873.742953164202618, 100.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 272.000000000000057, 43.246891221200187, 100.0, 15.0 ],
+					"presentation_rect" : [ 150.594623317022979, 116.948797107165774, 100.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "A-br-aliens-mind-change", "A-fo-activities-ethics", "B-br-future2-love2", "B-sw-music-nature-all", "B-sw-music-nature-mix", "B-sw-music-nature-sep", "B-sw-music-nature-sep-airhi", "B-sw-music-nature-sep-airlo", "C-br-clothing1-emotional1", "C-fo-friendship-words", "D-br-communication", "D-sw-family-all", "D-sw-family-mix", "D-sw-family-sep", "D-sw-family-sep-airhi", "D-sw-family-sep-airlo", "E-br-senses-structure", "E-fo-diversity-humans-politics", "F-br-institutions-life", "F-sw-self-all", "F-sw-self-mix", "F-sw-self-sep", "F-sw-self-sep-airhi", "F-sw-self-sep-airlo", "G-br-home-money", "G-fo-intimacy-time", "H-br-children-community", "H-sw-ritual-spirituality3-all", "H-sw-ritual-spirituality3-mix", "H-sw-ritual-spirituality3-sep", "H-sw-ritual-spirituality3-sep-airhi", "H-sw-ritual-spirituality3-sep-airlo", "J-br-feelings-world", "J-fo-cities-knowledge", "K-br-gender-kindness", "K-sw-foodstuffs-all", "K-sw-foodstuffs-mix", "K-sw-foodstuffs-sep", "K-sw-foodstuffs-sep-airhi", "K-sw-foodstuffs-sep-airlo", "L-br-death2-morality", "L-fo-future1-love1", "M-br-nighttime-relationships", "M-sw-physicality-all", "M-sw-physicality-mix", "M-sw-physicality-sep", "M-sw-physicality-sep-airhi", "M-sw-physicality-sep-airlo", "N-br-plants-imagination-psychology", "N-fo-people2-spirituality2", "P-br-death1-mentalhealth", "P-sw-education-sport-all", "P-sw-education-sport-mix", "P-sw-education-sport-sep", "P-sw-education-sport-sep-airhi", "P-sw-education-sport-sep-airlo", "Q-br-identity-society", "Q-fo-clothing2-emotional2", "R-br-aspiration-freedom", "R-sw-animals-behaviour-all", "R-sw-animals-behaviour-mix", "R-sw-animals-behaviour-sep", "R-sw-animals-behaviour-sep-airhi", "R-sw-animals-behaviour-sep-airlo", "S-br-philosophy-superstition", "S-fo-equality-humour", "T-br-struggle-technology", "T-sw-creativity-all", "T-sw-creativity-mix", "T-sw-creativity-sep", "T-sw-creativity-sep-airhi", "T-sw-creativity-sep-airlo", "U-br-chaos-loneliness-relaxation", "U-fo-objects", "V-br-people1-sprituality1", "V-sw-drugs-joy-all", "V-sw-drugs-joy-mix", "V-sw-drugs-joy-sep", "V-sw-drugs-joy-sep-airhi", "V-sw-drugs-joy-sep-airlo", "_cb-alto", "_eh-air-air-harmon", "_eh-arp-hi", "_eh-arp-lo", "_eh-flugel-harmon", "_eh-flugel-sine-soft-long", "_eh-harmon-sparks", "_eh-harmon-stem", "_eh-industrial", "_eh-lydian-stack", "_eh-melodies", "_eh-open", "_eh-run", "_eh-warmups", "_noise-pink", "_noise-white", "_numbers", "_sine-decay", "_sine-hard", "_sine-short", "_sine-soft", "_sine-soft-long", "_sparks" ],
@@ -2473,7 +2524,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1892.849950075149536, 853.742953164202618, 31.0, 31.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 322.000000000000057, 60.246891221200187, 50.0, 21.0 ],
+					"presentation_rect" : [ 200.594623317022979, 133.948797107165774, 50.0, 21.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "load off", "load on" ],
@@ -2506,7 +2557,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 2052.849950075149536, 899.742953164202618, 44.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 272.000000000000057, 60.246891221200187, 44.0, 21.0 ],
+					"presentation_rect" : [ 150.594623317022979, 133.948797107165774, 44.0, 21.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "loop off", "loop on" ],
@@ -2535,7 +2586,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1799.797592350892273, 134.413318727495607, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 258.0, 33.246891221200201, 128.0, 53.0 ]
+					"presentation_rect" : [ 136.594623317022922, 106.948797107165774, 128.0, 53.0 ]
 				}
 
 			}
@@ -2550,7 +2601,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1719.549975037574768, 873.742953164202618, 100.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 141.000000000000057, 43.246891221200187, 100.0, 15.0 ],
+					"presentation_rect" : [ 19.594623317022979, 116.948797107165774, 100.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "A-br-aliens-mind-change", "A-fo-activities-ethics", "B-br-future2-love2", "B-sw-music-nature-all", "B-sw-music-nature-mix", "B-sw-music-nature-sep", "B-sw-music-nature-sep-airhi", "B-sw-music-nature-sep-airlo", "C-br-clothing1-emotional1", "C-fo-friendship-words", "D-br-communication", "D-sw-family-all", "D-sw-family-mix", "D-sw-family-sep", "D-sw-family-sep-airhi", "D-sw-family-sep-airlo", "E-br-senses-structure", "E-fo-diversity-humans-politics", "F-br-institutions-life", "F-sw-self-all", "F-sw-self-mix", "F-sw-self-sep", "F-sw-self-sep-airhi", "F-sw-self-sep-airlo", "G-br-home-money", "G-fo-intimacy-time", "H-br-children-community", "H-sw-ritual-spirituality3-all", "H-sw-ritual-spirituality3-mix", "H-sw-ritual-spirituality3-sep", "H-sw-ritual-spirituality3-sep-airhi", "H-sw-ritual-spirituality3-sep-airlo", "J-br-feelings-world", "J-fo-cities-knowledge", "K-br-gender-kindness", "K-sw-foodstuffs-all", "K-sw-foodstuffs-mix", "K-sw-foodstuffs-sep", "K-sw-foodstuffs-sep-airhi", "K-sw-foodstuffs-sep-airlo", "L-br-death2-morality", "L-fo-future1-love1", "M-br-nighttime-relationships", "M-sw-physicality-all", "M-sw-physicality-mix", "M-sw-physicality-sep", "M-sw-physicality-sep-airhi", "M-sw-physicality-sep-airlo", "N-br-plants-imagination-psychology", "N-fo-people2-spirituality2", "P-br-death1-mentalhealth", "P-sw-education-sport-all", "P-sw-education-sport-mix", "P-sw-education-sport-sep", "P-sw-education-sport-sep-airhi", "P-sw-education-sport-sep-airlo", "Q-br-identity-society", "Q-fo-clothing2-emotional2", "R-br-aspiration-freedom", "R-sw-animals-behaviour-all", "R-sw-animals-behaviour-mix", "R-sw-animals-behaviour-sep", "R-sw-animals-behaviour-sep-airhi", "R-sw-animals-behaviour-sep-airlo", "S-br-philosophy-superstition", "S-fo-equality-humour", "T-br-struggle-technology", "T-sw-creativity-all", "T-sw-creativity-mix", "T-sw-creativity-sep", "T-sw-creativity-sep-airhi", "T-sw-creativity-sep-airlo", "U-br-chaos-loneliness-relaxation", "U-fo-objects", "V-br-people1-sprituality1", "V-sw-drugs-joy-all", "V-sw-drugs-joy-mix", "V-sw-drugs-joy-sep", "V-sw-drugs-joy-sep-airhi", "V-sw-drugs-joy-sep-airlo", "_cb-alto", "_eh-air-air-harmon", "_eh-arp-hi", "_eh-arp-lo", "_eh-flugel-harmon", "_eh-flugel-sine-soft-long", "_eh-harmon-sparks", "_eh-harmon-stem", "_eh-industrial", "_eh-lydian-stack", "_eh-melodies", "_eh-open", "_eh-run", "_eh-warmups", "_noise-pink", "_noise-white", "_numbers", "_sine-decay", "_sine-hard", "_sine-short", "_sine-soft", "_sine-soft-long", "_sparks" ],
@@ -2584,7 +2635,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1632.849950075149536, 853.742953164202618, 31.0, 31.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 191.000000000000057, 58.061291968000816, 50.0, 21.0 ],
+					"presentation_rect" : [ 69.594623317022979, 131.763197853966403, 50.0, 21.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "load off", "load on" ],
@@ -2617,7 +2668,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1792.849950075149536, 899.742953164202618, 44.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 141.000000000000057, 58.061291968000816, 44.0, 21.0 ],
+					"presentation_rect" : [ 19.594623317022979, 131.763197853966403, 44.0, 21.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "loop off", "loop on" ],
@@ -2646,7 +2697,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1637.997617313317505, 134.413318727495607, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 127.0, 33.458725337754174, 128.0, 53.0 ]
+					"presentation_rect" : [ 5.594623317022922, 107.160631223719747, 128.0, 53.0 ]
 				}
 
 			}
@@ -2677,15 +2728,26 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.301961, 0.301961, 0.301961, 0.0 ],
+					"bgcolor2" : [ 0.301961, 0.301961, 0.301961, 0.0 ],
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0.0,
+					"bgfillcolor_color" : [ 0.301961, 0.301961, 0.301961, 0.0 ],
+					"bgfillcolor_color1" : [ 0.301961, 0.301961, 0.301961, 0.0 ],
+					"bgfillcolor_color2" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_proportion" : 0.5,
+					"bgfillcolor_type" : "color",
+					"fontsize" : 11.0,
+					"gradient" : 1,
 					"id" : "obj-106",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 515.336249351501465, 124.615845055394857, 75.0, 22.0 ],
+					"patching_rect" : [ 515.336249351501465, 124.615845055394857, 71.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.594623317022922, 99.472654157799582, 81.183750045123787, 22.0 ],
-					"text" : "P br sw tx"
+					"presentation_rect" : [ 147.408124977438092, 4.308260321867124, 76.0, 21.0 ],
+					"text" : "U br fo tx"
 				}
 
 			}
@@ -2709,7 +2771,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 728.586249351501465, 1074.439750064346526, 50.0, 22.0 ],
-					"text" : "133"
+					"text" : "138"
 				}
 
 			}
@@ -2721,7 +2783,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 730.586249351501465, 1020.242953164202618, 50.0, 22.0 ],
-					"text" : "133"
+					"text" : "138"
 				}
 
 			}
@@ -2834,7 +2896,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 918.836249351501465, 894.242953164202618, 52.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 57.594623317022922, 30.883492829810649, 58.683750045123787, 58.15046501588705 ],
+					"presentation_rect" : [ 63.594623317022922, 30.883492829810649, 58.683750045123787, 58.15046501588705 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "cue off", "cue on" ],
@@ -3369,7 +3431,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1019.222473740577698, 129.742953164202618, 59.0, 36.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 574.137747994623851, 43.246891221200187, 45.0, 36.0 ],
+					"presentation_rect" : [ 602.629374032802616, 57.316642690759664, 45.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 1 ],
@@ -3569,8 +3631,6 @@
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 240.556473969367971, 1584.270995648949793, 63.0, 23.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 91.0, 124.160631223719747, 43.0, 23.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "unicast", "broadcast" ],
@@ -3602,7 +3662,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 929.972473740577698, 91.803203099856091, 50.0, 63.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 528.508373961821235, 43.246891221200187, 50.0, 63.0 ],
+					"presentation_rect" : [ 557.0, 57.316642690759664, 50.0, 63.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 1 ],
@@ -3696,7 +3756,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 2876.997617313317278, 887.162774568024361, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 643.053172263374108, 23.544484479385069, 113.0, 20.0 ],
+					"presentation_rect" : [ 696.053172263374108, 23.544484479385069, 113.0, 20.0 ],
 					"text" : "osc: [control]"
 				}
 
@@ -3710,7 +3770,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 2876.997617313317278, 838.308260321867238, 128.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 630.508373961821235, 4.308260321867124, 126.0, 20.0 ],
+					"presentation_rect" : [ 683.508373961821235, 4.308260321867124, 126.0, 20.0 ],
 					"text" : "debug",
 					"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
 				}
@@ -3728,7 +3788,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 3053.367567414934456, 1148.638202885744249, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 630.508373961821235, 26.010667063682241, 15.0, 15.0 ],
+					"presentation_rect" : [ 683.508373961821235, 26.010667063682241, 15.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
@@ -3793,7 +3853,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 2877.997617313317278, 953.348844966428715, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 643.053172263374108, 100.506471573502409, 113.0, 20.0 ],
+					"presentation_rect" : [ 696.053172263374108, 100.506471573502409, 113.0, 20.0 ],
 					"text" : "osc: [other]"
 				}
 
@@ -3806,7 +3866,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 2876.997617313317278, 933.659571867519389, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 643.053172263374108, 81.783269748558155, 113.0, 20.0 ],
+					"presentation_rect" : [ 696.053172263374108, 81.783269748558155, 113.0, 20.0 ],
 					"text" : "osc: /objectEnd"
 				}
 
@@ -3819,7 +3879,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 2876.997617313317278, 865.162774568024361, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 643.053172263374108, 61.867096266098343, 113.0, 20.0 ],
+					"presentation_rect" : [ 696.053172263374108, 61.867096266098343, 113.0, 20.0 ],
 					"text" : "osc: /objectUpdate"
 				}
 
@@ -3832,7 +3892,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 2876.997617313317278, 911.659571867519389, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 643.053172263374108, 42.780708636903015, 113.0, 20.0 ],
+					"presentation_rect" : [ 696.053172263374108, 42.780708636903015, 113.0, 20.0 ],
 					"text" : "osc: /objectStart"
 				}
 
@@ -3849,7 +3909,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 2972.997617313317278, 1100.293953101629768, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 630.508373961821235, 102.972654157799582, 15.0, 15.0 ],
+					"presentation_rect" : [ 683.508373961821235, 102.972654157799582, 15.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
@@ -3881,7 +3941,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 2892.497617313317278, 1100.293953101629768, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 630.508373961821235, 84.249452332855356, 15.0, 15.0 ],
+					"presentation_rect" : [ 683.508373961821235, 84.249452332855356, 15.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
@@ -3913,7 +3973,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 2825.497617313317278, 1096.688891440216821, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 630.508373961821235, 64.333278850395516, 15.0, 15.0 ],
+					"presentation_rect" : [ 683.508373961821235, 64.333278850395516, 15.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
@@ -3945,7 +4005,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 2757.497617313317278, 1096.688891440216821, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 630.508373961821235, 45.246891221200187, 15.0, 15.0 ],
+					"presentation_rect" : [ 683.508373961821235, 45.246891221200187, 15.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
@@ -3976,9 +4036,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 478.0, 1456.67563600459971, 63.0, 23.0 ],
+					"patching_rect" : [ 537.5, 1376.67563600459971, 63.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.594623317022922, 124.160631223719747, 81.183750045123787, 21.751908263680662 ],
+					"presentation_rect" : [ 413.702688341488567, 35.972654157799582, 103.297311658511433, 57.343988532960083 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "osc off", "osc on" ],
@@ -4092,8 +4152,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 5.594623317022922, 4.308260321867124, 511.405376682977078, 24.0 ],
 					"text" : "BELIEF SYSTEM",
-					"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"textjustification" : 1
+					"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
 				}
 
 			}
@@ -4862,8 +4921,36 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-189", 0 ],
+					"source" : [ "obj-187", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-190", 0 ],
+					"source" : [ "obj-187", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-170", 0 ],
+					"source" : [ "obj-189", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-71", 0 ],
 					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-170", 0 ],
+					"source" : [ "obj-190", 0 ]
 				}
 
 			}
@@ -5958,8 +6045,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-56", 0 ],
+					"destination" : [ "obj-187", 0 ],
 					"order" : 1,
+					"source" : [ "obj-57", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-56", 0 ],
+					"order" : 2,
 					"source" : [ "obj-57", 0 ]
 				}
 
