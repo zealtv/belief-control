@@ -119,7 +119,7 @@ function cueGroup(newIndex){
 		currentState.fosw = "sw";
 		currentState.bank1 = groups[thisIndex].sw;		
 	}
-	//fallback to sine swarm
+	//if no focus or swarm, fallback to sine swarm
 	else{
 		currentState.clip1 = "/sw/start";
 		currentState.fosw = "sw";
@@ -131,7 +131,7 @@ function cueGroup(newIndex){
 	}
 
 	//tones or textures?
-	if(Math.random() > 0.0){
+	if(Math.random() > 0.5){
 		var toneIndex = Math.floor(Math.random()*tones.length);
 		log("LOADING TONE: ", tones[toneIndex]);
 		currentState.txto = "to";
@@ -144,10 +144,18 @@ function cueGroup(newIndex){
 		}
 	}
 	else{
-		currentState.clip2 = "/tx/start";
+
+		var texIndex = Math.floor(Math.random()*tones.length);
+		log("LOADING TEX: ", tones[texIndex]);
 		currentState.txto = "tx";
-		currentState.bank2 = textures[Math.floor(Math.random()*textures.length)].folder;
-		// currentState.bank2 = textures[0].folder;
+		currentState.bank2 = textures[texIndex].folder;
+		currentState.clip2 = textures[texIndex].clip;
+		
+		if( currentState.clip2 == null){
+			currentState.clip2 =  "/tx/start";
+			log("loading fallback slashclip: ", currentState.clip2);
+		}
+
 	}
 
 

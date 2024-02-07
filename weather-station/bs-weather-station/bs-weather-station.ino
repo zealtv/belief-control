@@ -22,12 +22,16 @@ const int SPEEDPIN = A1; //A1
 
 int dirValue = 0;
 int speedValue = 0;
+// int windTicks[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 //unsigned long lastTurnTime = 0;
-//int lastTurnValue = 0;
-//unsigned int turnCount = 0;
+int lastTurnValue = 0;
+int thisTurnValue = 0;
+unsigned int turnCount = 0;
 //unsigned int lastTurnCount = 0;
 
 // unsigned long lastMessageTime = 0;
+
+int tickCount = 0;
 
 
 void setup() {
@@ -46,11 +50,14 @@ void setup() {
 
 void loop() {
 //  Portal.handleClient();
-  delay(100);
+  delay(2);
+  tickCount++;
+  tickCount = tickCount%500; //1 second
 
   // Reading potentiometer value
   dirValue = get_wind_direction();
   speedValue = analogRead(SPEEDPIN);
+
   if(speedValue > 500){
     speedValue = 1;
   }
@@ -58,22 +65,38 @@ void loop() {
     speedValue = 0;
   }
 
+  if(speedValue != lastTurnValue){
+    turnCount++;
+  }
+
+  lastTurnValue = speedValue;
+
   // Serial.print("dir: "); 
   // Serial.println(dirValue); 
 
   // Serial.print("spd: "); 
   // Serial.println(speedValue); 
 
-  OSCMessage msg("/wind");
-  msg.add( dirValue );
-  msg.add( speedValue );
+  //send messages every second
+  if(tickCount == 0){
+    //convert to km/h
+    float windSpeed = turnCount * 2.4;
+    turnCount = 0;
 
-  SLIPSerial.beginPacket();
-  msg.send(SLIPSerial);
-  SLIPSerial.endPacket();
-  msg.empty();  
+    OSCMessage msg("/wind");
+    msg.add( dirValue );
+    msg.add( windSpeed );
+
+    SLIPSerial.beginPacket();
+    msg.send(SLIPSerial);
+    SLIPSerial.endPacket();
+    msg.empty();  
+  }
+
 
 }
+
+
 
 
 
