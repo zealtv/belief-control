@@ -8,17 +8,31 @@ flocking algorithm from maxmsp->examples->js->simulation
 
 */
 
+
+
+
 // inlets/outlets for max obj
 inlets = 2;
 outlets = 4;
-spaceWidth = 18000;
-spaceHeight = 4800;
+
 setinletassist(0,"bang calculates one iteration of simulation");
 setinletassist(1, "parameters go here")
 
 setoutletassist(0, "bang on each tick");
 setoutletassist(1, "objectUpdate message");
 setoutletassist(2, "objectStart/End");
+
+
+//bounds
+var boundLeft = -0.2;
+var boundRight = 0.75;
+var boundBottom = 0.2;
+var boundTop = 1.2;
+
+spaceWidth = 18000;
+spaceHeight = 4800;
+
+
 
 //weather inputs
 var windSpeed = 0;
@@ -56,27 +70,23 @@ var currentMode = 'Flock'; // default state
 
 
 
+// ---- MODES
 
-// state sets rules in constructor and if updateState is passed in from UI
+// mode sets rules in constructor and if updateState is passed in from UI
 var Mode = {
 	modes:
 	{
 		Flock: { //flock based on wind direction
-			rules: [separate, align, cohere, limit]
+			rules: [separate, align, cohere, limit, wrap]
 		},
 
 		Flow: { //keep distance, but move to end of installation
-			rules: [ripple, limit]
+			rules: [ripple, limit, wrap]
 		}
 	}
 };
 
 
-
-
-
-
-// ---- State switching
 function updateMode(v) //update between flow and flock mode
 {
 	currentMode = v;
@@ -119,9 +129,9 @@ function SoundObject() {
 	this.rules = Mode.modes[currentMode].rules //get the rules from mode
 	this.tick = soundObjectTick; // tick method
 
-	//for (var i = 0; i < this.rules.length; i++) {
-	//	post(this.rules[i] + "\n");
-	//}
+	// for (var i = 0; i < this.rules.length; i++) {
+	// 	post(this.rules[i] + "\n");
+	// }
 }
 
 
@@ -136,7 +146,8 @@ function addSoundObject() {
 	soundObjects.push(soundObject); //add to the js soundObject array
 
 	//pass the objectStart OSC message through outlet 0
-	outlet(2, "/objectStart", soundObject.id, bank, soundObject.id, gain, soundObject.x * (spaceWidth + 4 * radius) - 2 * radius, soundObject.y * (spaceHeight + 4 * radius) - 2 * radius, radius);
+	outlet(2, "/objectStart", soundObject.id, bank, soundObject.id, gain, soundObject.x * spaceWidth, soundObject.y * spaceHeight, radius);
+
 	//post("particles size: " + soundObjects.length + "\n");
 }
 
@@ -147,13 +158,13 @@ function removeSoundObject() {
 		return; //gtfo
 	}
 	//first objectEnd particle for OSC
-	//post("/objectEnd", soundObjects[0].id + "\n");
+	post("/objectEnd", soundObjects[0].id + "\n");
 	outlet(2, "/objectEnd", soundObjects[0].id);
 
 	
 	//then remove from js array
 	soundObjects.shift();
-	//post("particles size: " + soundObjects.length + "\n");
+	post("particles size: " + soundObjects.length + "\n");
 }
 
 
@@ -166,7 +177,7 @@ function killAll()
 	}
 
 	soundObjects = [];
-	//post("amount of soundObjects: " + soundObjects.length + "\n");
+	post("amount of soundObjects: " + soundObjects.length + "\n");
 }
 
 
@@ -188,7 +199,8 @@ function bang() {
 		//first update each object in js particle system
 		soundObjects[i].tick();
 		//then send object updates
-		outlet(1, "/objectUpdate", soundObjects[i].id, gain, soundObjects[i].x * (spaceWidth + 4 * radius) - 2 * radius, soundObjects[i].y * (spaceHeight + 4 * radius) - 2 * radius, radius);
+		outlet(1, "/objectUpdate", soundObjects[i].id, gain, soundObjects[i].x * spaceWidth, soundObjects[i].y * spaceHeight, radius);
+
 		outlet(3, soundObjects[i].x, soundObjects[i].y, radius);
 
 		// calculate average position/velocity for next tick
@@ -217,7 +229,9 @@ function soundObjectTick() {
 	this.y += this.vy;
 	this.x += this.vx;
 	//pacman mode
-	wrap(this);
+	// wrap(this);
+
+	post("x: " + this.x + " y: " + this.y + "\n");
 }
 
 
@@ -261,7 +275,7 @@ function setWindDirection(v)
 
 function setWindSpeed(v)
 {
-	var scalingFactor = 0.0008;
+	var scalingFactor = 0.0002;
 
 	windSpeed = v;
 	
@@ -273,7 +287,7 @@ function setWindSpeed(v)
 
 
 
-//// ------------------------------------- RULES
+//// ----------- RULES -------------------------- 
 function separate(s)
 {
 	var dx,dy,proxscale;
@@ -308,12 +322,6 @@ function separate(s)
 		}
 	}
 }
-
-
-
-
-
-
 
 
 function align(s)
@@ -367,16 +375,23 @@ function limit(s)
 
 function wrap(s)
 {
-	if (s.x<=0) {
-		s.x = s.x + 1.;
-	} else if (s.x>=1) {
-		s.x = s.x - 1.;
+
+	// var boundLeft = -0.2;
+	// var boundRight = 0.75;
+	// var boundBottom = 0.2;
+	// var boundTop = 1.2;
+	
+
+	if (s.x < 0) {
+		s.x = 1.;
+	} else if (s.x > 1) {
+		s.x = 0.;
 	}
 
-	if (s.y<0) {
-		s.y = s.y + 1.;
-	} else if (s.y>=1) {
-		s.y = s.y - 1.;
+	if (s.y < 0) {
+		s.y = 1.;
+	} else if (s.y > 1) {
+		s.y = 0.;
 	}
 }
 

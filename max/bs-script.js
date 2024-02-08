@@ -94,12 +94,6 @@ function cueGroup(newIndex){
 		currentState.clip0 = "/br/start";
 		currentState.brcl = "br";
 		currentState.bank0 = groups[thisIndex].br;
-
-	}
-	else{
-		currentState.clip0 = "/cl/start";
-		currentState.brcl = "cl";
-		currentState.bank0 = groups[thisIndex].cl;
 	}
 	if( groups[thisIndex].clip0 != null){
 		currentState.clip0 =  groups[thisIndex].clip0;
@@ -501,7 +495,7 @@ function makeTextures(){
 
 	const harmonsparks = {
 		folder: "_eh-harmon-sparks",
-		clip: "/tx/start"
+		clip: "/tx/harmonsparks"
 	}
 	textures.push(harmonsparks);
 

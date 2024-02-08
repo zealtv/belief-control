@@ -40,6 +40,61 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-45",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 845.166666666666742, 477.0, 125.0, 22.0 ],
+					"text" : "loadmess outputvalue"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-44",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 759.0, 611.0, 29.5, 22.0 ],
+					"text" : "+ 0."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"appearance" : 1,
+					"id" : "obj-36",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 845.166666666666742, 512.5, 45.0, 36.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 225.166666666666742, 85.0, 45.0, 36.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_initial" : [ 1 ],
+							"parameter_initial_enable" : 1,
+							"parameter_invisible" : 1,
+							"parameter_linknames" : 1,
+							"parameter_longname" : "attenuate",
+							"parameter_mmax" : 2.0,
+							"parameter_shortname" : "attenuate",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1
+						}
+
+					}
+,
+					"varname" : "attenuate"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"automation" : "/targetOn",
 					"automationon" : "/targetOnQueue",
 					"id" : "obj-39",
@@ -543,7 +598,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 736.166666666666742, 329.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 89.0, 5.408163265306115, 147.0, 20.0 ],
+					"presentation_rect" : [ 123.166666666666742, 5.408163265306115, 147.0, 20.0 ],
 					"text" : "note > smpl     vel > spkr",
 					"textcolor" : [ 1.0, 1.0, 1.0, 0.47 ]
 				}
@@ -689,7 +744,7 @@
 					"outlettype" : [ "", "" ],
 					"outputmode" : 1,
 					"parameter_enable" : 1,
-					"patching_rect" : [ 833.666666666666742, 559.0, 73.0, 24.0 ],
+					"patching_rect" : [ 921.166666666666742, 559.0, 73.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 9.0, 99.408163265306115, 61.0, 37.0 ],
 					"saved_attribute_attributes" : 					{
@@ -721,7 +776,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 908.666666666666742, 520.0, 50.0, 63.0 ],
+					"patching_rect" : [ 996.166666666666742, 520.0, 50.0, 63.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 134.0, 96.408163265306115, 50.0, 63.0 ],
 					"saved_attribute_attributes" : 					{
@@ -784,7 +839,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 736.166666666666742, 223.408163265306143, 112.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 9.0, 5.408163265306115, 227.0, 20.0 ],
+					"presentation_rect" : [ 9.0, 5.408163265306115, 261.166666666666742, 20.0 ],
 					"text" : "SNIPER",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -1134,6 +1189,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-44", 1 ],
+					"source" : [ "obj-36", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
 					"source" : [ "obj-38", 0 ]
 				}
@@ -1176,6 +1238,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-6", 3 ],
+					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-36", 0 ],
+					"source" : [ "obj-45", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
 					"source" : [ "obj-46", 0 ]
 				}
@@ -1183,7 +1259,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-6", 3 ],
+					"destination" : [ "obj-44", 0 ],
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -1294,6 +1370,7 @@
 			"obj-23" : [ "live.numbox[1]", "live.numbox", 0 ],
 			"obj-24" : [ "rate-multiply", "rate", 0 ],
 			"obj-26" : [ "play-to-end", "play to end", 0 ],
+			"obj-36" : [ "attenuate", "attenuate", 0 ],
 			"obj-39" : [ "queue", "queue", 0 ],
 			"obj-4" : [ "sample-index", "sample", 0 ],
 			"obj-46" : [ "autostep", "auto", 0 ],

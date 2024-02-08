@@ -259,10 +259,12 @@ function setWindDirection(v)
 function setWindSpeed(v)
 {
 	var scalingFactor = 0.0008;
+	var minSpeed = 1.5;
 
 	windSpeed = v;
 	
-	maxVelocity = (windSpeed > 3.0) ? windSpeed * scalingFactor : 3.0 * scalingFactor;
+	maxVelocity = (windSpeed > minSpeed) ? windSpeed : minSpeed;
+	maxVelocity *= scalingFactor;
 	// maxVelocity = clip(v, 0, 1) * 0.1; //from wind speed
 
 }
