@@ -189,7 +189,7 @@ function makeGroups(){
 	const B = {
 		name: "B",
 		br: "B-br-future2-love2",
-		fo: "B-focus-identity1",
+		// fo: "B-focus-identity1",
 		// sw: "B-sw-music-nature-all"
 		//sw: "B-sw-music-nature-mix"
 		//sw: "B-sw-music-nature-sep"
@@ -413,6 +413,13 @@ function makeTones(){
 	}
 	tones.push(flugelsine);
 
+	const sinesoft = {
+		folder: "_sine-soft",
+		clip: "/to/flugelsine"
+	}
+	tones.push(sinesoft);
+
+
 	// const trumpet = {
 	// 	folder: "_eh-open",
 	// 	clip: ""
@@ -468,11 +475,6 @@ function makeTones(){
 	// }
 	// tones.push(sineshort);
 
-	// const sinesoft = {
-	// 	folder: "_sine-soft",
-	// 	clip: ""
-	// }
-	// tones.push(sinesoft);
 
 	// _eh-warmups
 	// _numbers
@@ -485,27 +487,27 @@ function makeTextures(){
 	
 	textures = new Array();
 
-	const industrial = {
-		folder: "_eh-industrial",
-		clip: ""
-	}
-	textures.push(industrial);
+	// const industrial = {
+	// 	folder: "_eh-industrial",
+	// 	clip: ""
+	// }
+	// textures.push(industrial);
 
 	const air = {
 		folder: "_eh-air-air-harmon",
-		clip: ""
+		clip: "/tx/start"
 	}
 	textures.push(air);
 
 	const harmonsparks = {
 		folder: "_eh-harmon-sparks",
-		clip: ""
+		clip: "/tx/start"
 	}
 	textures.push(harmonsparks);
 
 	const sinedecay = {
 		folder: "_sine-decay",
-		clip: ""
+		clip: "/tx/start"
 	}
 	textures.push(sinedecay);
 

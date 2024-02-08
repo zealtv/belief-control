@@ -53,7 +53,7 @@ var soundObjects = new Array(); // the array of soundObjects to be held in js
 var objectsSpawned = 0; // global var tracking total objects spawned
 var currentMode = 'Flock'; // default state
 
-
+post("Executing particles.js\n");
 
 
 
@@ -70,9 +70,6 @@ var Mode = {
 		}
 	}
 };
-
-
-
 
 
 
@@ -136,7 +133,7 @@ function addSoundObject() {
 	soundObjects.push(soundObject); //add to the js soundObject array
 
 	//pass the objectStart OSC message through outlet 0
-	outlet(2, "/objectStart", soundObject.id, bank, soundObject.id, gain, soundObject.x * (spaceWidth + 4 * radius) - 2 * radius, soundObject.y * (spaceHeight + 4 * radius) - 2 * radius, radius);
+	outlet(2, "/objectStart", soundObject.id, bank, soundObject.id, gain, soundObject.x * spaceWidth, soundObject.y * spaceHeight, radius);
 	//post("particles size: " + soundObjects.length + "\n");
 }
 
@@ -188,7 +185,7 @@ function bang() {
 		//first update each object in js particle system
 		soundObjects[i].tick();
 		//then send object updates
-		outlet(1, "/objectUpdate", soundObjects[i].id, gain, soundObjects[i].x * (spaceWidth + 4 * radius) - 2 * radius, soundObjects[i].y * (spaceHeight + 4 * radius) - 2 * radius, radius);
+		outlet(1, "/objectUpdate", soundObjects[i].id, gain, soundObjects[i].x * spaceWidth, soundObjects[i].y * spaceHeight, radius);
 		outlet(3, soundObjects[i].x, soundObjects[i].y, radius);
 
 		// calculate average position/velocity for next tick
@@ -367,16 +364,16 @@ function limit(s)
 
 function wrap(s)
 {
-	if (s.x<=0) {
-		s.x = s.x + 1.;
-	} else if (s.x>=1) {
-		s.x = s.x - 1.;
+	if (s.x < 0) {
+		s.x = 1.;
+	} else if (s.x > 1) {
+		s.x = 0;
 	}
 
-	if (s.y<0) {
-		s.y = s.y + 1.;
-	} else if (s.y>=1) {
-		s.y = s.y - 1.;
+	if (s.y < 0) {
+		s.y = 1.;
+	} else if (s.y > 1) {
+		s.y = 0.;
 	}
 }
 
