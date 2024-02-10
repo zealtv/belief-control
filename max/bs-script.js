@@ -77,6 +77,9 @@ makeTextures();
 // MAIN ---------------------------------
 function cueGroup(newIndex){
 	
+
+
+
 	previousState = JSON.parse(JSON.stringify(currentState));
 	
 	var thisIndex = newIndex%(groups.length);
@@ -139,7 +142,7 @@ function cueGroup(newIndex){
 	}
 	else{
 
-		var texIndex = Math.floor(Math.random()*tones.length);
+		var texIndex = Math.floor(Math.random()*textures.length);
 		log("LOADING TEX: ", tones[texIndex]);
 		currentState.txto = "tx";
 		currentState.bank2 = textures[texIndex].folder;
@@ -185,7 +188,7 @@ function makeGroups(){
 		br: "B-br-future2-love2",
 		// fo: "B-focus-identity1",
 		// sw: "B-sw-music-nature-all"
-		//sw: "B-sw-music-nature-mix"
+		// sw: "B-sw-music-nature-mix"
 		//sw: "B-sw-music-nature-sep"
 		//sw: "B-sw-music-nature-sep-airhi"
 		sw: "B-sw-music-nature-sep-airlo"
@@ -241,8 +244,8 @@ function makeGroups(){
 		// sw: "H-sw-ritual-spirituality3-all"
 		// sw: "H-sw-ritual-spirituality3-mix"
 		// sw: "H-sw-ritual-spirituality3-sep"
-		sw: "H-sw-ritual-spirituality3-sep-airhi"
-		// sw: "H-sw-ritual-spirituality3-sep-airlo"
+		// sw: "H-sw-ritual-spirituality3-sep-airhi"
+		sw: "H-sw-ritual-spirituality3-sep-airlo"
 	};
 	groups.push(H);
 
@@ -269,8 +272,8 @@ function makeGroups(){
 		// sw: "K-sw-foodstuffs-all"
 		// sw: "K-sw-foodstuffs-mix"
 		// sw: "K-sw-foodstuffs-sep"
-		sw: "K-sw-foodstuffs-sep-airhi"
-		// sw: "K-sw-foodstuffs-sep-airlo"
+		// sw: "K-sw-foodstuffs-sep-airhi"
+		sw: "K-sw-foodstuffs-sep-airlo"
 	};
 	groups.push(K);
 
@@ -287,8 +290,8 @@ function makeGroups(){
 		// sw: "M-sw-physicality-all"
 		// sw: "M-sw-physicality-mix"
 		// sw: "M-sw-physicality-sep"
-		sw: "M-sw-physicality-sep-airhi"
-		// sw: "M-sw-physicality-sep-airlo"
+		// sw: "M-sw-physicality-sep-airhi"
+		sw: "M-sw-physicality-sep-airlo"
 	};
 	groups.push(M);
 
@@ -315,8 +318,8 @@ function makeGroups(){
 		// sw: "P-sw-education-sport-all"
 		// sw: "P-sw-education-sport-mix"
 		// sw: "P-sw-education-sport-sep"
-		sw: "P-sw-education-sport-sep-airhi"
-		// sw: "P-sw-education-sport-sep-airlo"
+		// sw: "P-sw-education-sport-sep-airhi"
+		sw: "P-sw-education-sport-sep-airlo"
 	};
 	groups.push(P);
 
@@ -333,8 +336,8 @@ function makeGroups(){
 		// sw: "R-sw-animals-behaviour-all"
 		// sw: "R-sw-animals-behaviour-mix"
 		// sw: "R-sw-animals-behaviour-sep"
-		sw: "R-sw-animals-behaviour-sep-airhi"
-		// sw: "R-sw-animals-behaviour-sep-airlo"
+		// sw: "R-sw-animals-behaviour-sep-airhi"
+		sw: "R-sw-animals-behaviour-sep-airlo"
 	};
 	groups.push(R);
 
@@ -351,8 +354,8 @@ function makeGroups(){
 		// sw: "T-sw-creativity-all"
 		// sw: "T-sw-creativity-mix"
 		// sw: "T-sw-creativity-sep"
-		sw: "T-sw-creativity-sep-airhi"
-		// sw: "T-sw-creativity-sep-airlo"
+		// sw: "T-sw-creativity-sep-airhi"
+		sw: "T-sw-creativity-sep-airlo"
 		// sw: "_sine-soft",
 		// clip1: "/sw/start low"
 	};
@@ -375,8 +378,8 @@ function makeGroups(){
 		// sw: "V-sw-drugs-joy-all"
 		// sw: "V-sw-drugs-joy-mix"
 		// sw: "V-sw-drugs-joy-sep"
-		sw: "V-sw-drugs-joy-sep-airhi"
-		// sw: "V-sw-drugs-joy-sep-airlo"
+		// sw: "V-sw-drugs-joy-sep-airhi"
+		sw: "V-sw-drugs-joy-sep-airlo"
 	};
 	groups.push(V);
 
@@ -513,11 +516,11 @@ function makeTextures(){
 	// }
 	// textures.push(pinknoise);
 
-	// const whitenoise = {
-	// 	folder: "_noise-white",
-	// 	clip: ""
-	// }
-	// textures.push(whitenoise);
+	const whitenoise = {
+		folder: "_noise-white",
+		clip: "/tx/start"
+	}
+	textures.push(whitenoise);
 
 	// const sinenoiseair = {
 	// 	folder: "_sines-noise-air",
