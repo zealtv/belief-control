@@ -410,11 +410,11 @@ function makeTones(){
 	}
 	tones.push(flugelsine);
 
-	const sinesoft = {
-		folder: "_sine-soft",
-		clip: "/to/flugelsine"
-	}
-	tones.push(sinesoft);
+	// const sinesoft = {
+	// 	folder: "_sine-soft",
+	// 	clip: "/to/flugelsine"
+	// }
+	// tones.push(sinesoft);
 
 
 	// const trumpet = {
@@ -516,11 +516,11 @@ function makeTextures(){
 	// }
 	// textures.push(pinknoise);
 
-	const whitenoise = {
-		folder: "_noise-white",
-		clip: "/tx/start"
-	}
-	textures.push(whitenoise);
+	// const whitenoise = {
+	// 	folder: "_noise-white",
+	// 	clip: "/tx/start"
+	// }
+	// textures.push(whitenoise);
 
 	// const sinenoiseair = {
 	// 	folder: "_sines-noise-air",

@@ -25,6 +25,9 @@ var windSpeed = 0;
 var windDirection_ = 0;
 var maxVelocity = 0.005; //updated from windSpeed
 var windDirection = 1; // 0-360 deg from weather station
+var windScaleFactor = 5000; // higher is slower
+var windMinSpeed = 10;
+
 
 
 //params for flocking
@@ -258,13 +261,11 @@ function setWindDirection(v)
 
 function setWindSpeed(v)
 {
-	var scalingFactor = 0.0008;
-	var minSpeed = 1.5;
 
 	windSpeed = v;
 	
-	maxVelocity = (windSpeed > minSpeed) ? windSpeed : minSpeed;
-	maxVelocity *= scalingFactor;
+	maxVelocity = (windSpeed > windMinSpeed) ? windSpeed : windMinSpeed;
+	maxVelocity /= windScaleFactor;
 	// maxVelocity = clip(v, 0, 1) * 0.1; //from wind speed
 
 }

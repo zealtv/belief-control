@@ -1,0 +1,333 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10240\viewh4620\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Set duration: 107 minutes\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+Thurs 8/2/24\
+21:52 Started \
+23:59 Still working swarms and bedrock\
+\
+Fri 9/2/24\
+10:50 Swarm working passably.  5 Pis down: 14 17 29 30 45\
+11:00 Rebooting pis and router with live set running\
+11:10 all pis running - set starting\
+12:50 swarms still running. 2 Pis down : 34 44\
+14:30 no change\
+16:50  3 Pis down 9 34 44. Some holes in swarms\
+22:00 powered down pis, router and weather station\
+\
+Sat 10/2/24\
+11:05 Rebooted with live set running.  Odd speakers off (rebooted on load command?)\
+Wifi was also on - could have been an issue.\
+\
+- edited conductor to pause file loading while resetting \
+\
+12:50 Restarted\
+13:45 Pis down 5 6 10 20R 25\
+14:50 20R 30\
+16:25 same as prev.\
+16:30 restarted. Pi 4 down\
+16:36 restarting \'97 all working\
+16:40 - started set\
+\
+11/2/24\
+11am Swarms patchy. One pi stuck playing swarm (or backed up bedrock)\
+Pis out 1 2 5 7 13 20L 25 29 36 40 41 42 \
+11:15 Restarted \
+12:29 pis 1 - approx 10 down (boot issue? Router? Restart A and Bs\
+13:44 3 20R 45 46\
+\
+\'97 INSTALL AT CHAPTER 4/3/24 \'97\
+16:25 - all plugged and testing\
+7 8  13 14 21 22 23 24 27 28 31 32 33 34 35 36 39 40 49 50 52 63 68 \
+Speakers were unplugged\'85 running again\
+49 50  pi25\
+52 pi26R\
+63 pi32L\
+All fixed - speaker probs\
+\
+15:56 - retest\
+All good\
+\
+\'97 Install Day 2 at chapter 5/4/24 \'97\
+Pis disconnected and hung\
+\
+\'97 Install Day 3 at chapter 6/4/24 \'97\
+11:40 Pis hung and powered\
+15:40 weather station installed and running\
+18:00 speakers and connected horns running\
+18:20 wrapping up - over half the horns connected\
+\
+\'97 Install Day 4 at chapter 7/4/24 \'97\
+All horns connected - system running\
+plot and focus\
+\
+Weather station not sending OSC every time it boots.\
+Added hourly reboot to weatherstation rebooting at half passed the hour\
+Adding wait for network in raspi-config\
+Adding delay to autostart script called in lx-session\
+Weather station working!\
+\
+Speaker test required long pause before loading sounds - include this in reboot procedure\
+Router off - pis off - pis on - pause - router on\
+\
+Tested - weather station stops sending on router restart - if can avoid that would be good.\
+Set weather station to reboot every 15 minutes\
+\
+Maybe just restart router at the beginning of the day\'85\
+\
+\
+Midday pi reset:\
+Auto off \
+Pis off\
+Wait 5 seconds\
+Pis on\
+Wait 120 seconds (popcorn + 30 seconds)\
+Auto on\
+\
+\
+End of day:\
+Auto Off\
+Pis Off\
+Router Off\
+\
+Start of Day:\
+Router On\
+Wait 120 seconds (until light goes off)\
+Pis On\
+Wait for popcorn\
+Auto On\
+\
+(swarms take up to an hour to become weather reactive)\
+\
+Lots of pis dropping off - especially distant from the router.\
+Disabled 5ghz and retesting - optimising scatter module might help - queue two sounds when hitting a speaker.\
+\
+\'97 Install Day 5 at chapter 8/4/24 \'97\
+Moved router to centre of space\
+Increased bedrock interval to 200ms\
+Increased swarm metro to 100ms\
+Set router region to Europe\
+\
+11:16 router cable rerun\
+Changed router channel to 1\
+Changed bandwidth to 20hz\
+\
+Testing scene A\
+\
+Pis dropping off immediately\
+\
+11:31 running bedrock \
+Pi 1 left channel down almost immediately.\
+\
+Switching to unicast\
+Same problem\
+\
+12:00 Rebooted pis and router\
+Now working well - change in power or other interference?\
+\
+13:50 running number check\
+ALL RUNNING. - unicast may have solved it!\
+\
+13:55 Reboot pis and router\
+15:50 running well - decreased bedrock interval to 150\
+\
+16:20 Lost several pis - mostly left channel\
+\
+Increased bedrock interval to 200\
+16:45 Restart \
+\
+Decreased bedrock interval to 150\
+17:10 Restart \
+Scene Q\
+Several down almost immediately\
+\
+Increased bedrock interval to 175\
+Restarting 17:25\
+All speakers online starting sequence S\
+Many speakers immediately down\
+OSC error shown in HB debug\
+\
+\
+Things to try - \
+remove filter\
+disabling broadcast messages\
+\
+Running only bedrock @ 17:43\
+Several left sides out immediately \
+\
+Swapped broadcast for multiunicast\
+\
+17:58 reboot tested all speakers - all working\
+Loading into slot 1\
+Running bedrock at interval of 150\
+\
+Lighting changed\
+18:15 Approx all working again\
+\
+Changed router to n-only, disabled target wake time\
+\
+\
+\'97 install at chapter 9/4/24 \'97\
+Have test HB script on pi 1\
+Show is running\
+\
+Ran well for several hours.\
+16:38 - Power cycling Pis.\
+16:40 triggering Rs\
+\
+Problem appeared - left channel dropped out\
+Close to open so didn\'92t check debug log (d\'92oh!)\
+\
+\
+Copied some debugs.\
+Problem persisting across reboots of router and pis\
+\
+!!!\
+Resetting and resending HB revives some \
+Pis but only works on old hats\
+Only works when whole pi drops off\
+!!!\
+\
+\
+Rebooting again - waited for pi popcorn before rebooting router\
+\
+Stepping through count works \
+As soon as br is played, left channel drops\
+\
+Loading folder\
+\
+\
+\'97 10/4/24 \'97\
+11:15 Up and running after debugging, stops and starts\
+17:17 pi 7 down \
+\'85 leaving running over night\
+\
+\
+\'97 Debugging 11/4/24 \'97\
+\
+Speakers out after 10 hours:\
+3 4\
+11 12\
+13 14\
+15 16\
+21 22\
+41 42\
+53 54\
+55 56\
+61\
+63 64\
+69\
+71\
+81\
+\
+\
+9\
+11\
+15\
+\
+\
+\'97 12/4/24 \'97\
+All speakers working at start of day\
+\
+Built automated test sequence\
+\
+\
+\'97 13/4/24 \'97\
+\
+All online\
+Shutting down and testing\
+10:02 Rebooting succeeded\
+\
+- 14/4/24 -\
+\
+All Pi\'92s seemed to be online.\
+1st reboot at 9.24am\
+Turned on after 8 mins\
+9.43 reboot succeeded\
+\
+- 15/4/24 -\
+\
+All Pi\'92s seemed online.\
+1st reboot 9.31 Waited 8 mins to turn Pi\'92s back on\
+\
+2nd reboot 9.43 Waited 5 mins\
+\
+3rd reboot 9.52 \
+4th reboot 9.59 success!\
+\
+- 16/3/24\
+\
+All pis appear working\
+1st reboot 9.48 waited 3 mins before hitting test\
+2nd reboot 9.57 success!\
+\
+- 17/3/24 -\
+\
+1st reboot 9.35am waited 2 mins before turning on and then another 2 mins before test\
+2nd reboot 9.41test skipped 2nd count but seems to be working with all pi\'92s. Ran test again and all pi\'92s on. BINGO\
+\
+- 18/3/24\
+\
+1st reboot 9.49am\
+2nd reboot 9.57am BINGO!\
+\
+- 19/3/24\
+\
+1st reboot 9.36am\
+2nd reboot 9,47am\
+3rd reboot 9.54am\
+4th reboot 10.04am\
+5th reboot 10.13am\
+6th reboot 10.17am\
+7th reboot 10.24am\
+8th reboot 10.30am\
+9th reboot 10.38am\
+10th reboot 10.47am BINGO!\
+\
+- 20/3/24\
+\
+1st reboot 9.35am\
+2nd reboot 9.43am\
+3rd reboot 9.50am\
+4th reboot 9.55am\
+5th reboot 10.02am\
+6th reboot 10.09am\
+7th reboot 10.17am\
+8th reboot.10.23am\
+9th reboot 10.32am\
+10th reboot 10.40am\
+11th reboot 10.46am\
+12th reboot 10.54am\
+13th reboot 11.00am\
+14th reboot 11.06am\
+15th reboot 11.10am\
+16th reboot 11.19am\
+17th reboot 11.26am\
+18th reboot 11.37am\
+19th reboot 11.45am\
+20th reboot 11.52am\
+21st reboot 12.10pm\
+22nd reboot 12.14pm BINGO!\
+\
+- 21/3/23\
+\
+Left system running as all pi\'92s appeared working\
+\
+- 22/3/24\
+\
+Left system running as pi\'92s appeared all working\
+\
+\
+23/3/24 \'97 PACKDOWN\
+Tested pis - all running.\
+\
+\
+\
+\
+}
